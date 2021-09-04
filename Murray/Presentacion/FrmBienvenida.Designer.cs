@@ -74,6 +74,7 @@ namespace Murray
             this.pbCrearCuenta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbCrearCuenta.TabIndex = 2;
             this.pbCrearCuenta.TabStop = false;
+            this.pbCrearCuenta.Click += new System.EventHandler(this.PbCrearCuenta_Click);
             // 
             // pbImagen
             // 
@@ -100,6 +101,7 @@ namespace Murray
             this.Name = "FrmBienvenida";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Murray - Bienvenida";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmBienvenida_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pbIniciarSesion)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCrearCuenta)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).EndInit();
