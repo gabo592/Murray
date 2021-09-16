@@ -46,8 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enums\Cargos.cs" />
     <Compile Include="Poco\Departamento.cs" />
     <Compile Include="Poco\Municipio.cs" />
+    <Compile Include="Poco\Usuario.cs" />
+    <Compile Include="Presentacion\FrmAvatares.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\FrmAvatares.Designer.cs">
+      <DependentUpon>FrmAvatares.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentacion\FrmBienvenida.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,13 +68,43 @@
     <Compile Include="Presentacion\FrmCrearCuenta.Designer.cs">
       <DependentUpon>FrmCrearCuenta.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentacion\FrmIniciarSesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\FrmIniciarSesion.Designer.cs">
+      <DependentUpon>FrmIniciarSesion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\UserCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentacion\UserCard.Designer.cs">
+      <DependentUpon>UserCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\UserPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\UserPassword.Designer.cs">
+      <DependentUpon>UserPassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Presentacion\FrmAvatares.resx">
+      <DependentUpon>FrmAvatares.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\FrmBienvenida.resx">
       <DependentUpon>FrmBienvenida.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\FrmCrearCuenta.resx">
       <DependentUpon>FrmCrearCuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\FrmIniciarSesion.resx">
+      <DependentUpon>FrmIniciarSesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\UserCard.resx">
+      <DependentUpon>UserCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\UserPassword.resx">
+      <DependentUpon>UserPassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -111,6 +149,69 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001-elephant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\002-snake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\003-hippo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\004-turtle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\005-parrot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\006-panda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\007-boar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\008-giraffe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\009-squid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\010-rhino.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\011-deer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\012-stingray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\013-beetle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\014-shark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\015-walrus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\016-bat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\017-hedgehog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\018-spider.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\019-ladybug.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\020-dog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invisible.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

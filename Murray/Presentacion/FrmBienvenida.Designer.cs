@@ -62,6 +62,7 @@ namespace Murray
             this.pbIniciarSesion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbIniciarSesion.TabIndex = 3;
             this.pbIniciarSesion.TabStop = false;
+            this.pbIniciarSesion.Click += new System.EventHandler(this.PbIniciarSesion_Click);
             // 
             // pbCrearCuenta
             // 

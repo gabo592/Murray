@@ -255,6 +255,7 @@ namespace Murray.Presentacion
             this.pbAgregar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbAgregar.TabIndex = 20;
             this.pbAgregar.TabStop = false;
+            this.pbAgregar.Click += new System.EventHandler(this.PbAgregar_Click);
             // 
             // pbRegresar
             // 
@@ -280,6 +281,7 @@ namespace Murray.Presentacion
             this.pbAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbAvatar.TabIndex = 18;
             this.pbAvatar.TabStop = false;
+            this.pbAvatar.Click += new System.EventHandler(this.PbAvatar_Click);
             // 
             // pbMostrarPass
             // 
@@ -291,6 +293,7 @@ namespace Murray.Presentacion
             this.pbMostrarPass.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbMostrarPass.TabIndex = 17;
             this.pbMostrarPass.TabStop = false;
+            this.pbMostrarPass.Click += new System.EventHandler(this.PbMostrarPass_Click);
             // 
             // lblDepartamento
             // 

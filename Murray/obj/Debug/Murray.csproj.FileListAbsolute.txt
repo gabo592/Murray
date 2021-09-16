@@ -19,3 +19,7 @@ C:\Users\gabri\workspace\Murray\Murray\obj\Debug\Murray.csproj.GenerateResource.
 C:\Users\gabri\workspace\Murray\Murray\obj\Debug\Murray.csproj.CoreCompileInputs.cache
 C:\Users\gabri\workspace\Murray\Murray\obj\Debug\Murray.exe
 C:\Users\gabri\workspace\Murray\Murray\obj\Debug\Murray.pdb
+C:\Users\gabri\workspace\Murray\Murray\obj\Debug\Murray.Presentacion.FrmAvatares.resources
+C:\Users\gabri\workspace\Murray\Murray\obj\Debug\Murray.Presentacion.FrmIniciarSesion.resources
+C:\Users\gabri\workspace\Murray\Murray\obj\Debug\Murray.Presentacion.UserCard.resources
+C:\Users\gabri\workspace\Murray\Murray\obj\Debug\Murray.Presentacion.UserPassword.resources

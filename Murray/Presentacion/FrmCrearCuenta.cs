@@ -4,25 +4,31 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Murray.Poco;
 using Murray.Properties;
+using Murray.Enums;
 
 namespace Murray.Presentacion
 {
     public partial class FrmCrearCuenta : Form
     {
-        private List<Departamento> Departamentos;
-        private List<Municipio> Municipios;
+        private readonly List<Departamento> Departamentos;
+        private readonly List<Municipio> Municipios;
+        public static Image Avatar;
+        private readonly string Conexion;
 
         public FrmCrearCuenta()
         {
             InitializeComponent();
             Departamentos = new List<Departamento>();
             Municipios = new List<Municipio>();
+            Conexion = Settings.Default.ConnectionStrings;
         }
 
         private void FrmCrearCuenta_FormClosing(object sender, FormClosingEventArgs e)
@@ -39,22 +45,23 @@ namespace Murray.Presentacion
 
         private void FrmCrearCuenta_Load(object sender, EventArgs e)
         {
-            DataTable dataTable = new DataTable();
+            CargarDepartamentos();
 
-            string conexion = Settings.Default.ConnectionStrings;
-
-            CargarDepartamentos(conexion, dataTable);
+            cmbCargo.Items.AddRange(Enum.GetValues(typeof(Cargos)).Cast<object>().ToArray());
+            cmbCargo.SelectedIndex = 0;
         }
 
-        private void CargarDepartamentos(string conexion, DataTable dataTable)
+        private void CargarDepartamentos()
         {
+            DataTable dataTable = new DataTable();
+
             try
             {
-                using (SqlConnection connection = new SqlConnection(conexion))
+                using (SqlConnection connection = new SqlConnection(Conexion))
                 {
                     connection.Open();
 
-                    SqlDataAdapter dataAdapter = new SqlDataAdapter("obtener_departamentos", connection);
+                    SqlDataAdapter dataAdapter = new SqlDataAdapter("seleccionar_departamentos", connection);
 
                     dataAdapter.Fill(dataTable);
 
@@ -106,7 +113,7 @@ namespace Murray.Presentacion
 
             try
             {
-                using (SqlConnection connection = new SqlConnection(Settings.Default.ConnectionStrings))
+                using (SqlConnection connection = new SqlConnection(Conexion))
                 {
                     connection.Open();
 
@@ -136,6 +143,136 @@ namespace Murray.Presentacion
             catch (Exception ex)
             {
                 MessageBox.Show(this, ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void PbAvatar_Click(object sender, EventArgs e)
+        {
+            FrmAvatares avatares = new FrmAvatares();
+            avatares.ShowDialog();
+            pbAvatar.Image = Avatar;
+        }
+
+        private void PbAgregar_Click(object sender, EventArgs e)
+        {
+            if (!ValidarCampos())
+            {
+                return;
+            }
+
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(Conexion))
+                {
+                    connection.Open();
+
+                    SqlCommand command = new SqlCommand("agregar_usuario", connection)
+                    {
+                        CommandType = CommandType.StoredProcedure
+                    };
+
+                    command.Parameters.AddWithValue("@primerNombre", txtPNombre.Text);
+                    command.Parameters.AddWithValue("@segundoNombre", txtSNombre.Text);
+                    command.Parameters.AddWithValue("@primerApellido", txtPApellido.Text);
+                    command.Parameters.AddWithValue("@segundoApellido", txtSApellido.Text);
+                    command.Parameters.AddWithValue("@nickName", txtNick.Text);
+                    command.Parameters.AddWithValue("@pass", txtPass.Text);
+
+                    MemoryStream memoryStream = new MemoryStream();
+                    Avatar.Save(memoryStream, Avatar.RawFormat);
+                    command.Parameters.AddWithValue("@avatar", memoryStream.GetBuffer());
+
+                    int idMunicipio = 0;
+                    string nombreMunicipio = cmbMunicipio.SelectedItem.ToString();
+
+                    foreach (Municipio m in Municipios)
+                    {
+                        if (m.Nombre.Equals(nombreMunicipio, StringComparison.CurrentCultureIgnoreCase))
+                        {
+                            idMunicipio = m.ID;
+                            break;
+                        }
+                    }
+
+                    command.Parameters.AddWithValue("@idMunicipio", idMunicipio);
+                    command.Parameters.AddWithValue("@cargo", cmbCargo.SelectedItem.ToString());
+                    command.Parameters.AddWithValue("@correo", txtCorreo.Text);
+
+                    command.ExecuteNonQuery();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(this, ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private bool ValidarCampos()
+        {
+            if (Avatar == null)
+            {
+                MessageBox.Show(this, "Seleccione un avatar", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return false;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtPNombre.Text))
+            {
+                MessageBox.Show(this, "Digite el primer nombre", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return false;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtPApellido.Text))
+            {
+                MessageBox.Show(this, "Digite el primer apellido", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return false;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtCorreo.Text))
+            {
+                MessageBox.Show(this, "Digite un correo electrónico", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return false;
+            }
+            else
+            {
+                MailAddress mailAddress = new MailAddress(txtCorreo.Text);
+
+                if (mailAddress.Address != txtCorreo.Text)
+                {
+                    return false;
+                }
+            }
+
+            if (string.IsNullOrWhiteSpace(txtNick.Text))
+            {
+                MessageBox.Show(this, "Digite un nombre de usuario (NickName)", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return false;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtPass.Text))
+            {
+                MessageBox.Show(this, "Digite una contraseña", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return false;
+            }
+            else if (txtPass.Text.Length < 4)
+            {
+                MessageBox.Show(this, "Digite una contraseña de al menos 5 caracteres", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return false;
+            }
+
+            return true;
+        }
+
+        private void PbMostrarPass_Click(object sender, EventArgs e)
+        {
+            if (txtPass.PasswordChar.Equals('*'))
+            {
+                txtPass.PasswordChar = '\0';
+                pbMostrarPass.Image = Resources.invisible;
+            }
+            else
+            {
+                txtPass.PasswordChar = '*';
+                pbMostrarPass.Image = Resources.eye;
             }
         }
     }

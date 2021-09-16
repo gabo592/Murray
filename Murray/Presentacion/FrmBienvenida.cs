@@ -29,5 +29,12 @@ namespace Murray
         {
             Application.Exit();
         }
+
+        private void PbIniciarSesion_Click(object sender, EventArgs e)
+        {
+            FrmIniciarSesion iniciarSesion = new FrmIniciarSesion();
+            iniciarSesion.Show();
+            Hide();
+        }
     }
 }
