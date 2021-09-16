@@ -23,3 +23,4 @@ C:\Users\gabri\workspace\Murray\Murray\obj\Debug\Murray.Presentacion.FrmAvatares
 C:\Users\gabri\workspace\Murray\Murray\obj\Debug\Murray.Presentacion.FrmIniciarSesion.resources
 C:\Users\gabri\workspace\Murray\Murray\obj\Debug\Murray.Presentacion.UserCard.resources
 C:\Users\gabri\workspace\Murray\Murray\obj\Debug\Murray.Presentacion.UserPassword.resources
+C:\Users\gabri\workspace\Murray\Murray\obj\Debug\Murray.Presentacion.FrmRecuperarContrasena.resources

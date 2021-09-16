@@ -50,60 +50,70 @@
     <Compile Include="Poco\Departamento.cs" />
     <Compile Include="Poco\Municipio.cs" />
     <Compile Include="Poco\Usuario.cs" />
-    <Compile Include="Presentacion\FrmAvatares.cs">
+    <Compile Include="Presentacion\Usuarios\FrmAvatares.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\FrmAvatares.Designer.cs">
+    <Compile Include="Presentacion\Usuarios\FrmAvatares.Designer.cs">
       <DependentUpon>FrmAvatares.cs</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\FrmBienvenida.cs">
+    <Compile Include="Presentacion\Principal\FrmBienvenida.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\FrmBienvenida.Designer.cs">
+    <Compile Include="Presentacion\Principal\FrmBienvenida.Designer.cs">
       <DependentUpon>FrmBienvenida.cs</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\FrmCrearCuenta.cs">
+    <Compile Include="Presentacion\Usuarios\FrmCrearCuenta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\FrmCrearCuenta.Designer.cs">
+    <Compile Include="Presentacion\Usuarios\FrmCrearCuenta.Designer.cs">
       <DependentUpon>FrmCrearCuenta.cs</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\FrmIniciarSesion.cs">
+    <Compile Include="Presentacion\Usuarios\FrmIniciarSesion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\FrmIniciarSesion.Designer.cs">
+    <Compile Include="Presentacion\Usuarios\FrmIniciarSesion.Designer.cs">
       <DependentUpon>FrmIniciarSesion.cs</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\UserCard.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Presentacion\UserCard.Designer.cs">
-      <DependentUpon>UserCard.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\UserPassword.cs">
+    <Compile Include="Presentacion\Usuarios\FrmRecuperarContrasena.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\UserPassword.Designer.cs">
+    <Compile Include="Presentacion\Usuarios\FrmRecuperarContrasena.Designer.cs">
+      <DependentUpon>FrmRecuperarContrasena.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Usuarios\UserCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Usuarios\UserCard.Designer.cs">
+      <DependentUpon>UserCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Usuarios\UserPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Usuarios\UserPassword.Designer.cs">
       <DependentUpon>UserPassword.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Presentacion\FrmAvatares.resx">
+    <Compile Include="Utilidades\AsistenteCorreos.cs" />
+    <EmbeddedResource Include="Presentacion\Usuarios\FrmAvatares.resx">
       <DependentUpon>FrmAvatares.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\FrmBienvenida.resx">
+    <EmbeddedResource Include="Presentacion\Principal\FrmBienvenida.resx">
       <DependentUpon>FrmBienvenida.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\FrmCrearCuenta.resx">
+    <EmbeddedResource Include="Presentacion\Usuarios\FrmCrearCuenta.resx">
       <DependentUpon>FrmCrearCuenta.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\FrmIniciarSesion.resx">
+    <EmbeddedResource Include="Presentacion\Usuarios\FrmIniciarSesion.resx">
       <DependentUpon>FrmIniciarSesion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\UserCard.resx">
+    <EmbeddedResource Include="Presentacion\Usuarios\FrmRecuperarContrasena.resx">
+      <DependentUpon>FrmRecuperarContrasena.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Usuarios\UserCard.resx">
       <DependentUpon>UserCard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\UserPassword.resx">
+    <EmbeddedResource Include="Presentacion\Usuarios\UserPassword.resx">
       <DependentUpon>UserPassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -212,6 +222,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\invisible.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnifying-glass.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

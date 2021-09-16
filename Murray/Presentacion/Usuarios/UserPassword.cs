@@ -40,5 +40,19 @@ namespace Murray.Presentacion
                 Close();
             }
         }
+
+        private void LblContra_Click(object sender, EventArgs e)
+        {
+            FrmRecuperarContrasena frmRecuperar = new FrmRecuperarContrasena();
+            frmRecuperar.ShowDialog();
+        }
+
+        private void UserPassword_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                UserCard.Pass = "none";
+            }
+        }
     }
 }

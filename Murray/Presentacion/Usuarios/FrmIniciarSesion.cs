@@ -23,9 +23,13 @@ namespace Murray.Presentacion
 
         private void FrmIniciarSesion_FormClosing(object sender, FormClosingEventArgs e)
         {
+            if (e.CloseReason != CloseReason.UserClosing)
+            {
+                Application.Exit();
+            }
+
             FrmBienvenida bienvenida = new FrmBienvenida();
             bienvenida.Show();
-            Hide();
         }
 
         private void FrmIniciarSesion_Load(object sender, EventArgs e)

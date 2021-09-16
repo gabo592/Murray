@@ -34,6 +34,7 @@ namespace Murray.Presentacion
             this.txtPass = new System.Windows.Forms.TextBox();
             this.pbMostrarPass = new System.Windows.Forms.PictureBox();
             this.lblMensaje = new System.Windows.Forms.Label();
+            this.lblContra = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbMostrarPass)).BeginInit();
             this.SuspendLayout();
             // 
@@ -78,18 +79,32 @@ namespace Murray.Presentacion
             this.lblMensaje.AutoSize = true;
             this.lblMensaje.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMensaje.ForeColor = System.Drawing.Color.Red;
-            this.lblMensaje.Location = new System.Drawing.Point(104, 192);
+            this.lblMensaje.Location = new System.Drawing.Point(105, 229);
             this.lblMensaje.Name = "lblMensaje";
             this.lblMensaje.Size = new System.Drawing.Size(410, 25);
             this.lblMensaje.TabIndex = 3;
             this.lblMensaje.Text = "La contraseña no puede quedar vacía";
+            // 
+            // lblContra
+            // 
+            this.lblContra.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblContra.AutoSize = true;
+            this.lblContra.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblContra.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblContra.Location = new System.Drawing.Point(163, 180);
+            this.lblContra.Name = "lblContra";
+            this.lblContra.Size = new System.Drawing.Size(287, 25);
+            this.lblContra.TabIndex = 4;
+            this.lblContra.Text = "¿Olvidaste la contraseña?";
+            this.lblContra.Click += new System.EventHandler(this.LblContra_Click);
             // 
             // UserPassword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(590, 226);
+            this.ClientSize = new System.Drawing.Size(590, 275);
+            this.Controls.Add(this.lblContra);
             this.Controls.Add(this.lblMensaje);
             this.Controls.Add(this.pbMostrarPass);
             this.Controls.Add(this.txtPass);
@@ -98,6 +113,7 @@ namespace Murray.Presentacion
             this.Name = "UserPassword";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Confirmar Usuario";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.UserPassword_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pbMostrarPass)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -110,5 +126,6 @@ namespace Murray.Presentacion
         private System.Windows.Forms.TextBox txtPass;
         private System.Windows.Forms.PictureBox pbMostrarPass;
         private System.Windows.Forms.Label lblMensaje;
+        private System.Windows.Forms.Label lblContra;
     }
 }

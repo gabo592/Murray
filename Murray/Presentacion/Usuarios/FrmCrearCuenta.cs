@@ -33,7 +33,10 @@ namespace Murray.Presentacion
 
         private void FrmCrearCuenta_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit();
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                Application.Exit();
+            }
         }
 
         private void PbRegresar_Click(object sender, EventArgs e)
