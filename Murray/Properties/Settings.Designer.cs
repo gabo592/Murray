@@ -23,15 +23,30 @@ namespace Murray.Properties {
             }
         }
         
-        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-I01TLVI;Initial Catalog=Murray;Integrated Security=True;")]
         public string ConnectionStrings {
             get {
                 return ((string)(this["ConnectionStrings"]));
             }
-            set {
-                this["ConnectionStrings"] = value;
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("murray.program@gmail.com")]
+        public string Correo {
+            get {
+                return ((string)(this["Correo"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Gabo050902")]
+        public string PassCorreo {
+            get {
+                return ((string)(this["PassCorreo"]));
             }
         }
     }

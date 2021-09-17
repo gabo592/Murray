@@ -79,7 +79,7 @@ namespace Murray.Presentacion
             this.lblMensaje.AutoSize = true;
             this.lblMensaje.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMensaje.ForeColor = System.Drawing.Color.Red;
-            this.lblMensaje.Location = new System.Drawing.Point(105, 229);
+            this.lblMensaje.Location = new System.Drawing.Point(97, 228);
             this.lblMensaje.Name = "lblMensaje";
             this.lblMensaje.Size = new System.Drawing.Size(410, 25);
             this.lblMensaje.TabIndex = 3;
@@ -91,7 +91,7 @@ namespace Murray.Presentacion
             this.lblContra.AutoSize = true;
             this.lblContra.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblContra.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContra.Location = new System.Drawing.Point(163, 180);
+            this.lblContra.Location = new System.Drawing.Point(154, 179);
             this.lblContra.Name = "lblContra";
             this.lblContra.Size = new System.Drawing.Size(287, 25);
             this.lblContra.TabIndex = 4;

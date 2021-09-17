@@ -34,6 +34,7 @@ namespace Murray.Presentacion
             this.dgvUsuarios = new System.Windows.Forms.DataGridView();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.pbLupa = new System.Windows.Forms.PictureBox();
+            this.txtHtml = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbLupa)).BeginInit();
             this.SuspendLayout();
@@ -65,6 +66,7 @@ namespace Murray.Presentacion
             this.dgvUsuarios.Name = "dgvUsuarios";
             this.dgvUsuarios.Size = new System.Drawing.Size(490, 129);
             this.dgvUsuarios.TabIndex = 1;
+            this.dgvUsuarios.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvUsuarios_CellDoubleClick);
             // 
             // txtBuscar
             // 
@@ -87,12 +89,23 @@ namespace Murray.Presentacion
             this.pbLupa.TabIndex = 3;
             this.pbLupa.TabStop = false;
             // 
+            // txtHtml
+            // 
+            this.txtHtml.Location = new System.Drawing.Point(92, 114);
+            this.txtHtml.Name = "txtHtml";
+            this.txtHtml.ReadOnly = true;
+            this.txtHtml.Size = new System.Drawing.Size(346, 96);
+            this.txtHtml.TabIndex = 4;
+            this.txtHtml.Text = resources.GetString("txtHtml.Text");
+            this.txtHtml.Visible = false;
+            // 
             // FrmRecuperarContrasena
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(514, 239);
+            this.Controls.Add(this.txtHtml);
             this.Controls.Add(this.pbLupa);
             this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.dgvUsuarios);
@@ -114,5 +127,6 @@ namespace Murray.Presentacion
         private System.Windows.Forms.DataGridView dgvUsuarios;
         private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.PictureBox pbLupa;
+        private System.Windows.Forms.RichTextBox txtHtml;
     }
 }

@@ -94,7 +94,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Utilidades\AsistenteCorreos.cs" />
+    <Compile Include="Utilidades\Asistente.cs" />
     <EmbeddedResource Include="Presentacion\Usuarios\FrmAvatares.resx">
       <DependentUpon>FrmAvatares.cs</DependentUpon>
     </EmbeddedResource>

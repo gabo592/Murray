@@ -117,6 +117,56 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="txtHtml.Text" xml:space="preserve">
+    <value>&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Recuperación de contraseña&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1 class='titulo-principal'&gt;Recupera tu contraseña&lt;/h1&gt;
+    &lt;/header&gt;
+    &lt;main&gt;
+        &lt;h2 class='cabecera'&gt;Hola @primerNombre @primerApellido.&lt;/h2&gt;
+        &lt;p&gt;Te saluda el soporte técnico de Murray, favor no responder a este correo.&lt;/p&gt;
+        &lt;p&gt;El motivo de dicho correo es para la recuperación de tu contraseña de tu cuenta en Murray. Acontinuación se
+            mostrará tu contraseña:&lt;/p&gt;
+        &lt;button class='boton-contrasena'&gt;@pass&lt;/button&gt;
+        &lt;p&gt;Atte: Soporte técnico de Murray.&lt;/p&gt;
+
+    &lt;/main&gt;
+&lt;/body&gt;
+
+&lt;style&gt;
+    html {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .titulo-principal {
+        color: rgb(255, 153, 58)
+    }
+
+    .boton-contrasena {
+        height: 50px;
+        width: 150px;
+        background-color: rgb(255, 153, 58);
+        border-style: none;
+        color: white;
+    }
+
+    .cabecera {
+        color: rgb(41, 224, 136);
+    }
+&lt;/style&gt;
+
+&lt;/html&gt;</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

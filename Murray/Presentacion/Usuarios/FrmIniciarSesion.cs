@@ -54,7 +54,7 @@ namespace Murray.Presentacion
                 {
                     connection.Open();
 
-                    SqlDataAdapter dataAdapter = new SqlDataAdapter("seleccionar_usuarios", connection);
+                    SqlDataAdapter dataAdapter = new SqlDataAdapter("extraer_usuario", connection);
                     dataAdapter.Fill(dataTable);
                 }
 
