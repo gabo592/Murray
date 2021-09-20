@@ -49,12 +49,25 @@
     <Compile Include="Enums\Cargos.cs" />
     <Compile Include="Poco\Departamento.cs" />
     <Compile Include="Poco\Municipio.cs" />
+    <Compile Include="Poco\Proveedor.cs" />
     <Compile Include="Poco\Usuario.cs" />
     <Compile Include="Presentacion\Principal\FrmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Presentacion\Principal\FrmPrincipal.Designer.cs">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Proveedores\FrmAgregarProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Proveedores\FrmAgregarProveedor.Designer.cs">
+      <DependentUpon>FrmAgregarProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Proveedores\FrmProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Proveedores\FrmProveedores.Designer.cs">
+      <DependentUpon>FrmProveedores.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\Usuarios\FrmAvatares.cs">
       <SubType>Form</SubType>
@@ -103,6 +116,12 @@
     <Compile Include="Utilidades\Asistente.cs" />
     <EmbeddedResource Include="Presentacion\Principal\FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Proveedores\FrmAgregarProveedor.resx">
+      <DependentUpon>FrmAgregarProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Proveedores\FrmProveedores.resx">
+      <DependentUpon>FrmProveedores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Usuarios\FrmAvatares.resx">
       <DependentUpon>FrmAvatares.cs</DependentUpon>
@@ -264,6 +283,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\package.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

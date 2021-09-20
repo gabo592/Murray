@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Murray.Poco;
+using Murray.Presentacion.Proveedores;
 
 namespace Murray.Presentacion.Principal
 {
@@ -40,6 +41,12 @@ namespace Murray.Presentacion.Principal
             if (name.Contains("Productos"))
             {
                 MessageBox.Show(this, "Sección Productos", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+            if (name.Contains("Proveedores"))
+            {
+                FrmProveedores proveedores = new FrmProveedores();
+                proveedores.ShowDialog();
             }
         }
 

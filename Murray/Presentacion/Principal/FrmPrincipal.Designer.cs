@@ -32,55 +32,55 @@ namespace Murray.Presentacion.Principal
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPrincipal));
             this.lblLogo = new System.Windows.Forms.Label();
             this.pnlBarraSup = new System.Windows.Forms.Panel();
-            this.pnlPrincipal = new System.Windows.Forms.FlowLayoutPanel();
-            this.pnlClientes = new System.Windows.Forms.Panel();
-            this.lblClientes = new System.Windows.Forms.Label();
-            this.pnlProductos = new System.Windows.Forms.Panel();
-            this.lblProductos = new System.Windows.Forms.Label();
-            this.pnlProveedores = new System.Windows.Forms.Panel();
-            this.lblProveedores = new System.Windows.Forms.Label();
-            this.pnlUsuarios = new System.Windows.Forms.Panel();
-            this.lblUsuarios = new System.Windows.Forms.Label();
-            this.pnlVentas = new System.Windows.Forms.Panel();
-            this.lblVentas = new System.Windows.Forms.Label();
-            this.pnlCompras = new System.Windows.Forms.Panel();
-            this.lblCompras = new System.Windows.Forms.Label();
-            this.pnlDevolucionCE = new System.Windows.Forms.Panel();
-            this.lbllDevolucionesCE = new System.Windows.Forms.Label();
-            this.pnlDevolucionesEP = new System.Windows.Forms.Panel();
-            this.pbClientes = new System.Windows.Forms.PictureBox();
-            this.pbProductos = new System.Windows.Forms.PictureBox();
-            this.pbProveedores = new System.Windows.Forms.PictureBox();
-            this.pbUsuarios = new System.Windows.Forms.PictureBox();
-            this.pbVentas = new System.Windows.Forms.PictureBox();
-            this.pbCompras = new System.Windows.Forms.PictureBox();
-            this.pbDevolucionesCE = new System.Windows.Forms.PictureBox();
-            this.pbDevolucionesEP = new System.Windows.Forms.PictureBox();
             this.pbLogo = new System.Windows.Forms.PictureBox();
             this.pbConfig = new System.Windows.Forms.PictureBox();
             this.pbUsuario = new System.Windows.Forms.PictureBox();
+            this.pnlPrincipal = new System.Windows.Forms.FlowLayoutPanel();
+            this.pnlClientes = new System.Windows.Forms.Panel();
+            this.lblClientes = new System.Windows.Forms.Label();
+            this.pbClientes = new System.Windows.Forms.PictureBox();
+            this.pnlProductos = new System.Windows.Forms.Panel();
+            this.lblProductos = new System.Windows.Forms.Label();
+            this.pbProductos = new System.Windows.Forms.PictureBox();
+            this.pnlProveedores = new System.Windows.Forms.Panel();
+            this.lblProveedores = new System.Windows.Forms.Label();
+            this.pbProveedores = new System.Windows.Forms.PictureBox();
+            this.pnlUsuarios = new System.Windows.Forms.Panel();
+            this.lblUsuarios = new System.Windows.Forms.Label();
+            this.pbUsuarios = new System.Windows.Forms.PictureBox();
+            this.pnlVentas = new System.Windows.Forms.Panel();
+            this.lblVentas = new System.Windows.Forms.Label();
+            this.pbVentas = new System.Windows.Forms.PictureBox();
+            this.pnlCompras = new System.Windows.Forms.Panel();
+            this.lblCompras = new System.Windows.Forms.Label();
+            this.pbCompras = new System.Windows.Forms.PictureBox();
+            this.pnlDevolucionCE = new System.Windows.Forms.Panel();
+            this.lbllDevolucionesCE = new System.Windows.Forms.Label();
+            this.pbDevolucionesCE = new System.Windows.Forms.PictureBox();
+            this.pnlDevolucionesEP = new System.Windows.Forms.Panel();
             this.lblDevolucionesEP = new System.Windows.Forms.Label();
+            this.pbDevolucionesEP = new System.Windows.Forms.PictureBox();
             this.pnlBarraSup.SuspendLayout();
-            this.pnlPrincipal.SuspendLayout();
-            this.pnlClientes.SuspendLayout();
-            this.pnlProductos.SuspendLayout();
-            this.pnlProveedores.SuspendLayout();
-            this.pnlUsuarios.SuspendLayout();
-            this.pnlVentas.SuspendLayout();
-            this.pnlCompras.SuspendLayout();
-            this.pnlDevolucionCE.SuspendLayout();
-            this.pnlDevolucionesEP.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbClientes)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbProductos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbProveedores)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbUsuarios)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbVentas)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbCompras)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbDevolucionesCE)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbDevolucionesEP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbConfig)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbUsuario)).BeginInit();
+            this.pnlPrincipal.SuspendLayout();
+            this.pnlClientes.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbClientes)).BeginInit();
+            this.pnlProductos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbProductos)).BeginInit();
+            this.pnlProveedores.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbProveedores)).BeginInit();
+            this.pnlUsuarios.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbUsuarios)).BeginInit();
+            this.pnlVentas.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbVentas)).BeginInit();
+            this.pnlCompras.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCompras)).BeginInit();
+            this.pnlDevolucionCE.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbDevolucionesCE)).BeginInit();
+            this.pnlDevolucionesEP.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbDevolucionesEP)).BeginInit();
             this.SuspendLayout();
             // 
             // lblLogo
@@ -105,6 +105,40 @@ namespace Murray.Presentacion.Principal
             this.pnlBarraSup.Name = "pnlBarraSup";
             this.pnlBarraSup.Size = new System.Drawing.Size(929, 57);
             this.pnlBarraSup.TabIndex = 3;
+            // 
+            // pbLogo
+            // 
+            this.pbLogo.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pbLogo.Image = global::Murray.Properties.Resources.atom;
+            this.pbLogo.Location = new System.Drawing.Point(0, 0);
+            this.pbLogo.Name = "pbLogo";
+            this.pbLogo.Size = new System.Drawing.Size(77, 57);
+            this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbLogo.TabIndex = 0;
+            this.pbLogo.TabStop = false;
+            // 
+            // pbConfig
+            // 
+            this.pbConfig.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbConfig.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pbConfig.Image = global::Murray.Properties.Resources.settings;
+            this.pbConfig.Location = new System.Drawing.Point(826, 0);
+            this.pbConfig.Name = "pbConfig";
+            this.pbConfig.Size = new System.Drawing.Size(38, 57);
+            this.pbConfig.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbConfig.TabIndex = 2;
+            this.pbConfig.TabStop = false;
+            // 
+            // pbUsuario
+            // 
+            this.pbUsuario.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbUsuario.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pbUsuario.Location = new System.Drawing.Point(864, 0);
+            this.pbUsuario.Name = "pbUsuario";
+            this.pbUsuario.Size = new System.Drawing.Size(65, 57);
+            this.pbUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbUsuario.TabIndex = 1;
+            this.pbUsuario.TabStop = false;
             // 
             // pnlPrincipal
             // 
@@ -143,6 +177,19 @@ namespace Murray.Presentacion.Principal
             this.lblClientes.Text = "Clientes";
             this.lblClientes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // pbClientes
+            // 
+            this.pbClientes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbClientes.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pbClientes.Image = global::Murray.Properties.Resources.team;
+            this.pbClientes.Location = new System.Drawing.Point(0, 0);
+            this.pbClientes.Name = "pbClientes";
+            this.pbClientes.Size = new System.Drawing.Size(265, 116);
+            this.pbClientes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbClientes.TabIndex = 0;
+            this.pbClientes.TabStop = false;
+            this.pbClientes.Click += new System.EventHandler(this.CargarFrame);
+            // 
             // pnlProductos
             // 
             this.pnlProductos.Controls.Add(this.lblProductos);
@@ -162,6 +209,19 @@ namespace Murray.Presentacion.Principal
             this.lblProductos.TabIndex = 1;
             this.lblProductos.Text = "Productos";
             this.lblProductos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pbProductos
+            // 
+            this.pbProductos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbProductos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pbProductos.Image = global::Murray.Properties.Resources.box;
+            this.pbProductos.Location = new System.Drawing.Point(0, 0);
+            this.pbProductos.Name = "pbProductos";
+            this.pbProductos.Size = new System.Drawing.Size(265, 116);
+            this.pbProductos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbProductos.TabIndex = 0;
+            this.pbProductos.TabStop = false;
+            this.pbProductos.Click += new System.EventHandler(this.CargarFrame);
             // 
             // pnlProveedores
             // 
@@ -183,6 +243,19 @@ namespace Murray.Presentacion.Principal
             this.lblProveedores.Text = "Proveedores";
             this.lblProveedores.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // pbProveedores
+            // 
+            this.pbProveedores.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbProveedores.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pbProveedores.Image = global::Murray.Properties.Resources.delivery_truck;
+            this.pbProveedores.Location = new System.Drawing.Point(0, 0);
+            this.pbProveedores.Name = "pbProveedores";
+            this.pbProveedores.Size = new System.Drawing.Size(265, 116);
+            this.pbProveedores.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbProveedores.TabIndex = 0;
+            this.pbProveedores.TabStop = false;
+            this.pbProveedores.Click += new System.EventHandler(this.CargarFrame);
+            // 
             // pnlUsuarios
             // 
             this.pnlUsuarios.Controls.Add(this.lblUsuarios);
@@ -202,6 +275,18 @@ namespace Murray.Presentacion.Principal
             this.lblUsuarios.TabIndex = 1;
             this.lblUsuarios.Text = "Usuarios";
             this.lblUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pbUsuarios
+            // 
+            this.pbUsuarios.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbUsuarios.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pbUsuarios.Image = global::Murray.Properties.Resources.team__1_;
+            this.pbUsuarios.Location = new System.Drawing.Point(0, 0);
+            this.pbUsuarios.Name = "pbUsuarios";
+            this.pbUsuarios.Size = new System.Drawing.Size(265, 116);
+            this.pbUsuarios.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbUsuarios.TabIndex = 0;
+            this.pbUsuarios.TabStop = false;
             // 
             // pnlVentas
             // 
@@ -223,6 +308,18 @@ namespace Murray.Presentacion.Principal
             this.lblVentas.Text = "Ventas";
             this.lblVentas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // pbVentas
+            // 
+            this.pbVentas.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbVentas.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pbVentas.Image = global::Murray.Properties.Resources.money;
+            this.pbVentas.Location = new System.Drawing.Point(0, 0);
+            this.pbVentas.Name = "pbVentas";
+            this.pbVentas.Size = new System.Drawing.Size(265, 116);
+            this.pbVentas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbVentas.TabIndex = 0;
+            this.pbVentas.TabStop = false;
+            // 
             // pnlCompras
             // 
             this.pnlCompras.Controls.Add(this.lblCompras);
@@ -242,6 +339,18 @@ namespace Murray.Presentacion.Principal
             this.lblCompras.TabIndex = 1;
             this.lblCompras.Text = "Compras";
             this.lblCompras.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pbCompras
+            // 
+            this.pbCompras.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbCompras.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pbCompras.Image = global::Murray.Properties.Resources.shopping_cart;
+            this.pbCompras.Location = new System.Drawing.Point(0, 0);
+            this.pbCompras.Name = "pbCompras";
+            this.pbCompras.Size = new System.Drawing.Size(265, 116);
+            this.pbCompras.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbCompras.TabIndex = 0;
+            this.pbCompras.TabStop = false;
             // 
             // pnlDevolucionCE
             // 
@@ -263,89 +372,6 @@ namespace Murray.Presentacion.Principal
             this.lbllDevolucionesCE.Text = "Devoluciones Cliente-Empresa";
             this.lbllDevolucionesCE.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pnlDevolucionesEP
-            // 
-            this.pnlDevolucionesEP.Controls.Add(this.lblDevolucionesEP);
-            this.pnlDevolucionesEP.Controls.Add(this.pbDevolucionesEP);
-            this.pnlDevolucionesEP.Location = new System.Drawing.Point(274, 417);
-            this.pnlDevolucionesEP.Name = "pnlDevolucionesEP";
-            this.pnlDevolucionesEP.Size = new System.Drawing.Size(265, 201);
-            this.pnlDevolucionesEP.TabIndex = 7;
-            // 
-            // pbClientes
-            // 
-            this.pbClientes.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbClientes.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pbClientes.Image = global::Murray.Properties.Resources.team;
-            this.pbClientes.Location = new System.Drawing.Point(0, 0);
-            this.pbClientes.Name = "pbClientes";
-            this.pbClientes.Size = new System.Drawing.Size(265, 116);
-            this.pbClientes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbClientes.TabIndex = 0;
-            this.pbClientes.TabStop = false;
-            this.pbClientes.Click += new System.EventHandler(this.CargarFrame);
-            // 
-            // pbProductos
-            // 
-            this.pbProductos.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbProductos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pbProductos.Image = global::Murray.Properties.Resources.box;
-            this.pbProductos.Location = new System.Drawing.Point(0, 0);
-            this.pbProductos.Name = "pbProductos";
-            this.pbProductos.Size = new System.Drawing.Size(265, 116);
-            this.pbProductos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbProductos.TabIndex = 0;
-            this.pbProductos.TabStop = false;
-            this.pbProductos.Click += new System.EventHandler(this.CargarFrame);
-            // 
-            // pbProveedores
-            // 
-            this.pbProveedores.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbProveedores.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pbProveedores.Image = global::Murray.Properties.Resources.delivery_truck;
-            this.pbProveedores.Location = new System.Drawing.Point(0, 0);
-            this.pbProveedores.Name = "pbProveedores";
-            this.pbProveedores.Size = new System.Drawing.Size(265, 116);
-            this.pbProveedores.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbProveedores.TabIndex = 0;
-            this.pbProveedores.TabStop = false;
-            // 
-            // pbUsuarios
-            // 
-            this.pbUsuarios.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbUsuarios.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pbUsuarios.Image = global::Murray.Properties.Resources.team__1_;
-            this.pbUsuarios.Location = new System.Drawing.Point(0, 0);
-            this.pbUsuarios.Name = "pbUsuarios";
-            this.pbUsuarios.Size = new System.Drawing.Size(265, 116);
-            this.pbUsuarios.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbUsuarios.TabIndex = 0;
-            this.pbUsuarios.TabStop = false;
-            // 
-            // pbVentas
-            // 
-            this.pbVentas.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbVentas.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pbVentas.Image = global::Murray.Properties.Resources.money;
-            this.pbVentas.Location = new System.Drawing.Point(0, 0);
-            this.pbVentas.Name = "pbVentas";
-            this.pbVentas.Size = new System.Drawing.Size(265, 116);
-            this.pbVentas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbVentas.TabIndex = 0;
-            this.pbVentas.TabStop = false;
-            // 
-            // pbCompras
-            // 
-            this.pbCompras.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbCompras.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pbCompras.Image = global::Murray.Properties.Resources.shopping_cart;
-            this.pbCompras.Location = new System.Drawing.Point(0, 0);
-            this.pbCompras.Name = "pbCompras";
-            this.pbCompras.Size = new System.Drawing.Size(265, 116);
-            this.pbCompras.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbCompras.TabIndex = 0;
-            this.pbCompras.TabStop = false;
-            // 
             // pbDevolucionesCE
             // 
             this.pbDevolucionesCE.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -358,51 +384,14 @@ namespace Murray.Presentacion.Principal
             this.pbDevolucionesCE.TabIndex = 0;
             this.pbDevolucionesCE.TabStop = false;
             // 
-            // pbDevolucionesEP
+            // pnlDevolucionesEP
             // 
-            this.pbDevolucionesEP.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbDevolucionesEP.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pbDevolucionesEP.Image = global::Murray.Properties.Resources.package;
-            this.pbDevolucionesEP.Location = new System.Drawing.Point(0, 0);
-            this.pbDevolucionesEP.Name = "pbDevolucionesEP";
-            this.pbDevolucionesEP.Size = new System.Drawing.Size(265, 116);
-            this.pbDevolucionesEP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbDevolucionesEP.TabIndex = 0;
-            this.pbDevolucionesEP.TabStop = false;
-            // 
-            // pbLogo
-            // 
-            this.pbLogo.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pbLogo.Image = global::Murray.Properties.Resources.atom;
-            this.pbLogo.Location = new System.Drawing.Point(0, 0);
-            this.pbLogo.Name = "pbLogo";
-            this.pbLogo.Size = new System.Drawing.Size(77, 57);
-            this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbLogo.TabIndex = 0;
-            this.pbLogo.TabStop = false;
-            // 
-            // pbConfig
-            // 
-            this.pbConfig.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbConfig.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pbConfig.Image = global::Murray.Properties.Resources.settings;
-            this.pbConfig.Location = new System.Drawing.Point(826, 0);
-            this.pbConfig.Name = "pbConfig";
-            this.pbConfig.Size = new System.Drawing.Size(38, 57);
-            this.pbConfig.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbConfig.TabIndex = 2;
-            this.pbConfig.TabStop = false;
-            // 
-            // pbUsuario
-            // 
-            this.pbUsuario.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbUsuario.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pbUsuario.Location = new System.Drawing.Point(864, 0);
-            this.pbUsuario.Name = "pbUsuario";
-            this.pbUsuario.Size = new System.Drawing.Size(65, 57);
-            this.pbUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbUsuario.TabIndex = 1;
-            this.pbUsuario.TabStop = false;
+            this.pnlDevolucionesEP.Controls.Add(this.lblDevolucionesEP);
+            this.pnlDevolucionesEP.Controls.Add(this.pbDevolucionesEP);
+            this.pnlDevolucionesEP.Location = new System.Drawing.Point(274, 417);
+            this.pnlDevolucionesEP.Name = "pnlDevolucionesEP";
+            this.pnlDevolucionesEP.Size = new System.Drawing.Size(265, 201);
+            this.pnlDevolucionesEP.TabIndex = 7;
             // 
             // lblDevolucionesEP
             // 
@@ -414,6 +403,18 @@ namespace Murray.Presentacion.Principal
             this.lblDevolucionesEP.TabIndex = 1;
             this.lblDevolucionesEP.Text = "Devoluciones Empresa-Proveedores";
             this.lblDevolucionesEP.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pbDevolucionesEP
+            // 
+            this.pbDevolucionesEP.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbDevolucionesEP.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pbDevolucionesEP.Image = global::Murray.Properties.Resources.package;
+            this.pbDevolucionesEP.Location = new System.Drawing.Point(0, 0);
+            this.pbDevolucionesEP.Name = "pbDevolucionesEP";
+            this.pbDevolucionesEP.Size = new System.Drawing.Size(265, 116);
+            this.pbDevolucionesEP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbDevolucionesEP.TabIndex = 0;
+            this.pbDevolucionesEP.TabStop = false;
             // 
             // FrmPrincipal
             // 
@@ -431,26 +432,26 @@ namespace Murray.Presentacion.Principal
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmPrincipal_FormClosing);
             this.Load += new System.EventHandler(this.FrmPrincipal_Load);
             this.pnlBarraSup.ResumeLayout(false);
-            this.pnlPrincipal.ResumeLayout(false);
-            this.pnlClientes.ResumeLayout(false);
-            this.pnlProductos.ResumeLayout(false);
-            this.pnlProveedores.ResumeLayout(false);
-            this.pnlUsuarios.ResumeLayout(false);
-            this.pnlVentas.ResumeLayout(false);
-            this.pnlCompras.ResumeLayout(false);
-            this.pnlDevolucionCE.ResumeLayout(false);
-            this.pnlDevolucionesEP.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbClientes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbProductos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbProveedores)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbUsuarios)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbVentas)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbCompras)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbDevolucionesCE)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbDevolucionesEP)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbConfig)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbUsuario)).EndInit();
+            this.pnlPrincipal.ResumeLayout(false);
+            this.pnlClientes.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbClientes)).EndInit();
+            this.pnlProductos.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbProductos)).EndInit();
+            this.pnlProveedores.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbProveedores)).EndInit();
+            this.pnlUsuarios.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbUsuarios)).EndInit();
+            this.pnlVentas.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbVentas)).EndInit();
+            this.pnlCompras.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbCompras)).EndInit();
+            this.pnlDevolucionCE.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbDevolucionesCE)).EndInit();
+            this.pnlDevolucionesEP.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbDevolucionesEP)).EndInit();
             this.ResumeLayout(false);
 
         }
