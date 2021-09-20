@@ -31,14 +31,6 @@ namespace Murray.Presentacion
             Conexion = Settings.Default.ConnectionStrings;
         }
 
-        private void FrmCrearCuenta_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            if (e.CloseReason == CloseReason.UserClosing)
-            {
-                Application.Exit();
-            }
-        }
-
         private void PbRegresar_Click(object sender, EventArgs e)
         {
             FrmBienvenida bienvenida = new FrmBienvenida();

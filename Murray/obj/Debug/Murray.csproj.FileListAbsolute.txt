@@ -24,3 +24,4 @@ C:\Users\gabri\workspace\Murray\Murray\obj\Debug\Murray.Presentacion.FrmIniciarS
 C:\Users\gabri\workspace\Murray\Murray\obj\Debug\Murray.Presentacion.UserCard.resources
 C:\Users\gabri\workspace\Murray\Murray\obj\Debug\Murray.Presentacion.UserPassword.resources
 C:\Users\gabri\workspace\Murray\Murray\obj\Debug\Murray.Presentacion.FrmRecuperarContrasena.resources
+C:\Users\gabri\workspace\Murray\Murray\obj\Debug\Murray.Presentacion.Principal.FrmPrincipal.resources

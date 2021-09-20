@@ -50,6 +50,12 @@
     <Compile Include="Poco\Departamento.cs" />
     <Compile Include="Poco\Municipio.cs" />
     <Compile Include="Poco\Usuario.cs" />
+    <Compile Include="Presentacion\Principal\FrmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Principal\FrmPrincipal.Designer.cs">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentacion\Usuarios\FrmAvatares.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +101,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilidades\Asistente.cs" />
+    <EmbeddedResource Include="Presentacion\Principal\FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Usuarios\FrmAvatares.resx">
       <DependentUpon>FrmAvatares.cs</DependentUpon>
     </EmbeddedResource>
@@ -225,6 +234,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\magnifying-glass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\team.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -49,7 +49,7 @@ namespace Murray.Presentacion
 
         private void UserPassword_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (e.CloseReason == CloseReason.UserClosing)
+            if (string.IsNullOrWhiteSpace(txtPass.Text))
             {
                 UserCard.Pass = "none";
             }

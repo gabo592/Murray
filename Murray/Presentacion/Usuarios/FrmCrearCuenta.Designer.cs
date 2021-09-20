@@ -378,7 +378,6 @@ namespace Murray.Presentacion
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmCrearCuenta";
             this.Text = "Murray - Crear Cuenta";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmCrearCuenta_FormClosing);
             this.Load += new System.EventHandler(this.FrmCrearCuenta_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbAgregar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbRegresar)).EndInit();

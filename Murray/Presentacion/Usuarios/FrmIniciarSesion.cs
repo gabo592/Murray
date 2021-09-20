@@ -21,17 +21,6 @@ namespace Murray.Presentacion
             InitializeComponent();
         }
 
-        private void FrmIniciarSesion_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            if (e.CloseReason != CloseReason.UserClosing)
-            {
-                Application.Exit();
-            }
-
-            FrmBienvenida bienvenida = new FrmBienvenida();
-            bienvenida.Show();
-        }
-
         private void FrmIniciarSesion_Load(object sender, EventArgs e)
         {
             DataTable dataTable = CargarDatos();
@@ -96,6 +85,13 @@ namespace Murray.Presentacion
             MemoryStream memoryStream = new MemoryStream(bytesImagen);
             Image imagen = Image.FromStream(memoryStream);
             return imagen;
+        }
+
+        private void PbRegresar_Click(object sender, EventArgs e)
+        {
+            FrmBienvenida bienvenida = new FrmBienvenida();
+            bienvenida.Show();
+            Hide();
         }
     }
 }

@@ -1,26 +1,27 @@
 ﻿using System;
 using System.Windows.Forms;
 using Murray.Poco;
+using Murray.Presentacion.Principal;
 
 namespace Murray.Presentacion
 {
     public partial class UserCard : UserControl
     {
-        private readonly Usuario Usuario;
+        private readonly Usuario usuario;
         public static string Pass;
-        private FrmIniciarSesion iniciarSesion;
+        private readonly FrmIniciarSesion iniciarSesion;
 
         public UserCard(Usuario usuario, FrmIniciarSesion iniciarSesion)
         {
             InitializeComponent();
-            Usuario = usuario;
+            this.usuario = usuario;
             this.iniciarSesion = iniciarSesion;
         }
 
         private void UserCard_Load(object sender, EventArgs e)
         {
-            pbImagen.Image = Usuario.Imagen;
-            lblNickName.Text = Usuario.NickName;
+            pbImagen.Image = usuario.Imagen;
+            lblNickName.Text = usuario.NickName;
         }
 
         private void Click_Usuario(object sender, EventArgs args)
@@ -34,12 +35,15 @@ namespace Murray.Presentacion
                 return;
             }
 
-            iniciarSesion.Close();
+            FrmPrincipal principal = new FrmPrincipal(usuario);
+            principal.Show();
+
+            iniciarSesion.Hide();
         }
 
         private bool ValidarPass()
         {
-            return Pass.Equals(Usuario.Pass);
+            return Pass.Equals(usuario.Pass);
         }
     }
 }
