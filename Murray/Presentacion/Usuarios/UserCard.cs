@@ -21,29 +21,15 @@ namespace Murray.Presentacion
         private void UserCard_Load(object sender, EventArgs e)
         {
             pbImagen.Image = usuario.Imagen;
-            lblNickName.Text = usuario.NickName;
+            lblNickName.Text = usuario.Alias;
         }
 
         private void Click_Usuario(object sender, EventArgs args)
         {
-            UserPassword password = new UserPassword();
+            UserPassword password = new UserPassword(usuario);
             password.ShowDialog();
 
-            if (!ValidarPass())
-            {
-                MessageBox.Show(this, "Contraseña incorrecta", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
-            FrmPrincipal principal = new FrmPrincipal(usuario);
-            principal.Show();
-
             iniciarSesion.Hide();
-        }
-
-        private bool ValidarPass()
-        {
-            return Pass.Equals(usuario.Pass);
         }
     }
 }

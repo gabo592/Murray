@@ -35,6 +35,7 @@ namespace Murray.Presentacion
             this.pbMostrarPass = new System.Windows.Forms.PictureBox();
             this.lblMensaje = new System.Windows.Forms.Label();
             this.lblContra = new System.Windows.Forms.Label();
+            this.txtHtml = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbMostrarPass)).BeginInit();
             this.SuspendLayout();
             // 
@@ -98,12 +99,23 @@ namespace Murray.Presentacion
             this.lblContra.Text = "¿Olvidaste la contraseña?";
             this.lblContra.Click += new System.EventHandler(this.LblContra_Click);
             // 
+            // txtHtml
+            // 
+            this.txtHtml.Location = new System.Drawing.Point(282, 157);
+            this.txtHtml.Name = "txtHtml";
+            this.txtHtml.ReadOnly = true;
+            this.txtHtml.Size = new System.Drawing.Size(346, 96);
+            this.txtHtml.TabIndex = 5;
+            this.txtHtml.Text = resources.GetString("txtHtml.Text");
+            this.txtHtml.Visible = false;
+            // 
             // UserPassword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(590, 275);
+            this.Controls.Add(this.txtHtml);
             this.Controls.Add(this.lblContra);
             this.Controls.Add(this.lblMensaje);
             this.Controls.Add(this.pbMostrarPass);
@@ -113,7 +125,6 @@ namespace Murray.Presentacion
             this.Name = "UserPassword";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Confirmar Usuario";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.UserPassword_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pbMostrarPass)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -127,5 +138,6 @@ namespace Murray.Presentacion
         private System.Windows.Forms.PictureBox pbMostrarPass;
         private System.Windows.Forms.Label lblMensaje;
         private System.Windows.Forms.Label lblContra;
+        private System.Windows.Forms.RichTextBox txtHtml;
     }
 }

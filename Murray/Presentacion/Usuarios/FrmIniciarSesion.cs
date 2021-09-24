@@ -63,17 +63,17 @@ namespace Murray.Presentacion
                 Usuario usuario = new Usuario
                 {
                     ID = (int)dataTable.Rows[i]["ID_Usuario"],
-                    PrimerNombre = dataTable.Rows[i]["Primer_Nombre"].ToString(),
-                    SegundoNombre = dataTable.Rows[i]["Segundo_Nombre"].ToString(),
-                    PrimerApellido = dataTable.Rows[i]["Primer_Apellido"].ToString(),
-                    SegundoApellido = dataTable.Rows[i]["Segundo_Apellido"].ToString(),
-                    NickName = dataTable.Rows[i]["NickName"].ToString(),
+                    PrimerNombre = dataTable.Rows[i]["PrimerNombre"].ToString(),
+                    SegundoNombre = dataTable.Rows[i]["SegundoNombre"].ToString(),
+                    PrimerApellido = dataTable.Rows[i]["PrimerApellido"].ToString(),
+                    SegundoApellido = dataTable.Rows[i]["SegundoApellido"].ToString(),
+                    Alias = dataTable.Rows[i]["Alias"].ToString(),
                     Pass = dataTable.Rows[i]["Pass"].ToString(),
                     Imagen = ObtenerImagen((byte[])dataTable.Rows[i]["Avatar"]),
                     Cargo = dataTable.Rows[i]["Cargo"].ToString(),
                     Estado = dataTable.Rows[i]["Estado"].ToString(),
-                    ID_Municipio = (int)dataTable.Rows[i]["ID_Municipio"],
-                    Correo = dataTable.Rows[i]["Correo"].ToString()
+                    Correo = dataTable.Rows[i]["Correo"].ToString(),
+                    ID_Municipio = (int)dataTable.Rows[i]["ID_Municipio"]
                 };
 
                 pnlPrincipal.Controls.Add(new UserCard(usuario, this));
@@ -92,6 +92,11 @@ namespace Murray.Presentacion
             FrmBienvenida bienvenida = new FrmBienvenida();
             bienvenida.Show();
             Hide();
+        }
+
+        private void FrmIniciarSesion_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

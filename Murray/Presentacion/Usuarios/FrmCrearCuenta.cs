@@ -13,6 +13,7 @@ using System.Windows.Forms;
 using Murray.Poco;
 using Murray.Properties;
 using Murray.Enums;
+using Murray.Presentacion.Principal;
 
 namespace Murray.Presentacion
 {
@@ -22,6 +23,7 @@ namespace Murray.Presentacion
         private readonly List<Municipio> Municipios;
         public static Image Avatar;
         private readonly string Conexion;
+        private Usuario Usuario;
 
         public FrmCrearCuenta()
         {
@@ -145,6 +147,12 @@ namespace Murray.Presentacion
         {
             FrmAvatares avatares = new FrmAvatares();
             avatares.ShowDialog();
+
+            if (Avatar == null)
+            {
+                return;
+            }
+
             pbAvatar.Image = Avatar;
         }
 
@@ -155,51 +163,82 @@ namespace Murray.Presentacion
                 return;
             }
 
+            CrearUsuario();
+            InsertarUsuario(Usuario);
+        }
+
+        private void CrearUsuario()
+        {
+            Usuario = new Usuario
+            {
+                PrimerNombre = txtPNombre.Text,
+                SegundoNombre = txtSNombre.Text,
+                PrimerApellido = txtPApellido.Text,
+                SegundoApellido = txtSApellido.Text,
+                Alias = txtNick.Text,
+                Pass = txtPass.Text,
+                Imagen = Avatar,
+                Cargo = cmbCargo.SelectedItem.ToString(),
+                Correo = txtCorreo.Text,
+                ID_Municipio = ObtenerIDMunicipio(cmbMunicipio.SelectedItem.ToString())
+            };
+        }
+
+        private void InsertarUsuario(Usuario usuario)
+        {
             try
             {
                 using (SqlConnection connection = new SqlConnection(Conexion))
                 {
                     connection.Open();
 
-                    SqlCommand command = new SqlCommand("agregar_usuario", connection)
+                    SqlCommand command = new SqlCommand("insertar_usuario", connection)
                     {
                         CommandType = CommandType.StoredProcedure
                     };
 
-                    command.Parameters.AddWithValue("@primerNombre", txtPNombre.Text);
-                    command.Parameters.AddWithValue("@segundoNombre", txtSNombre.Text);
-                    command.Parameters.AddWithValue("@primerApellido", txtPApellido.Text);
-                    command.Parameters.AddWithValue("@segundoApellido", txtSApellido.Text);
-                    command.Parameters.AddWithValue("@nickName", txtNick.Text);
-                    command.Parameters.AddWithValue("@pass", txtPass.Text);
+                    command.Parameters.AddWithValue("@primerNombre", usuario.PrimerNombre);
+                    command.Parameters.AddWithValue("@segundoNombre", usuario.SegundoNombre);
+                    command.Parameters.AddWithValue("@primerApellido", usuario.PrimerApellido);
+                    command.Parameters.AddWithValue("@segundoApellido", usuario.SegundoApellido);
+                    command.Parameters.AddWithValue("@alias", usuario.Alias);
+                    command.Parameters.AddWithValue("@pass", usuario.Pass);
 
                     MemoryStream memoryStream = new MemoryStream();
-                    Avatar.Save(memoryStream, Avatar.RawFormat);
-                    command.Parameters.AddWithValue("@avatar", memoryStream.GetBuffer());
+                    usuario.Imagen.Save(memoryStream, usuario.Imagen.RawFormat);
+                    command.Parameters.AddWithValue("@avatar", memoryStream.GetBuffer()); 
 
-                    int idMunicipio = 0;
-                    string nombreMunicipio = cmbMunicipio.SelectedItem.ToString();
-
-                    foreach (Municipio m in Municipios)
-                    {
-                        if (m.Nombre.Equals(nombreMunicipio, StringComparison.CurrentCultureIgnoreCase))
-                        {
-                            idMunicipio = m.ID;
-                            break;
-                        }
-                    }
-
-                    command.Parameters.AddWithValue("@idMunicipio", idMunicipio);
-                    command.Parameters.AddWithValue("@cargo", cmbCargo.SelectedItem.ToString());
-                    command.Parameters.AddWithValue("@correo", txtCorreo.Text);
+                    command.Parameters.AddWithValue("@cargo", usuario.Cargo);
+                    command.Parameters.AddWithValue("@correo", usuario.Correo);
+                    command.Parameters.AddWithValue("@idMunicipio", usuario.ID_Municipio);
 
                     command.ExecuteNonQuery();
                 }
+
+                FrmPrincipal principal = new FrmPrincipal(Usuario);
+                principal.Show();
+                Hide();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(this, ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private int ObtenerIDMunicipio(string nombreMunicipio)
+        {
+            int idMunicipio = 0;
+
+            foreach (Municipio m in Municipios)
+            {
+                if (m.Nombre.Equals(nombreMunicipio, StringComparison.CurrentCultureIgnoreCase))
+                {
+                    idMunicipio = m.ID;
+                    break;
+                }
+            }
+
+            return idMunicipio;
         }
 
         private bool ValidarCampos()
@@ -269,6 +308,11 @@ namespace Murray.Presentacion
                 txtPass.PasswordChar = '*';
                 pbMostrarPass.Image = Resources.eye;
             }
+        }
+
+        private void FrmCrearCuenta_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

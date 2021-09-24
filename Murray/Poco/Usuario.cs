@@ -9,7 +9,7 @@ namespace Murray.Poco
         public string SegundoNombre { get; set; }
         public string PrimerApellido { get; set; }
         public string SegundoApellido { get; set; }
-        public string NickName { get; set; }
+        public string Alias { get; set; }
         public string Pass { get; set; }
         public Image Imagen { get; set; }
         public string Estado { get; set; }

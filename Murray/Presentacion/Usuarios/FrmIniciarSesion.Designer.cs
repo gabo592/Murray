@@ -93,6 +93,7 @@ namespace Murray.Presentacion
             this.Name = "FrmIniciarSesion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Iniciar Sesion";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmIniciarSesion_FormClosing);
             this.Load += new System.EventHandler(this.FrmIniciarSesion_Load);
             this.pnlParteSuperior.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbRegresar)).EndInit();

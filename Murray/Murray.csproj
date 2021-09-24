@@ -93,12 +93,6 @@
     <Compile Include="Presentacion\Usuarios\FrmIniciarSesion.Designer.cs">
       <DependentUpon>FrmIniciarSesion.cs</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\Usuarios\FrmRecuperarContrasena.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentacion\Usuarios\FrmRecuperarContrasena.Designer.cs">
-      <DependentUpon>FrmRecuperarContrasena.cs</DependentUpon>
-    </Compile>
     <Compile Include="Presentacion\Usuarios\UserCard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -134,9 +128,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Usuarios\FrmIniciarSesion.resx">
       <DependentUpon>FrmIniciarSesion.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Usuarios\FrmRecuperarContrasena.resx">
-      <DependentUpon>FrmRecuperarContrasena.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Usuarios\UserCard.resx">
       <DependentUpon>UserCard.cs</DependentUpon>

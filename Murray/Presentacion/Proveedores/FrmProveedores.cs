@@ -84,6 +84,7 @@ namespace Murray.Presentacion.Proveedores
 
                     dataAdapter.Fill(DataTable);
                     dgvProveedores.DataSource = DataTable;
+                    dgvProveedores.Columns["Estado"].Visible = false;
                 }
             }
             catch (Exception ex)

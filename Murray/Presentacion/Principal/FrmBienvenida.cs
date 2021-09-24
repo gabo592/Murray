@@ -27,10 +27,7 @@ namespace Murray
 
         private void FrmBienvenida_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (e.CloseReason == CloseReason.UserClosing)
-            {
-                Application.Exit();
-            }
+            Application.Exit();
         }
 
         private void PbIniciarSesion_Click(object sender, EventArgs e)
