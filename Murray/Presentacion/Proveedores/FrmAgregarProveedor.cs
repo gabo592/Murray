@@ -9,14 +9,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Murray.Properties;
+using Murray.Observable;
 
 namespace Murray.Presentacion.Proveedores
 {
-    public partial class FrmAgregarProveedor : Form
+    public partial class FrmAgregarProveedor : Form, ISujeto
     {
+        private List<IObservador> Observadors;
+
         public FrmAgregarProveedor()
         {
             InitializeComponent();
+            Observadors = new List<IObservador>();
         }
 
         private void TxtTelefono_KeyPress(object sender, KeyPressEventArgs e)
@@ -56,6 +60,8 @@ namespace Murray.Presentacion.Proveedores
 
                     command.ExecuteNonQuery();
                 }
+
+                Notificar();
             }
             catch (Exception ex)
             {
@@ -91,6 +97,16 @@ namespace Murray.Presentacion.Proveedores
             txtNombre.Clear();
             txtTelefono.Clear();
             txtDireccion.Clear();
+        }
+
+        public void Notificar()
+        {
+            Observadors.ForEach(o => o.ActualizarEstado());
+        }
+
+        public void AgregarObservador(IObservador observador)
+        {
+            Observadors.Add(observador);
         }
     }
 }

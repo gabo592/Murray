@@ -62,11 +62,11 @@ namespace Murray.Presentacion
             {
                 Usuario usuario = new Usuario
                 {
-                    ID = (int)dataTable.Rows[i]["ID_Usuario"],
-                    PrimerNombre = dataTable.Rows[i]["PrimerNombre"].ToString(),
-                    SegundoNombre = dataTable.Rows[i]["SegundoNombre"].ToString(),
-                    PrimerApellido = dataTable.Rows[i]["PrimerApellido"].ToString(),
-                    SegundoApellido = dataTable.Rows[i]["SegundoApellido"].ToString(),
+                    ID = (int)dataTable.Rows[i]["ID"],
+                    PrimerNombre = dataTable.Rows[i]["Primer Nombre"].ToString(),
+                    SegundoNombre = dataTable.Rows[i]["Segundo Nombre"].ToString(),
+                    PrimerApellido = dataTable.Rows[i]["Primer Apellido"].ToString(),
+                    SegundoApellido = dataTable.Rows[i]["Segundo Apellido"].ToString(),
                     Alias = dataTable.Rows[i]["Alias"].ToString(),
                     Pass = dataTable.Rows[i]["Pass"].ToString(),
                     Imagen = ObtenerImagen((byte[])dataTable.Rows[i]["Avatar"]),

@@ -8,45 +8,44 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Murray.Poco;
 using Murray.Properties;
-using Murray.Observable;
 
-namespace Murray.Presentacion.Proveedores
+namespace Murray.Presentacion.Productos
 {
-    public partial class FrmProveedores : Form, IObservador
+    public partial class FrmProductos : Form
     {
         private readonly string Conexion;
         private DataTable DataTable;
 
-        public FrmProveedores()
+        public FrmProductos()
         {
             InitializeComponent();
             Conexion = Settings.Default.ConnectionStrings;
             DataTable = new DataTable();
         }
 
-        private void FrmProveedores_Load(object sender, EventArgs e)
+        private void FrmProductos_Load(object sender, EventArgs e)
         {
-            CargarDatos();
+            CargarProductos();
         }
 
-        private void CargarDatos()
+        private void CargarProductos()
         {
+            if (DataTable.Rows.Count > 0)
+            {
+                DataTable.Clear();
+            }
+
             try
             {
-                if (DataTable.Rows.Count > 0)
-                {
-                    DataTable.Clear();
-                }
-
                 using (SqlConnection connection = new SqlConnection(Conexion))
                 {
                     connection.Open();
-                    SqlDataAdapter dataAdapter = new SqlDataAdapter("mostrar_proveedores", connection);
+
+                    SqlDataAdapter dataAdapter = new SqlDataAdapter("seleccionar_productos", connection);
                     dataAdapter.Fill(DataTable);
-                    dgvProveedores.DataSource = DataTable;
-                    dgvProveedores.Columns["Estado"].Visible = false;
+
+                    dgvProductos.DataSource = DataTable;
                 }
             }
             catch (Exception ex)
@@ -57,46 +56,33 @@ namespace Murray.Presentacion.Proveedores
 
         private void PbAgregar_Click(object sender, EventArgs e)
         {
-            FrmAgregarProveedor agregarProveedor = new FrmAgregarProveedor();
-            agregarProveedor.AgregarObservador(this);
-            agregarProveedor.ShowDialog();
+            FrmAgregarProducto agregarProducto = new FrmAgregarProducto();
+            agregarProducto.ShowDialog();
         }
 
         private void TxtBuscar_TextChanged(object sender, EventArgs e)
         {
-            Buscar(txtBuscar.Text);
-        }
-
-        private void Buscar(string text)
-        {
             try
             {
+                if (DataTable.Rows.Count != 0)
+                {
+                    DataTable.Clear();
+                }
+
                 using (SqlConnection connection = new SqlConnection(Conexion))
                 {
                     connection.Open();
-                    SqlDataAdapter dataAdapter = new SqlDataAdapter("buscar_proveedor", connection);
+                    SqlDataAdapter dataAdapter = new SqlDataAdapter("buscar_productos", connection);
                     dataAdapter.SelectCommand.CommandType = CommandType.StoredProcedure;
-                    dataAdapter.SelectCommand.Parameters.AddWithValue("@letra", text);
-
-                    if (DataTable.Rows.Count > 0)
-                    {
-                        DataTable.Clear();
-                    }
-
+                    dataAdapter.SelectCommand.Parameters.AddWithValue("@letra", txtBuscar.Text);
                     dataAdapter.Fill(DataTable);
-                    dgvProveedores.DataSource = DataTable;
-                    dgvProveedores.Columns["Estado"].Visible = false;
+                    dgvProductos.DataSource = DataTable;
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(this, ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
-
-        public void ActualizarEstado()
-        {
-            CargarDatos();
         }
     }
 }

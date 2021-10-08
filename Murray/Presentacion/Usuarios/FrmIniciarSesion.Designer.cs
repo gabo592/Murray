@@ -62,6 +62,7 @@ namespace Murray.Presentacion
             // 
             // pbRegresar
             // 
+            this.pbRegresar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbRegresar.Dock = System.Windows.Forms.DockStyle.Left;
             this.pbRegresar.Image = global::Murray.Properties.Resources.previous;
             this.pbRegresar.Location = new System.Drawing.Point(0, 0);

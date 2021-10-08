@@ -26,3 +26,5 @@ C:\Users\gabri\workspace\Murray\Murray\obj\Debug\Murray.Presentacion.UserPasswor
 C:\Users\gabri\workspace\Murray\Murray\obj\Debug\Murray.Presentacion.Principal.FrmPrincipal.resources
 C:\Users\gabri\workspace\Murray\Murray\obj\Debug\Murray.Presentacion.Proveedores.FrmAgregarProveedor.resources
 C:\Users\gabri\workspace\Murray\Murray\obj\Debug\Murray.Presentacion.Proveedores.FrmProveedores.resources
+C:\Users\gabri\workspace\Murray\Murray\obj\Debug\Murray.Presentacion.Productos.FrmProductos.resources
+C:\Users\gabri\workspace\Murray\Murray\obj\Debug\Murray.Presentacion.Productos.FrmAgregarProducto.resources

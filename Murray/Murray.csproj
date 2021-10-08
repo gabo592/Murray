@@ -47,8 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Enums\Cargos.cs" />
+    <Compile Include="Observable\IObservador.cs" />
+    <Compile Include="Observable\ISujeto.cs" />
     <Compile Include="Poco\Departamento.cs" />
+    <Compile Include="Poco\Grupo.cs" />
     <Compile Include="Poco\Municipio.cs" />
+    <Compile Include="Poco\Producto.cs" />
     <Compile Include="Poco\Proveedor.cs" />
     <Compile Include="Poco\Usuario.cs" />
     <Compile Include="Presentacion\Principal\FrmPrincipal.cs">
@@ -56,6 +60,18 @@
     </Compile>
     <Compile Include="Presentacion\Principal\FrmPrincipal.Designer.cs">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Productos\FrmAgregarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Productos\FrmAgregarProducto.Designer.cs">
+      <DependentUpon>FrmAgregarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Productos\FrmProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Productos\FrmProductos.Designer.cs">
+      <DependentUpon>FrmProductos.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\Proveedores\FrmAgregarProveedor.cs">
       <SubType>Form</SubType>
@@ -110,6 +126,12 @@
     <Compile Include="Utilidades\Asistente.cs" />
     <EmbeddedResource Include="Presentacion\Principal\FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Productos\FrmAgregarProducto.resx">
+      <DependentUpon>FrmAgregarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Productos\FrmProductos.resx">
+      <DependentUpon>FrmProductos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Proveedores\FrmAgregarProveedor.resx">
       <DependentUpon>FrmAgregarProveedor.cs</DependentUpon>
@@ -277,6 +299,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\excel.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

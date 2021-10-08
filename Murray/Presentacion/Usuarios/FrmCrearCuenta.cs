@@ -66,8 +66,8 @@ namespace Murray.Presentacion
                     {
                         Departamento departamento = new Departamento
                         {
-                            ID = (int)dataTable.Rows[i]["ID_Departamento"],
-                            Nombre = dataTable.Rows[i]["Nombre_Departamento"].ToString()
+                            ID = (int)dataTable.Rows[i]["ID"],
+                            Nombre = dataTable.Rows[i]["Nombre de Departamento"].ToString()
                         };
 
                         Departamentos.Add(departamento);
@@ -124,9 +124,9 @@ namespace Murray.Presentacion
                     {
                         Municipio municipio = new Municipio
                         {
-                            ID = (int)data.Rows[i]["ID_Municipio"],
-                            Nombre = data.Rows[i]["Nombre_Municipio"].ToString(),
-                            ID_Departamento = (int)data.Rows[i]["ID_Departamento"]
+                            ID = (int)data.Rows[i]["ID"],
+                            Nombre = data.Rows[i]["Nombre del Municipio"].ToString(),
+                            ID_Departamento = (int)data.Rows[i]["ID del Departamento"]
                         };
 
                         Municipios.Add(municipio);
