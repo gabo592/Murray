@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Drawing;
 
 namespace Murray.Poco
 {
@@ -11,5 +7,6 @@ namespace Murray.Poco
         public int ID { get; set; }
         public string Nombre { get; set; }
         public string Estado { get; set; }
+        public Image Imagen { get; set; }
     }
 }

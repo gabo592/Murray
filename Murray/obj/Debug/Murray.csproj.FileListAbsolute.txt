@@ -28,3 +28,6 @@ C:\Users\gabri\workspace\Murray\Murray\obj\Debug\Murray.Presentacion.Proveedores
 C:\Users\gabri\workspace\Murray\Murray\obj\Debug\Murray.Presentacion.Proveedores.FrmProveedores.resources
 C:\Users\gabri\workspace\Murray\Murray\obj\Debug\Murray.Presentacion.Productos.FrmProductos.resources
 C:\Users\gabri\workspace\Murray\Murray\obj\Debug\Murray.Presentacion.Productos.FrmAgregarProducto.resources
+C:\Users\gabri\workspace\Murray\Murray\obj\Debug\Murray.Presentacion.Productos.FrmCategorias.resources
+C:\Users\gabri\workspace\Murray\Murray\obj\Debug\Murray.Presentacion.Productos.FrmSeleccion.resources
+C:\Users\gabri\workspace\Murray\Murray\obj\Debug\Murray.Presentacion.Productos.GroupCard.resources

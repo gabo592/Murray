@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Net;
 using System.Net.Mail;
+using System.Drawing;
+using System.IO;
 
 namespace Murray.Utilidades
 {
@@ -27,6 +29,13 @@ namespace Murray.Utilidades
             {
                 throw new Exception("Correo no válido");
             }
+        }
+
+        public static Image ObtenerImagen(byte[] bytesImagen)
+        {
+            MemoryStream memoryStream = new MemoryStream(bytesImagen);
+            Image imagen = Image.FromStream(memoryStream);
+            return imagen;
         }
     }
 }

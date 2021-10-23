@@ -1,16 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Murray.Properties;
 using Murray.Poco;
+using Murray.Utilidades;
 
 namespace Murray.Presentacion
 {
@@ -69,7 +65,7 @@ namespace Murray.Presentacion
                     SegundoApellido = dataTable.Rows[i]["Segundo Apellido"].ToString(),
                     Alias = dataTable.Rows[i]["Alias"].ToString(),
                     Pass = dataTable.Rows[i]["Pass"].ToString(),
-                    Imagen = ObtenerImagen((byte[])dataTable.Rows[i]["Avatar"]),
+                    Imagen = Asistente.ObtenerImagen((byte[])dataTable.Rows[i]["Avatar"]),
                     Cargo = dataTable.Rows[i]["Cargo"].ToString(),
                     Estado = dataTable.Rows[i]["Estado"].ToString(),
                     Correo = dataTable.Rows[i]["Correo"].ToString(),
@@ -78,13 +74,6 @@ namespace Murray.Presentacion
 
                 pnlPrincipal.Controls.Add(new UserCard(usuario, this));
             }
-        }
-
-        private Image ObtenerImagen(byte[] bytesImagen)
-        {
-            MemoryStream memoryStream = new MemoryStream(bytesImagen);
-            Image imagen = Image.FromStream(memoryStream);
-            return imagen;
         }
 
         private void PbRegresar_Click(object sender, EventArgs e)

@@ -67,11 +67,29 @@
     <Compile Include="Presentacion\Productos\FrmAgregarProducto.Designer.cs">
       <DependentUpon>FrmAgregarProducto.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentacion\Productos\FrmCategorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Productos\FrmCategorias.Designer.cs">
+      <DependentUpon>FrmCategorias.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentacion\Productos\FrmProductos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Presentacion\Productos\FrmProductos.Designer.cs">
       <DependentUpon>FrmProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Productos\FrmSeleccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Productos\FrmSeleccion.Designer.cs">
+      <DependentUpon>FrmSeleccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Productos\GroupCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Productos\GroupCard.Designer.cs">
+      <DependentUpon>GroupCard.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\Proveedores\FrmAgregarProveedor.cs">
       <SubType>Form</SubType>
@@ -130,8 +148,17 @@
     <EmbeddedResource Include="Presentacion\Productos\FrmAgregarProducto.resx">
       <DependentUpon>FrmAgregarProducto.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Productos\FrmCategorias.resx">
+      <DependentUpon>FrmCategorias.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Productos\FrmProductos.resx">
       <DependentUpon>FrmProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Productos\FrmSeleccion.resx">
+      <DependentUpon>FrmSeleccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Productos\GroupCard.resx">
+      <DependentUpon>GroupCard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Proveedores\FrmAgregarProveedor.resx">
       <DependentUpon>FrmAgregarProveedor.cs</DependentUpon>
@@ -302,6 +329,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\excel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\categories.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

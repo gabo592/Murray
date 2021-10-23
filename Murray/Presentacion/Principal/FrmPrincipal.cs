@@ -41,8 +41,8 @@ namespace Murray.Presentacion.Principal
 
             if (name.Contains("Productos"))
             {
-                FrmProductos productos = new FrmProductos();
-                productos.ShowDialog();
+                FrmSeleccion seleccion = new FrmSeleccion();
+                seleccion.ShowDialog();
             }
 
             if (name.Contains("Proveedores"))

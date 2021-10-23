@@ -32,32 +32,42 @@ namespace Murray.Presentacion.Productos
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmProductos));
             this.pnlBarraSup = new System.Windows.Forms.Panel();
             this.txtBuscar = new System.Windows.Forms.TextBox();
-            this.pbEspacio2 = new System.Windows.Forms.PictureBox();
+            this.lblAgregarProducto = new System.Windows.Forms.Label();
             this.pbAgregar = new System.Windows.Forms.PictureBox();
             this.pbEspacio1 = new System.Windows.Forms.PictureBox();
             this.pbBuscar = new System.Windows.Forms.PictureBox();
             this.pnlPrincipal = new System.Windows.Forms.Panel();
+            this.pnlDetalleProducto = new System.Windows.Forms.Panel();
+            this.lblCategoria = new System.Windows.Forms.Label();
+            this.pbCategoria = new System.Windows.Forms.PictureBox();
+            this.pnlSepPictureCateg = new System.Windows.Forms.Panel();
+            this.pbProducto = new System.Windows.Forms.PictureBox();
+            this.pnlSepBarraPicture = new System.Windows.Forms.Panel();
+            this.pnlDatos = new System.Windows.Forms.Panel();
             this.dgvProductos = new System.Windows.Forms.DataGridView();
             this.pnlBarraSup.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbEspacio2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbAgregar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbEspacio1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbBuscar)).BeginInit();
             this.pnlPrincipal.SuspendLayout();
+            this.pnlDetalleProducto.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCategoria)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbProducto)).BeginInit();
+            this.pnlDatos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlBarraSup
             // 
             this.pnlBarraSup.Controls.Add(this.txtBuscar);
-            this.pnlBarraSup.Controls.Add(this.pbEspacio2);
+            this.pnlBarraSup.Controls.Add(this.lblAgregarProducto);
             this.pnlBarraSup.Controls.Add(this.pbAgregar);
             this.pnlBarraSup.Controls.Add(this.pbEspacio1);
             this.pnlBarraSup.Controls.Add(this.pbBuscar);
             this.pnlBarraSup.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlBarraSup.Location = new System.Drawing.Point(0, 0);
             this.pnlBarraSup.Name = "pnlBarraSup";
-            this.pnlBarraSup.Size = new System.Drawing.Size(813, 33);
+            this.pnlBarraSup.Size = new System.Drawing.Size(902, 33);
             this.pnlBarraSup.TabIndex = 0;
             // 
             // txtBuscar
@@ -66,37 +76,42 @@ namespace Murray.Presentacion.Productos
             this.txtBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBuscar.Location = new System.Drawing.Point(40, 0);
             this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(702, 31);
+            this.txtBuscar.Size = new System.Drawing.Size(668, 31);
             this.txtBuscar.TabIndex = 4;
             this.txtBuscar.TextChanged += new System.EventHandler(this.TxtBuscar_TextChanged);
             // 
-            // pbEspacio2
+            // lblAgregarProducto
             // 
-            this.pbEspacio2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pbEspacio2.Location = new System.Drawing.Point(742, 0);
-            this.pbEspacio2.Name = "pbEspacio2";
-            this.pbEspacio2.Size = new System.Drawing.Size(12, 33);
-            this.pbEspacio2.TabIndex = 3;
-            this.pbEspacio2.TabStop = false;
+            this.lblAgregarProducto.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblAgregarProducto.Dock = System.Windows.Forms.DockStyle.Right;
+            this.lblAgregarProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAgregarProducto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(171)))), ((int)(((byte)(39)))));
+            this.lblAgregarProducto.Location = new System.Drawing.Point(708, 0);
+            this.lblAgregarProducto.Name = "lblAgregarProducto";
+            this.lblAgregarProducto.Size = new System.Drawing.Size(135, 33);
+            this.lblAgregarProducto.TabIndex = 4;
+            this.lblAgregarProducto.Text = "Agregar Producto";
+            this.lblAgregarProducto.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblAgregarProducto.Click += new System.EventHandler(this.AgregarProducto_Click);
             // 
             // pbAgregar
             // 
             this.pbAgregar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbAgregar.Dock = System.Windows.Forms.DockStyle.Right;
             this.pbAgregar.Image = global::Murray.Properties.Resources.plus;
-            this.pbAgregar.Location = new System.Drawing.Point(754, 0);
+            this.pbAgregar.Location = new System.Drawing.Point(843, 0);
             this.pbAgregar.Name = "pbAgregar";
             this.pbAgregar.Size = new System.Drawing.Size(41, 33);
             this.pbAgregar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbAgregar.TabIndex = 2;
             this.pbAgregar.TabStop = false;
-            this.pbAgregar.Click += new System.EventHandler(this.PbAgregar_Click);
+            this.pbAgregar.Click += new System.EventHandler(this.AgregarProducto_Click);
             // 
             // pbEspacio1
             // 
             this.pbEspacio1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbEspacio1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pbEspacio1.Location = new System.Drawing.Point(795, 0);
+            this.pbEspacio1.Location = new System.Drawing.Point(884, 0);
             this.pbEspacio1.Name = "pbEspacio1";
             this.pbEspacio1.Size = new System.Drawing.Size(18, 33);
             this.pbEspacio1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -116,12 +131,84 @@ namespace Murray.Presentacion.Productos
             // 
             // pnlPrincipal
             // 
-            this.pnlPrincipal.Controls.Add(this.dgvProductos);
+            this.pnlPrincipal.Controls.Add(this.pnlDatos);
+            this.pnlPrincipal.Controls.Add(this.pnlDetalleProducto);
             this.pnlPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlPrincipal.Location = new System.Drawing.Point(0, 33);
             this.pnlPrincipal.Name = "pnlPrincipal";
-            this.pnlPrincipal.Size = new System.Drawing.Size(813, 358);
+            this.pnlPrincipal.Size = new System.Drawing.Size(902, 413);
             this.pnlPrincipal.TabIndex = 1;
+            // 
+            // pnlDetalleProducto
+            // 
+            this.pnlDetalleProducto.Controls.Add(this.lblCategoria);
+            this.pnlDetalleProducto.Controls.Add(this.pbCategoria);
+            this.pnlDetalleProducto.Controls.Add(this.pnlSepPictureCateg);
+            this.pnlDetalleProducto.Controls.Add(this.pbProducto);
+            this.pnlDetalleProducto.Controls.Add(this.pnlSepBarraPicture);
+            this.pnlDetalleProducto.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnlDetalleProducto.Location = new System.Drawing.Point(711, 0);
+            this.pnlDetalleProducto.Name = "pnlDetalleProducto";
+            this.pnlDetalleProducto.Size = new System.Drawing.Size(191, 413);
+            this.pnlDetalleProducto.TabIndex = 1;
+            // 
+            // lblCategoria
+            // 
+            this.lblCategoria.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCategoria.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(224)))), ((int)(((byte)(136)))));
+            this.lblCategoria.Location = new System.Drawing.Point(0, 347);
+            this.lblCategoria.Name = "lblCategoria";
+            this.lblCategoria.Size = new System.Drawing.Size(191, 66);
+            this.lblCategoria.TabIndex = 4;
+            this.lblCategoria.Text = "Categoria";
+            this.lblCategoria.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblCategoria.Visible = false;
+            // 
+            // pbCategoria
+            // 
+            this.pbCategoria.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pbCategoria.Location = new System.Drawing.Point(0, 213);
+            this.pbCategoria.Name = "pbCategoria";
+            this.pbCategoria.Size = new System.Drawing.Size(191, 134);
+            this.pbCategoria.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbCategoria.TabIndex = 3;
+            this.pbCategoria.TabStop = false;
+            // 
+            // pnlSepPictureCateg
+            // 
+            this.pnlSepPictureCateg.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlSepPictureCateg.Location = new System.Drawing.Point(0, 179);
+            this.pnlSepPictureCateg.Name = "pnlSepPictureCateg";
+            this.pnlSepPictureCateg.Size = new System.Drawing.Size(191, 34);
+            this.pnlSepPictureCateg.TabIndex = 2;
+            // 
+            // pbProducto
+            // 
+            this.pbProducto.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pbProducto.Location = new System.Drawing.Point(0, 23);
+            this.pbProducto.Name = "pbProducto";
+            this.pbProducto.Size = new System.Drawing.Size(191, 156);
+            this.pbProducto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbProducto.TabIndex = 1;
+            this.pbProducto.TabStop = false;
+            // 
+            // pnlSepBarraPicture
+            // 
+            this.pnlSepBarraPicture.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlSepBarraPicture.Location = new System.Drawing.Point(0, 0);
+            this.pnlSepBarraPicture.Name = "pnlSepBarraPicture";
+            this.pnlSepBarraPicture.Size = new System.Drawing.Size(191, 23);
+            this.pnlSepBarraPicture.TabIndex = 0;
+            // 
+            // pnlDatos
+            // 
+            this.pnlDatos.Controls.Add(this.dgvProductos);
+            this.pnlDatos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlDatos.Location = new System.Drawing.Point(0, 0);
+            this.pnlDatos.Name = "pnlDatos";
+            this.pnlDatos.Size = new System.Drawing.Size(711, 413);
+            this.pnlDatos.TabIndex = 2;
             // 
             // dgvProductos
             // 
@@ -129,20 +216,19 @@ namespace Murray.Presentacion.Productos
             this.dgvProductos.AllowUserToDeleteRows = false;
             this.dgvProductos.AllowUserToResizeColumns = false;
             this.dgvProductos.AllowUserToResizeRows = false;
-            this.dgvProductos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvProductos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvProductos.Location = new System.Drawing.Point(0, 0);
             this.dgvProductos.Name = "dgvProductos";
-            this.dgvProductos.Size = new System.Drawing.Size(813, 358);
-            this.dgvProductos.TabIndex = 0;
+            this.dgvProductos.Size = new System.Drawing.Size(711, 413);
+            this.dgvProductos.TabIndex = 1;
             // 
             // FrmProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(813, 391);
+            this.ClientSize = new System.Drawing.Size(902, 446);
             this.Controls.Add(this.pnlPrincipal);
             this.Controls.Add(this.pnlBarraSup);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -151,11 +237,14 @@ namespace Murray.Presentacion.Productos
             this.Load += new System.EventHandler(this.FrmProductos_Load);
             this.pnlBarraSup.ResumeLayout(false);
             this.pnlBarraSup.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbEspacio2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbAgregar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbEspacio1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbBuscar)).EndInit();
             this.pnlPrincipal.ResumeLayout(false);
+            this.pnlDetalleProducto.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbCategoria)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbProducto)).EndInit();
+            this.pnlDatos.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).EndInit();
             this.ResumeLayout(false);
 
@@ -167,9 +256,16 @@ namespace Murray.Presentacion.Productos
         private System.Windows.Forms.PictureBox pbEspacio1;
         private System.Windows.Forms.PictureBox pbBuscar;
         private System.Windows.Forms.PictureBox pbAgregar;
-        private System.Windows.Forms.PictureBox pbEspacio2;
         private System.Windows.Forms.Panel pnlPrincipal;
-        private System.Windows.Forms.DataGridView dgvProductos;
         private System.Windows.Forms.TextBox txtBuscar;
+        private System.Windows.Forms.Label lblAgregarProducto;
+        private System.Windows.Forms.Panel pnlDetalleProducto;
+        private System.Windows.Forms.Label lblCategoria;
+        private System.Windows.Forms.PictureBox pbCategoria;
+        private System.Windows.Forms.Panel pnlSepPictureCateg;
+        private System.Windows.Forms.PictureBox pbProducto;
+        private System.Windows.Forms.Panel pnlSepBarraPicture;
+        private System.Windows.Forms.Panel pnlDatos;
+        private System.Windows.Forms.DataGridView dgvProductos;
     }
 }

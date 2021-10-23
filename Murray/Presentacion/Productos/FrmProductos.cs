@@ -54,7 +54,7 @@ namespace Murray.Presentacion.Productos
             }
         }
 
-        private void PbAgregar_Click(object sender, EventArgs e)
+        private void AgregarProducto_Click(object sender, EventArgs args)
         {
             FrmAgregarProducto agregarProducto = new FrmAgregarProducto();
             agregarProducto.ShowDialog();
