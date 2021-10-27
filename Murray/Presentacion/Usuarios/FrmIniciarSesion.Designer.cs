@@ -108,5 +108,7 @@ namespace Murray.Presentacion
         private System.Windows.Forms.Panel pnlParteSuperior;
         private System.Windows.Forms.PictureBox pbRegresar;
         private System.Windows.Forms.FlowLayoutPanel pnlPrincipal;
+
+        public System.Windows.Forms.FlowLayoutPanel PnlPrincipal { get => pnlPrincipal; }
     }
 }

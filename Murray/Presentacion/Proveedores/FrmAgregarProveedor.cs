@@ -15,7 +15,7 @@ namespace Murray.Presentacion.Proveedores
 {
     public partial class FrmAgregarProveedor : Form, ISujeto
     {
-        private List<IObservador> Observadors;
+        private readonly List<IObservador> Observadors;
 
         public FrmAgregarProveedor()
         {

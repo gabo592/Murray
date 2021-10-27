@@ -25,7 +25,7 @@ namespace Murray.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-I01TLVI;Initial Catalog=Murray;Integrated Security=True;")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.;Initial Catalog=Murray;Integrated Security=True;")]
         public string ConnectionStrings {
             get {
                 return ((string)(this["ConnectionStrings"]));

@@ -37,23 +37,12 @@ namespace Murray.Presentacion.Productos
             this.pbEspacio1 = new System.Windows.Forms.PictureBox();
             this.pbBuscar = new System.Windows.Forms.PictureBox();
             this.pnlPrincipal = new System.Windows.Forms.Panel();
-            this.pnlDetalleProducto = new System.Windows.Forms.Panel();
-            this.lblCategoria = new System.Windows.Forms.Label();
-            this.pbCategoria = new System.Windows.Forms.PictureBox();
-            this.pnlSepPictureCateg = new System.Windows.Forms.Panel();
-            this.pbProducto = new System.Windows.Forms.PictureBox();
-            this.pnlSepBarraPicture = new System.Windows.Forms.Panel();
-            this.pnlDatos = new System.Windows.Forms.Panel();
             this.dgvProductos = new System.Windows.Forms.DataGridView();
             this.pnlBarraSup.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbAgregar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbEspacio1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbBuscar)).BeginInit();
             this.pnlPrincipal.SuspendLayout();
-            this.pnlDetalleProducto.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbCategoria)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbProducto)).BeginInit();
-            this.pnlDatos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -131,84 +120,12 @@ namespace Murray.Presentacion.Productos
             // 
             // pnlPrincipal
             // 
-            this.pnlPrincipal.Controls.Add(this.pnlDatos);
-            this.pnlPrincipal.Controls.Add(this.pnlDetalleProducto);
+            this.pnlPrincipal.Controls.Add(this.dgvProductos);
             this.pnlPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlPrincipal.Location = new System.Drawing.Point(0, 33);
             this.pnlPrincipal.Name = "pnlPrincipal";
             this.pnlPrincipal.Size = new System.Drawing.Size(902, 413);
             this.pnlPrincipal.TabIndex = 1;
-            // 
-            // pnlDetalleProducto
-            // 
-            this.pnlDetalleProducto.Controls.Add(this.lblCategoria);
-            this.pnlDetalleProducto.Controls.Add(this.pbCategoria);
-            this.pnlDetalleProducto.Controls.Add(this.pnlSepPictureCateg);
-            this.pnlDetalleProducto.Controls.Add(this.pbProducto);
-            this.pnlDetalleProducto.Controls.Add(this.pnlSepBarraPicture);
-            this.pnlDetalleProducto.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlDetalleProducto.Location = new System.Drawing.Point(711, 0);
-            this.pnlDetalleProducto.Name = "pnlDetalleProducto";
-            this.pnlDetalleProducto.Size = new System.Drawing.Size(191, 413);
-            this.pnlDetalleProducto.TabIndex = 1;
-            // 
-            // lblCategoria
-            // 
-            this.lblCategoria.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCategoria.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(224)))), ((int)(((byte)(136)))));
-            this.lblCategoria.Location = new System.Drawing.Point(0, 347);
-            this.lblCategoria.Name = "lblCategoria";
-            this.lblCategoria.Size = new System.Drawing.Size(191, 66);
-            this.lblCategoria.TabIndex = 4;
-            this.lblCategoria.Text = "Categoria";
-            this.lblCategoria.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblCategoria.Visible = false;
-            // 
-            // pbCategoria
-            // 
-            this.pbCategoria.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pbCategoria.Location = new System.Drawing.Point(0, 213);
-            this.pbCategoria.Name = "pbCategoria";
-            this.pbCategoria.Size = new System.Drawing.Size(191, 134);
-            this.pbCategoria.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbCategoria.TabIndex = 3;
-            this.pbCategoria.TabStop = false;
-            // 
-            // pnlSepPictureCateg
-            // 
-            this.pnlSepPictureCateg.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlSepPictureCateg.Location = new System.Drawing.Point(0, 179);
-            this.pnlSepPictureCateg.Name = "pnlSepPictureCateg";
-            this.pnlSepPictureCateg.Size = new System.Drawing.Size(191, 34);
-            this.pnlSepPictureCateg.TabIndex = 2;
-            // 
-            // pbProducto
-            // 
-            this.pbProducto.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pbProducto.Location = new System.Drawing.Point(0, 23);
-            this.pbProducto.Name = "pbProducto";
-            this.pbProducto.Size = new System.Drawing.Size(191, 156);
-            this.pbProducto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbProducto.TabIndex = 1;
-            this.pbProducto.TabStop = false;
-            // 
-            // pnlSepBarraPicture
-            // 
-            this.pnlSepBarraPicture.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlSepBarraPicture.Location = new System.Drawing.Point(0, 0);
-            this.pnlSepBarraPicture.Name = "pnlSepBarraPicture";
-            this.pnlSepBarraPicture.Size = new System.Drawing.Size(191, 23);
-            this.pnlSepBarraPicture.TabIndex = 0;
-            // 
-            // pnlDatos
-            // 
-            this.pnlDatos.Controls.Add(this.dgvProductos);
-            this.pnlDatos.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlDatos.Location = new System.Drawing.Point(0, 0);
-            this.pnlDatos.Name = "pnlDatos";
-            this.pnlDatos.Size = new System.Drawing.Size(711, 413);
-            this.pnlDatos.TabIndex = 2;
             // 
             // dgvProductos
             // 
@@ -220,8 +137,8 @@ namespace Murray.Presentacion.Productos
             this.dgvProductos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvProductos.Location = new System.Drawing.Point(0, 0);
             this.dgvProductos.Name = "dgvProductos";
-            this.dgvProductos.Size = new System.Drawing.Size(711, 413);
-            this.dgvProductos.TabIndex = 1;
+            this.dgvProductos.Size = new System.Drawing.Size(902, 413);
+            this.dgvProductos.TabIndex = 2;
             // 
             // FrmProductos
             // 
@@ -241,10 +158,6 @@ namespace Murray.Presentacion.Productos
             ((System.ComponentModel.ISupportInitialize)(this.pbEspacio1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbBuscar)).EndInit();
             this.pnlPrincipal.ResumeLayout(false);
-            this.pnlDetalleProducto.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbCategoria)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbProducto)).EndInit();
-            this.pnlDatos.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).EndInit();
             this.ResumeLayout(false);
 
@@ -259,13 +172,6 @@ namespace Murray.Presentacion.Productos
         private System.Windows.Forms.Panel pnlPrincipal;
         private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.Label lblAgregarProducto;
-        private System.Windows.Forms.Panel pnlDetalleProducto;
-        private System.Windows.Forms.Label lblCategoria;
-        private System.Windows.Forms.PictureBox pbCategoria;
-        private System.Windows.Forms.Panel pnlSepPictureCateg;
-        private System.Windows.Forms.PictureBox pbProducto;
-        private System.Windows.Forms.Panel pnlSepBarraPicture;
-        private System.Windows.Forms.Panel pnlDatos;
         private System.Windows.Forms.DataGridView dgvProductos;
     }
 }

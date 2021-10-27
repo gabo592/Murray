@@ -46,7 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controladores\ControladorUsuario.cs" />
     <Compile Include="Enums\Cargos.cs" />
+    <Compile Include="Modelos\UbicacionModel.cs" />
+    <Compile Include="Modelos\UsuarioModel.cs" />
     <Compile Include="Observable\IObservador.cs" />
     <Compile Include="Observable\ISujeto.cs" />
     <Compile Include="Poco\Departamento.cs" />

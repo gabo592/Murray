@@ -15,7 +15,7 @@ namespace Murray.Presentacion.Productos
     public partial class FrmProductos : Form
     {
         private readonly string Conexion;
-        private DataTable DataTable;
+        private readonly DataTable DataTable;
 
         public FrmProductos()
         {

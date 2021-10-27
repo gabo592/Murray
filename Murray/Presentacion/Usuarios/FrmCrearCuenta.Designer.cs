@@ -400,6 +400,8 @@ namespace Murray.Presentacion
         private System.Windows.Forms.Label lblNickName;
         private System.Windows.Forms.Label lblPass;
         private System.Windows.Forms.Label lblCargo;
+        private System.Windows.Forms.Label lblDepartamento;
+        private System.Windows.Forms.Label lblMunicipio;
         private System.Windows.Forms.TextBox txtSApellido;
         private System.Windows.Forms.TextBox txtPApellido;
         private System.Windows.Forms.TextBox txtSNombre;
@@ -412,9 +414,22 @@ namespace Murray.Presentacion
         private System.Windows.Forms.PictureBox pbAvatar;
         private System.Windows.Forms.PictureBox pbRegresar;
         private System.Windows.Forms.PictureBox pbAgregar;
-        private System.Windows.Forms.Label lblDepartamento;
-        private System.Windows.Forms.Label lblMunicipio;
         private System.Windows.Forms.ComboBox cmbDepartamento;
         private System.Windows.Forms.ComboBox cmbMunicipio;
+
+        public System.Windows.Forms.TextBox TxtSApellido { get => txtSApellido; }
+        public System.Windows.Forms.TextBox TxtPApellido { get => txtPApellido; }
+        public System.Windows.Forms.TextBox TxtSNombre { get => txtSNombre; }
+        public System.Windows.Forms.TextBox TxtPNombre { get => txtPNombre; }
+        public System.Windows.Forms.TextBox TxtCorreo { get => txtCorreo; }
+        public System.Windows.Forms.TextBox TxtNick { get => txtNick; }
+        public System.Windows.Forms.TextBox TxtPass { get => txtPass; }
+        public System.Windows.Forms.ComboBox CmbCargo { get => cmbCargo; }
+        public System.Windows.Forms.PictureBox PbMostrarPass { get => pbMostrarPass; }
+        public System.Windows.Forms.PictureBox PbAvatar { get => pbAvatar; }
+        public System.Windows.Forms.PictureBox PbRegresar { get => pbRegresar; }
+        public System.Windows.Forms.PictureBox PbAgregar { get => pbAgregar; }
+        public System.Windows.Forms.ComboBox CmbDepartamento { get => cmbDepartamento; }
+        public System.Windows.Forms.ComboBox CmbMunicipio { get => cmbMunicipio; }
     }
 }
