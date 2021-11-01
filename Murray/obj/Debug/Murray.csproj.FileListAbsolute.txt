@@ -1,0 +1,11 @@
+C:\Users\gabri\source\repos\Murray\Murray\bin\Debug\Murray.exe.config
+C:\Users\gabri\source\repos\Murray\Murray\bin\Debug\Murray.exe
+C:\Users\gabri\source\repos\Murray\Murray\bin\Debug\Murray.pdb
+C:\Users\gabri\source\repos\Murray\Murray\obj\Debug\Murray.csproj.AssemblyReference.cache
+C:\Users\gabri\source\repos\Murray\Murray\obj\Debug\Murray.Properties.Resources.resources
+C:\Users\gabri\source\repos\Murray\Murray\obj\Debug\Murray.csproj.GenerateResource.cache
+C:\Users\gabri\source\repos\Murray\Murray\obj\Debug\Murray.csproj.CoreCompileInputs.cache
+C:\Users\gabri\source\repos\Murray\Murray\obj\Debug\Murray.exe
+C:\Users\gabri\source\repos\Murray\Murray\obj\Debug\Murray.pdb
+C:\Users\gabri\source\repos\Murray\Murray\obj\Debug\Murray.Vistas.FrmLogin.resources
+C:\Users\gabri\source\repos\Murray\Murray\obj\Debug\Murray.Vistas.FrmPrincipal.resources
