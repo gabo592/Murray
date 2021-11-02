@@ -9,3 +9,14 @@ C:\Users\gabri\source\repos\Murray\Murray\obj\Debug\Murray.exe
 C:\Users\gabri\source\repos\Murray\Murray\obj\Debug\Murray.pdb
 C:\Users\gabri\source\repos\Murray\Murray\obj\Debug\Murray.Vistas.FrmLogin.resources
 C:\Users\gabri\source\repos\Murray\Murray\obj\Debug\Murray.Vistas.FrmPrincipal.resources
+D:\Proyecto BD\Murray\Murray\bin\Debug\Murray.exe.config
+D:\Proyecto BD\Murray\Murray\bin\Debug\Murray.exe
+D:\Proyecto BD\Murray\Murray\bin\Debug\Murray.pdb
+D:\Proyecto BD\Murray\Murray\obj\Debug\Murray.csproj.AssemblyReference.cache
+D:\Proyecto BD\Murray\Murray\obj\Debug\Murray.Properties.Resources.resources
+D:\Proyecto BD\Murray\Murray\obj\Debug\Murray.Vistas.FrmLogin.resources
+D:\Proyecto BD\Murray\Murray\obj\Debug\Murray.Vistas.FrmPrincipal.resources
+D:\Proyecto BD\Murray\Murray\obj\Debug\Murray.csproj.GenerateResource.cache
+D:\Proyecto BD\Murray\Murray\obj\Debug\Murray.csproj.CoreCompileInputs.cache
+D:\Proyecto BD\Murray\Murray\obj\Debug\Murray.exe
+D:\Proyecto BD\Murray\Murray\obj\Debug\Murray.pdb
