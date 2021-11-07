@@ -1,0 +1,8 @@
+C:\Users\Meitc\source\repos\Murray\Common\bin\Debug\Common.dll
+C:\Users\Meitc\source\repos\Murray\Common\bin\Debug\Common.pdb
+C:\Users\Meitc\source\repos\Murray\Common\obj\Debug\Common.csproj.AssemblyReference.cache
+C:\Users\Meitc\source\repos\Murray\Common\obj\Debug\Common.Resources.Messages.resources
+C:\Users\Meitc\source\repos\Murray\Common\obj\Debug\Common.csproj.GenerateResource.cache
+C:\Users\Meitc\source\repos\Murray\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+C:\Users\Meitc\source\repos\Murray\Common\obj\Debug\Common.dll
+C:\Users\Meitc\source\repos\Murray\Common\obj\Debug\Common.pdb

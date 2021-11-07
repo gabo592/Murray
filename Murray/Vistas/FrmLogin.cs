@@ -1,17 +1,32 @@
 ﻿using System;
 using System.Windows.Forms;
-using Murray.Controladores;
+using Common.Util;
+using Murray.Services.Identity;
 
 namespace Murray.Vistas
 {
     public partial class FrmLogin : Form
     {
-        private readonly ControladorUsuario controlador;
+        #region Dependencias
+
+        /// <summary>
+        ///     Servicio de autenticacion de usuario
+        /// </summary>
+        private readonly Login Service;
+
+        /// <summary>
+        ///     Administrador de erroes
+        /// </summary>
+        private readonly ErrorHandler Handler;
+
+        #endregion
 
         public FrmLogin()
         {
+            Handler = new ErrorHandler();
+            Service = new Login(Handler);
+
             InitializeComponent();
-            controlador = new ControladorUsuario(this);
         }
 
         private void BtnCancelar_Click(object sender, EventArgs e)
@@ -21,27 +36,27 @@ namespace Murray.Vistas
 
         private void BtnEntrar_Click(object sender, EventArgs e)
         {
-            ValidarUsuario();
+            DoLogin();
         }
 
         private void Txt_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == (char)Keys.Enter)
             {
-                ValidarUsuario();
+                DoLogin();
             }
         }
 
-        private void ValidarUsuario()
+        #region Private Methods
+
+        private void DoLogin()
         {
-            try
-            {
-                controlador.ValidarUsuario();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(this, ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            Service.DoLogin(txtUsuario.Text, txtContraseña.Text);
+
+            if (Handler.HasError())
+                MessageBox.Show(this, Handler.GetErrorMessage(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
+
+        #endregion
     }
 }

@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "SqRnPIL1QXyhcli9gZIeJMnBd+olASC1ila9l3bvfwbT04oZ+ib5cq2jWNZu7Mv5iiDRM/hef06bdFUukn0LsQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Meitc\\source\\repos\\Murray\\Test\\Test.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Meitc\\.nuget\\packages\\microsoft.codecoverage\\17.0.0\\microsoft.codecoverage.17.0.0.nupkg.sha512",
+    "C:\\Users\\Meitc\\.nuget\\packages\\microsoft.net.test.sdk\\17.0.0\\microsoft.net.test.sdk.17.0.0.nupkg.sha512",
+    "C:\\Users\\Meitc\\.nuget\\packages\\nunit\\3.13.2\\nunit.3.13.2.nupkg.sha512",
+    "C:\\Users\\Meitc\\.nuget\\packages\\nunit3testadapter\\4.0.0\\nunit3testadapter.4.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

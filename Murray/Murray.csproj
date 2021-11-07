@@ -46,13 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controladores\ControladorUsuario.cs" />
-    <Compile Include="Dao\IDao.cs" />
-    <Compile Include="Dao\IDaoUsuario.cs" />
-    <Compile Include="Modelos\UsuarioModel.cs" />
-    <Compile Include="Poco\Usuario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\DaoFactory.cs" />
+    <Compile Include="Services\Identity\Login.cs" />
     <Compile Include="Vistas\FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +126,20 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ventas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{d62c94b4-f541-4eda-9be8-0c3f6ac56232}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Connection\Connection.csproj">
+      <Project>{fe1aa579-fdd7-4a86-b500-01e85dc4ea9e}</Project>
+      <Name>Connection</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Models\Models.csproj">
+      <Project>{9053c156-227e-42fd-b691-36ac3e98c34c}</Project>
+      <Name>Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
