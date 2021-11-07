@@ -50,6 +50,36 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\DaoFactory.cs" />
     <Compile Include="Services\Identity\Login.cs" />
+    <Compile Include="Vistas\Compras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Compras.Designer.cs">
+      <DependentUpon>Compras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Devolucion Empresa-Proveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Devolucion Empresa-Proveedor.Designer.cs">
+      <DependentUpon>Devolucion Empresa-Proveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Devoluciones Cliente-Empresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Devoluciones Cliente-Empresa.Designer.cs">
+      <DependentUpon>Devoluciones Cliente-Empresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Empleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Empleados.Designer.cs">
+      <DependentUpon>Empleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\FrmClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\FrmClientes.Designer.cs">
+      <DependentUpon>FrmClientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +102,21 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Vistas\Compras.resx">
+      <DependentUpon>Compras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Devolucion Empresa-Proveedor.resx">
+      <DependentUpon>Devolucion Empresa-Proveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Devoluciones Cliente-Empresa.resx">
+      <DependentUpon>Devoluciones Cliente-Empresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Empleados.resx">
+      <DependentUpon>Empleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\FrmClientes.resx">
+      <DependentUpon>FrmClientes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>

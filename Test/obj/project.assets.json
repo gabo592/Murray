@@ -282,47 +282,43 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Meitc\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\James\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Meitc\\source\\repos\\Murray\\Test\\Test.csproj",
+      "projectUniqueName": "D:\\Proyecto BD\\Murray\\Test\\Test.csproj",
       "projectName": "Test",
-      "projectPath": "C:\\Users\\Meitc\\source\\repos\\Murray\\Test\\Test.csproj",
-      "packagesPath": "C:\\Users\\Meitc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Meitc\\source\\repos\\Murray\\Test\\obj\\",
+      "projectPath": "D:\\Proyecto BD\\Murray\\Test\\Test.csproj",
+      "packagesPath": "C:\\Users\\James\\.nuget\\packages\\",
+      "outputPath": "D:\\Proyecto BD\\Murray\\Test\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Meitc\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\James\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net472"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net472": {
           "targetAlias": "net472",
           "projectReferences": {
-            "C:\\Users\\Meitc\\source\\repos\\Murray\\Common\\Common.csproj": {
-              "projectPath": "C:\\Users\\Meitc\\source\\repos\\Murray\\Common\\Common.csproj"
+            "D:\\Proyecto BD\\Murray\\Common\\Common.csproj": {
+              "projectPath": "D:\\Proyecto BD\\Murray\\Common\\Common.csproj"
             },
-            "C:\\Users\\Meitc\\source\\repos\\Murray\\Connection\\Connection.csproj": {
-              "projectPath": "C:\\Users\\Meitc\\source\\repos\\Murray\\Connection\\Connection.csproj"
+            "D:\\Proyecto BD\\Murray\\Connection\\Connection.csproj": {
+              "projectPath": "D:\\Proyecto BD\\Murray\\Connection\\Connection.csproj"
             },
-            "C:\\Users\\Meitc\\source\\repos\\Murray\\Models\\Models.csproj": {
-              "projectPath": "C:\\Users\\Meitc\\source\\repos\\Murray\\Models\\Models.csproj"
+            "D:\\Proyecto BD\\Murray\\Models\\Models.csproj": {
+              "projectPath": "D:\\Proyecto BD\\Murray\\Models\\Models.csproj"
             },
-            "C:\\Users\\Meitc\\source\\repos\\Murray\\Murray\\Murray.csproj": {
-              "projectPath": "C:\\Users\\Meitc\\source\\repos\\Murray\\Murray\\Murray.csproj"
+            "D:\\Proyecto BD\\Murray\\Murray\\Murray.csproj": {
+              "projectPath": "D:\\Proyecto BD\\Murray\\Murray\\Murray.csproj"
             }
           }
         }
@@ -350,7 +346,7 @@
             "version": "[4.0.0, )"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-preview.6.21355.2\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }
