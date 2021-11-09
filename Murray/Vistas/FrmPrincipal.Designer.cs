@@ -45,6 +45,7 @@ namespace Murray.Vistas
             this.seguridadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ventasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.productosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuBar.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,10 +66,11 @@ namespace Murray.Vistas
             this.proveedoresToolStripMenuItem,
             this.reportesToolStripMenuItem,
             this.seguridadToolStripMenuItem,
-            this.ventasToolStripMenuItem});
+            this.ventasToolStripMenuItem,
+            this.productosToolStripMenuItem});
             this.menuBar.Location = new System.Drawing.Point(0, 0);
             this.menuBar.Name = "menuBar";
-            this.menuBar.Size = new System.Drawing.Size(937, 33);
+            this.menuBar.Size = new System.Drawing.Size(943, 33);
             this.menuBar.TabIndex = 3;
             this.menuBar.Text = "menuStrip1";
             // 
@@ -151,7 +153,7 @@ namespace Murray.Vistas
             // 
             this.usuariosToolStripMenuItem.Image = global::Murray.Properties.Resources.user;
             this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
-            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(157, 30);
+            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(180, 30);
             this.usuariosToolStripMenuItem.Text = "Usuarios";
             // 
             // ventasToolStripMenuItem
@@ -161,12 +163,19 @@ namespace Murray.Vistas
             this.ventasToolStripMenuItem.Size = new System.Drawing.Size(96, 29);
             this.ventasToolStripMenuItem.Text = "Ventas";
             // 
+            // productosToolStripMenuItem
+            // 
+            this.productosToolStripMenuItem.Image = global::Murray.Properties.Resources.box;
+            this.productosToolStripMenuItem.Name = "productosToolStripMenuItem";
+            this.productosToolStripMenuItem.Size = new System.Drawing.Size(125, 29);
+            this.productosToolStripMenuItem.Text = "Productos";
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(937, 462);
+            this.ClientSize = new System.Drawing.Size(943, 370);
             this.Controls.Add(this.menuBar);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmPrincipal";
@@ -197,5 +206,6 @@ namespace Murray.Vistas
         private System.Windows.Forms.ToolStripMenuItem seguridadToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem usuariosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ventasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem productosToolStripMenuItem;
     }
 }
