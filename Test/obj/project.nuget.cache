@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "qS6YKOqVixnfCASa5qWYrE3Ex81PWF9lKF1sHn0jtOJH6fgvDwvy37CTEVQYtN7fCAHpUmqXqskHrt1s7YDCkQ==",
+  "dgSpecHash": "ZAksyLH0GdrP4tMHkthGazjd5uHTNuo2++7RpvrDHI76NGCXo0VgUmUMnKaXE1JFePy62EPWLbluM5bi86gzQg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\gabri\\workspace\\Murray\\Test\\Test.csproj",
+  "projectFilePath": "D:\\Proyecto BD\\Murray\\Test\\Test.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\gabri\\.nuget\\packages\\microsoft.codecoverage\\17.0.0\\microsoft.codecoverage.17.0.0.nupkg.sha512",
-    "C:\\Users\\gabri\\.nuget\\packages\\microsoft.net.test.sdk\\17.0.0\\microsoft.net.test.sdk.17.0.0.nupkg.sha512",
-    "C:\\Users\\gabri\\.nuget\\packages\\nunit\\3.13.2\\nunit.3.13.2.nupkg.sha512",
-    "C:\\Users\\gabri\\.nuget\\packages\\nunit3testadapter\\4.0.0\\nunit3testadapter.4.0.0.nupkg.sha512"
+    "C:\\Users\\James\\.nuget\\packages\\microsoft.codecoverage\\17.0.0\\microsoft.codecoverage.17.0.0.nupkg.sha512",
+    "C:\\Users\\James\\.nuget\\packages\\microsoft.net.test.sdk\\17.0.0\\microsoft.net.test.sdk.17.0.0.nupkg.sha512",
+    "C:\\Users\\James\\.nuget\\packages\\nunit\\3.13.2\\nunit.3.13.2.nupkg.sha512",
+    "C:\\Users\\James\\.nuget\\packages\\nunit3testadapter\\4.0.0\\nunit3testadapter.4.0.0.nupkg.sha512"
   ],
   "logs": []
 }

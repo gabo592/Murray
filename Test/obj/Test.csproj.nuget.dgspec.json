@@ -1,32 +1,37 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gabri\\workspace\\Murray\\Test\\Test.csproj": {}
+    "D:\\Proyecto BD\\Murray\\Test\\Test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gabri\\workspace\\Murray\\Common\\Common.csproj": {
+    "D:\\Proyecto BD\\Murray\\Common\\Common.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\gabri\\workspace\\Murray\\Common\\Common.csproj",
+        "projectUniqueName": "D:\\Proyecto BD\\Murray\\Common\\Common.csproj",
         "projectName": "Common",
-        "projectPath": "C:\\Users\\gabri\\workspace\\Murray\\Common\\Common.csproj"
+        "projectPath": "D:\\Proyecto BD\\Murray\\Common\\Common.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
       },
       "frameworks": {
         "net472": {}
       }
     },
-    "C:\\Users\\gabri\\workspace\\Murray\\Connection\\Connection.csproj": {
+    "D:\\Proyecto BD\\Murray\\Connection\\Connection.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\gabri\\workspace\\Murray\\Connection\\Connection.csproj",
+        "projectUniqueName": "D:\\Proyecto BD\\Murray\\Connection\\Connection.csproj",
         "projectName": "Connection",
-        "projectPath": "C:\\Users\\gabri\\workspace\\Murray\\Connection\\Connection.csproj",
+        "projectPath": "D:\\Proyecto BD\\Murray\\Connection\\Connection.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {
-              "C:\\Users\\gabri\\workspace\\Murray\\Common\\Common.csproj": {
-                "projectPath": "C:\\Users\\gabri\\workspace\\Murray\\Common\\Common.csproj"
+              "D:\\Proyecto BD\\Murray\\Common\\Common.csproj": {
+                "projectPath": "D:\\Proyecto BD\\Murray\\Common\\Common.csproj"
               },
-              "C:\\Users\\gabri\\workspace\\Murray\\Models\\Models.csproj": {
-                "projectPath": "C:\\Users\\gabri\\workspace\\Murray\\Models\\Models.csproj"
+              "D:\\Proyecto BD\\Murray\\Models\\Models.csproj": {
+                "projectPath": "D:\\Proyecto BD\\Murray\\Models\\Models.csproj"
               }
             }
           }
@@ -36,32 +41,37 @@
         "net472": {}
       }
     },
-    "C:\\Users\\gabri\\workspace\\Murray\\Models\\Models.csproj": {
+    "D:\\Proyecto BD\\Murray\\Models\\Models.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\gabri\\workspace\\Murray\\Models\\Models.csproj",
+        "projectUniqueName": "D:\\Proyecto BD\\Murray\\Models\\Models.csproj",
         "projectName": "Models",
-        "projectPath": "C:\\Users\\gabri\\workspace\\Murray\\Models\\Models.csproj"
+        "projectPath": "D:\\Proyecto BD\\Murray\\Models\\Models.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
       },
       "frameworks": {
         "net472": {}
       }
     },
-    "C:\\Users\\gabri\\workspace\\Murray\\Murray\\Murray.csproj": {
+    "D:\\Proyecto BD\\Murray\\Murray\\Murray.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\gabri\\workspace\\Murray\\Murray\\Murray.csproj",
+        "projectUniqueName": "D:\\Proyecto BD\\Murray\\Murray\\Murray.csproj",
         "projectName": "Murray",
-        "projectPath": "C:\\Users\\gabri\\workspace\\Murray\\Murray\\Murray.csproj",
+        "projectPath": "D:\\Proyecto BD\\Murray\\Murray\\Murray.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {
-              "C:\\Users\\gabri\\workspace\\Murray\\Common\\Common.csproj": {
-                "projectPath": "C:\\Users\\gabri\\workspace\\Murray\\Common\\Common.csproj"
+              "D:\\Proyecto BD\\Murray\\Common\\Common.csproj": {
+                "projectPath": "D:\\Proyecto BD\\Murray\\Common\\Common.csproj"
               },
-              "C:\\Users\\gabri\\workspace\\Murray\\Connection\\Connection.csproj": {
-                "projectPath": "C:\\Users\\gabri\\workspace\\Murray\\Connection\\Connection.csproj"
+              "D:\\Proyecto BD\\Murray\\Connection\\Connection.csproj": {
+                "projectPath": "D:\\Proyecto BD\\Murray\\Connection\\Connection.csproj"
               },
-              "C:\\Users\\gabri\\workspace\\Murray\\Models\\Models.csproj": {
-                "projectPath": "C:\\Users\\gabri\\workspace\\Murray\\Models\\Models.csproj"
+              "D:\\Proyecto BD\\Murray\\Models\\Models.csproj": {
+                "projectPath": "D:\\Proyecto BD\\Murray\\Models\\Models.csproj"
               }
             }
           }
@@ -71,17 +81,17 @@
         "net472": {}
       }
     },
-    "C:\\Users\\gabri\\workspace\\Murray\\Test\\Test.csproj": {
+    "D:\\Proyecto BD\\Murray\\Test\\Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gabri\\workspace\\Murray\\Test\\Test.csproj",
+        "projectUniqueName": "D:\\Proyecto BD\\Murray\\Test\\Test.csproj",
         "projectName": "Test",
-        "projectPath": "C:\\Users\\gabri\\workspace\\Murray\\Test\\Test.csproj",
-        "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gabri\\workspace\\Murray\\Test\\obj\\",
+        "projectPath": "D:\\Proyecto BD\\Murray\\Test\\Test.csproj",
+        "packagesPath": "C:\\Users\\James\\.nuget\\packages\\",
+        "outputPath": "D:\\Proyecto BD\\Murray\\Test\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\James\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -89,24 +99,23 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.telerik.com/nuget": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net472": {
             "targetAlias": "net472",
             "projectReferences": {
-              "C:\\Users\\gabri\\workspace\\Murray\\Common\\Common.csproj": {
-                "projectPath": "C:\\Users\\gabri\\workspace\\Murray\\Common\\Common.csproj"
+              "D:\\Proyecto BD\\Murray\\Common\\Common.csproj": {
+                "projectPath": "D:\\Proyecto BD\\Murray\\Common\\Common.csproj"
               },
-              "C:\\Users\\gabri\\workspace\\Murray\\Connection\\Connection.csproj": {
-                "projectPath": "C:\\Users\\gabri\\workspace\\Murray\\Connection\\Connection.csproj"
+              "D:\\Proyecto BD\\Murray\\Connection\\Connection.csproj": {
+                "projectPath": "D:\\Proyecto BD\\Murray\\Connection\\Connection.csproj"
               },
-              "C:\\Users\\gabri\\workspace\\Murray\\Models\\Models.csproj": {
-                "projectPath": "C:\\Users\\gabri\\workspace\\Murray\\Models\\Models.csproj"
+              "D:\\Proyecto BD\\Murray\\Models\\Models.csproj": {
+                "projectPath": "D:\\Proyecto BD\\Murray\\Models\\Models.csproj"
               },
-              "C:\\Users\\gabri\\workspace\\Murray\\Murray\\Murray.csproj": {
-                "projectPath": "C:\\Users\\gabri\\workspace\\Murray\\Murray\\Murray.csproj"
+              "D:\\Proyecto BD\\Murray\\Murray\\Murray.csproj": {
+                "projectPath": "D:\\Proyecto BD\\Murray\\Murray\\Murray.csproj"
               }
             }
           }
@@ -134,7 +143,7 @@
               "version": "[4.0.0, )"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -67,9 +67,9 @@ namespace Murray.Vistas
             this.pnlDerecho.Controls.Add(this.pnlBotones);
             this.pnlDerecho.Controls.Add(this.pbUsuario);
             this.pnlDerecho.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlDerecho.Location = new System.Drawing.Point(539, 0);
+            this.pnlDerecho.Location = new System.Drawing.Point(468, 0);
             this.pnlDerecho.Name = "pnlDerecho";
-            this.pnlDerecho.Size = new System.Drawing.Size(366, 393);
+            this.pnlDerecho.Size = new System.Drawing.Size(366, 381);
             this.pnlDerecho.TabIndex = 0;
             // 
             // pnlInfo
@@ -79,7 +79,7 @@ namespace Murray.Vistas
             this.pnlInfo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlInfo.Location = new System.Drawing.Point(0, 101);
             this.pnlInfo.Name = "pnlInfo";
-            this.pnlInfo.Size = new System.Drawing.Size(366, 205);
+            this.pnlInfo.Size = new System.Drawing.Size(366, 193);
             this.pnlInfo.TabIndex = 2;
             // 
             // pnlTextBoxUsuario
@@ -89,7 +89,7 @@ namespace Murray.Vistas
             this.pnlTextBoxUsuario.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlTextBoxUsuario.Location = new System.Drawing.Point(120, 0);
             this.pnlTextBoxUsuario.Name = "pnlTextBoxUsuario";
-            this.pnlTextBoxUsuario.Size = new System.Drawing.Size(246, 205);
+            this.pnlTextBoxUsuario.Size = new System.Drawing.Size(246, 193);
             this.pnlTextBoxUsuario.TabIndex = 2;
             // 
             // txtContraseña
@@ -117,7 +117,7 @@ namespace Murray.Vistas
             this.pnlLabelsUsuario.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlLabelsUsuario.Location = new System.Drawing.Point(0, 0);
             this.pnlLabelsUsuario.Name = "pnlLabelsUsuario";
-            this.pnlLabelsUsuario.Size = new System.Drawing.Size(120, 205);
+            this.pnlLabelsUsuario.Size = new System.Drawing.Size(120, 193);
             this.pnlLabelsUsuario.TabIndex = 1;
             // 
             // lblPassword
@@ -149,7 +149,7 @@ namespace Murray.Vistas
             this.pnlBotones.Controls.Add(this.btnModificarUsuario);
             this.pnlBotones.Controls.Add(this.btnAgregarUsuario);
             this.pnlBotones.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlBotones.Location = new System.Drawing.Point(0, 306);
+            this.pnlBotones.Location = new System.Drawing.Point(0, 294);
             this.pnlBotones.Name = "pnlBotones";
             this.pnlBotones.Size = new System.Drawing.Size(366, 87);
             this.pnlBotones.TabIndex = 1;
@@ -228,7 +228,7 @@ namespace Murray.Vistas
             this.pnlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTop.Location = new System.Drawing.Point(0, 0);
             this.pnlTop.Name = "pnlTop";
-            this.pnlTop.Size = new System.Drawing.Size(539, 31);
+            this.pnlTop.Size = new System.Drawing.Size(468, 31);
             this.pnlTop.TabIndex = 1;
             // 
             // txtBuscar
@@ -237,7 +237,7 @@ namespace Murray.Vistas
             this.txtBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBuscar.Location = new System.Drawing.Point(46, 0);
             this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(493, 26);
+            this.txtBuscar.Size = new System.Drawing.Size(422, 26);
             this.txtBuscar.TabIndex = 1;
             // 
             // pbLupa
@@ -257,7 +257,7 @@ namespace Murray.Vistas
             this.pnlPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlPrincipal.Location = new System.Drawing.Point(0, 31);
             this.pnlPrincipal.Name = "pnlPrincipal";
-            this.pnlPrincipal.Size = new System.Drawing.Size(539, 362);
+            this.pnlPrincipal.Size = new System.Drawing.Size(468, 350);
             this.pnlPrincipal.TabIndex = 2;
             // 
             // dgvUsuarios
@@ -270,7 +270,7 @@ namespace Murray.Vistas
             this.dgvUsuarios.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvUsuarios.Location = new System.Drawing.Point(0, 0);
             this.dgvUsuarios.Name = "dgvUsuarios";
-            this.dgvUsuarios.Size = new System.Drawing.Size(539, 362);
+            this.dgvUsuarios.Size = new System.Drawing.Size(468, 350);
             this.dgvUsuarios.TabIndex = 0;
             // 
             // FrmUsuarios
@@ -278,7 +278,7 @@ namespace Murray.Vistas
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(905, 393);
+            this.ClientSize = new System.Drawing.Size(834, 381);
             this.Controls.Add(this.pnlPrincipal);
             this.Controls.Add(this.pnlTop);
             this.Controls.Add(this.pnlDerecho);

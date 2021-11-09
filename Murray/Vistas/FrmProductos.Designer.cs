@@ -31,40 +31,40 @@ namespace Murray.Vistas
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmProductos));
             this.pnlTop = new System.Windows.Forms.Panel();
+            this.txtBuscar = new System.Windows.Forms.TextBox();
+            this.lblCategorias = new System.Windows.Forms.Label();
             this.pbCategorias = new System.Windows.Forms.PictureBox();
             this.pbLupa = new System.Windows.Forms.PictureBox();
-            this.lblCategorias = new System.Windows.Forms.Label();
-            this.txtBuscar = new System.Windows.Forms.TextBox();
             this.pnlDerecho = new System.Windows.Forms.Panel();
-            this.pnlPrincipal = new System.Windows.Forms.Panel();
-            this.pbProducto = new System.Windows.Forms.PictureBox();
-            this.lblDesc = new System.Windows.Forms.Label();
-            this.txtDesc = new System.Windows.Forms.TextBox();
-            this.lblCantidad = new System.Windows.Forms.Label();
-            this.numCantidad = new System.Windows.Forms.NumericUpDown();
-            this.lblPrecio = new System.Windows.Forms.Label();
-            this.numPrecio = new System.Windows.Forms.NumericUpDown();
-            this.lblEstado = new System.Windows.Forms.Label();
-            this.txtEstado = new System.Windows.Forms.TextBox();
+            this.pnlBotones = new System.Windows.Forms.Panel();
+            this.btnLimpiar = new System.Windows.Forms.Button();
+            this.btnEliminarProducto = new System.Windows.Forms.Button();
+            this.btnModificarProducto = new System.Windows.Forms.Button();
+            this.btnAgregarProducto = new System.Windows.Forms.Button();
             this.cmbCategorias = new System.Windows.Forms.ComboBox();
             this.lblCategoria = new System.Windows.Forms.Label();
             this.cmbProveedores = new System.Windows.Forms.ComboBox();
             this.lblProveedor = new System.Windows.Forms.Label();
-            this.pnlBotones = new System.Windows.Forms.Panel();
-            this.btnAgregarProducto = new System.Windows.Forms.Button();
-            this.btnModificarProducto = new System.Windows.Forms.Button();
-            this.btnEliminarProducto = new System.Windows.Forms.Button();
-            this.btnLimpiar = new System.Windows.Forms.Button();
+            this.txtEstado = new System.Windows.Forms.TextBox();
+            this.lblEstado = new System.Windows.Forms.Label();
+            this.numPrecio = new System.Windows.Forms.NumericUpDown();
+            this.lblPrecio = new System.Windows.Forms.Label();
+            this.numCantidad = new System.Windows.Forms.NumericUpDown();
+            this.lblCantidad = new System.Windows.Forms.Label();
+            this.txtDesc = new System.Windows.Forms.TextBox();
+            this.lblDesc = new System.Windows.Forms.Label();
+            this.pbProducto = new System.Windows.Forms.PictureBox();
+            this.pnlPrincipal = new System.Windows.Forms.Panel();
             this.dgvProductos = new System.Windows.Forms.DataGridView();
             this.pnlTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbCategorias)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbLupa)).BeginInit();
             this.pnlDerecho.SuspendLayout();
-            this.pnlPrincipal.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbProducto)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numCantidad)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numPrecio)).BeginInit();
             this.pnlBotones.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numPrecio)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numCantidad)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbProducto)).BeginInit();
+            this.pnlPrincipal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -79,6 +79,28 @@ namespace Murray.Vistas
             this.pnlTop.Name = "pnlTop";
             this.pnlTop.Size = new System.Drawing.Size(1001, 29);
             this.pnlTop.TabIndex = 0;
+            // 
+            // txtBuscar
+            // 
+            this.txtBuscar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBuscar.Location = new System.Drawing.Point(54, 0);
+            this.txtBuscar.Name = "txtBuscar";
+            this.txtBuscar.Size = new System.Drawing.Size(755, 26);
+            this.txtBuscar.TabIndex = 3;
+            // 
+            // lblCategorias
+            // 
+            this.lblCategorias.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblCategorias.Dock = System.Windows.Forms.DockStyle.Right;
+            this.lblCategorias.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCategorias.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(224)))), ((int)(((byte)(131)))));
+            this.lblCategorias.Location = new System.Drawing.Point(809, 0);
+            this.lblCategorias.Name = "lblCategorias";
+            this.lblCategorias.Size = new System.Drawing.Size(131, 29);
+            this.lblCategorias.TabIndex = 2;
+            this.lblCategorias.Text = "Ver Categorías";
+            this.lblCategorias.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pbCategorias
             // 
@@ -103,28 +125,6 @@ namespace Murray.Vistas
             this.pbLupa.TabIndex = 0;
             this.pbLupa.TabStop = false;
             // 
-            // lblCategorias
-            // 
-            this.lblCategorias.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblCategorias.Dock = System.Windows.Forms.DockStyle.Right;
-            this.lblCategorias.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCategorias.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(224)))), ((int)(((byte)(131)))));
-            this.lblCategorias.Location = new System.Drawing.Point(809, 0);
-            this.lblCategorias.Name = "lblCategorias";
-            this.lblCategorias.Size = new System.Drawing.Size(131, 29);
-            this.lblCategorias.TabIndex = 2;
-            this.lblCategorias.Text = "Ver Categorías";
-            this.lblCategorias.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtBuscar
-            // 
-            this.txtBuscar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBuscar.Location = new System.Drawing.Point(54, 0);
-            this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(755, 26);
-            this.txtBuscar.TabIndex = 3;
-            // 
             // pnlDerecho
             // 
             this.pnlDerecho.AutoScroll = true;
@@ -148,109 +148,73 @@ namespace Murray.Vistas
             this.pnlDerecho.Size = new System.Drawing.Size(352, 613);
             this.pnlDerecho.TabIndex = 1;
             // 
-            // pnlPrincipal
+            // pnlBotones
             // 
-            this.pnlPrincipal.Controls.Add(this.dgvProductos);
-            this.pnlPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlPrincipal.Location = new System.Drawing.Point(0, 29);
-            this.pnlPrincipal.Name = "pnlPrincipal";
-            this.pnlPrincipal.Size = new System.Drawing.Size(649, 613);
-            this.pnlPrincipal.TabIndex = 2;
+            this.pnlBotones.Controls.Add(this.btnLimpiar);
+            this.pnlBotones.Controls.Add(this.btnEliminarProducto);
+            this.pnlBotones.Controls.Add(this.btnModificarProducto);
+            this.pnlBotones.Controls.Add(this.btnAgregarProducto);
+            this.pnlBotones.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlBotones.Location = new System.Drawing.Point(0, 540);
+            this.pnlBotones.Name = "pnlBotones";
+            this.pnlBotones.Size = new System.Drawing.Size(352, 73);
+            this.pnlBotones.TabIndex = 15;
             // 
-            // pbProducto
+            // btnLimpiar
             // 
-            this.pbProducto.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pbProducto.Location = new System.Drawing.Point(0, 0);
-            this.pbProducto.Name = "pbProducto";
-            this.pbProducto.Size = new System.Drawing.Size(352, 101);
-            this.pbProducto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbProducto.TabIndex = 0;
-            this.pbProducto.TabStop = false;
+            this.btnLimpiar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnLimpiar.FlatAppearance.BorderSize = 0;
+            this.btnLimpiar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(109)))), ((int)(((byte)(158)))));
+            this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiar.Location = new System.Drawing.Point(274, 0);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(78, 73);
+            this.btnLimpiar.TabIndex = 3;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = true;
             // 
-            // lblDesc
+            // btnEliminarProducto
             // 
-            this.lblDesc.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblDesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDesc.Location = new System.Drawing.Point(0, 101);
-            this.lblDesc.Name = "lblDesc";
-            this.lblDesc.Size = new System.Drawing.Size(352, 38);
-            this.lblDesc.TabIndex = 1;
-            this.lblDesc.Text = "Descripción:";
-            this.lblDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEliminarProducto.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnEliminarProducto.FlatAppearance.BorderSize = 0;
+            this.btnEliminarProducto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(143)))), ((int)(((byte)(56)))));
+            this.btnEliminarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminarProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminarProducto.Location = new System.Drawing.Point(182, 0);
+            this.btnEliminarProducto.Name = "btnEliminarProducto";
+            this.btnEliminarProducto.Size = new System.Drawing.Size(92, 73);
+            this.btnEliminarProducto.TabIndex = 2;
+            this.btnEliminarProducto.Text = "Eliminar Producto";
+            this.btnEliminarProducto.UseVisualStyleBackColor = true;
             // 
-            // txtDesc
+            // btnModificarProducto
             // 
-            this.txtDesc.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtDesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDesc.Location = new System.Drawing.Point(0, 139);
-            this.txtDesc.Multiline = true;
-            this.txtDesc.Name = "txtDesc";
-            this.txtDesc.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtDesc.Size = new System.Drawing.Size(352, 77);
-            this.txtDesc.TabIndex = 2;
+            this.btnModificarProducto.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnModificarProducto.FlatAppearance.BorderSize = 0;
+            this.btnModificarProducto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(185)))), ((int)(((byte)(80)))));
+            this.btnModificarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModificarProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificarProducto.Location = new System.Drawing.Point(88, 0);
+            this.btnModificarProducto.Name = "btnModificarProducto";
+            this.btnModificarProducto.Size = new System.Drawing.Size(94, 73);
+            this.btnModificarProducto.TabIndex = 1;
+            this.btnModificarProducto.Text = "Modificar Producto";
+            this.btnModificarProducto.UseVisualStyleBackColor = true;
             // 
-            // lblCantidad
+            // btnAgregarProducto
             // 
-            this.lblCantidad.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblCantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCantidad.Location = new System.Drawing.Point(0, 216);
-            this.lblCantidad.Name = "lblCantidad";
-            this.lblCantidad.Size = new System.Drawing.Size(352, 38);
-            this.lblCantidad.TabIndex = 3;
-            this.lblCantidad.Text = "Cantidad:";
-            this.lblCantidad.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // numCantidad
-            // 
-            this.numCantidad.Dock = System.Windows.Forms.DockStyle.Top;
-            this.numCantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numCantidad.Location = new System.Drawing.Point(0, 254);
-            this.numCantidad.Name = "numCantidad";
-            this.numCantidad.Size = new System.Drawing.Size(352, 26);
-            this.numCantidad.TabIndex = 4;
-            this.numCantidad.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // lblPrecio
-            // 
-            this.lblPrecio.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrecio.Location = new System.Drawing.Point(0, 280);
-            this.lblPrecio.Name = "lblPrecio";
-            this.lblPrecio.Size = new System.Drawing.Size(352, 38);
-            this.lblPrecio.TabIndex = 5;
-            this.lblPrecio.Text = "Precio:";
-            this.lblPrecio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // numPrecio
-            // 
-            this.numPrecio.DecimalPlaces = 2;
-            this.numPrecio.Dock = System.Windows.Forms.DockStyle.Top;
-            this.numPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numPrecio.Location = new System.Drawing.Point(0, 318);
-            this.numPrecio.Name = "numPrecio";
-            this.numPrecio.Size = new System.Drawing.Size(352, 26);
-            this.numPrecio.TabIndex = 6;
-            this.numPrecio.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // lblEstado
-            // 
-            this.lblEstado.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEstado.Location = new System.Drawing.Point(0, 344);
-            this.lblEstado.Name = "lblEstado";
-            this.lblEstado.Size = new System.Drawing.Size(352, 38);
-            this.lblEstado.TabIndex = 7;
-            this.lblEstado.Text = "Estado:";
-            this.lblEstado.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // txtEstado
-            // 
-            this.txtEstado.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEstado.Location = new System.Drawing.Point(0, 382);
-            this.txtEstado.Name = "txtEstado";
-            this.txtEstado.Size = new System.Drawing.Size(352, 26);
-            this.txtEstado.TabIndex = 8;
+            this.btnAgregarProducto.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnAgregarProducto.FlatAppearance.BorderSize = 0;
+            this.btnAgregarProducto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(217)))), ((int)(((byte)(117)))));
+            this.btnAgregarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarProducto.Location = new System.Drawing.Point(0, 0);
+            this.btnAgregarProducto.Name = "btnAgregarProducto";
+            this.btnAgregarProducto.Size = new System.Drawing.Size(88, 73);
+            this.btnAgregarProducto.TabIndex = 0;
+            this.btnAgregarProducto.Text = "Agregar Producto";
+            this.btnAgregarProducto.UseVisualStyleBackColor = true;
             // 
             // cmbCategorias
             // 
@@ -296,73 +260,109 @@ namespace Murray.Vistas
             this.lblProveedor.Text = "Proveedor:";
             this.lblProveedor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // pnlBotones
+            // txtEstado
             // 
-            this.pnlBotones.Controls.Add(this.btnLimpiar);
-            this.pnlBotones.Controls.Add(this.btnEliminarProducto);
-            this.pnlBotones.Controls.Add(this.btnModificarProducto);
-            this.pnlBotones.Controls.Add(this.btnAgregarProducto);
-            this.pnlBotones.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlBotones.Location = new System.Drawing.Point(0, 540);
-            this.pnlBotones.Name = "pnlBotones";
-            this.pnlBotones.Size = new System.Drawing.Size(352, 73);
-            this.pnlBotones.TabIndex = 15;
+            this.txtEstado.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEstado.Location = new System.Drawing.Point(0, 382);
+            this.txtEstado.Name = "txtEstado";
+            this.txtEstado.Size = new System.Drawing.Size(352, 26);
+            this.txtEstado.TabIndex = 8;
             // 
-            // btnAgregarProducto
+            // lblEstado
             // 
-            this.btnAgregarProducto.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnAgregarProducto.FlatAppearance.BorderSize = 0;
-            this.btnAgregarProducto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(217)))), ((int)(((byte)(117)))));
-            this.btnAgregarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregarProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarProducto.Location = new System.Drawing.Point(0, 0);
-            this.btnAgregarProducto.Name = "btnAgregarProducto";
-            this.btnAgregarProducto.Size = new System.Drawing.Size(88, 73);
-            this.btnAgregarProducto.TabIndex = 0;
-            this.btnAgregarProducto.Text = "Agregar Producto";
-            this.btnAgregarProducto.UseVisualStyleBackColor = true;
+            this.lblEstado.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEstado.Location = new System.Drawing.Point(0, 344);
+            this.lblEstado.Name = "lblEstado";
+            this.lblEstado.Size = new System.Drawing.Size(352, 38);
+            this.lblEstado.TabIndex = 7;
+            this.lblEstado.Text = "Estado:";
+            this.lblEstado.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // btnModificarProducto
+            // numPrecio
             // 
-            this.btnModificarProducto.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnModificarProducto.FlatAppearance.BorderSize = 0;
-            this.btnModificarProducto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(185)))), ((int)(((byte)(80)))));
-            this.btnModificarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnModificarProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificarProducto.Location = new System.Drawing.Point(88, 0);
-            this.btnModificarProducto.Name = "btnModificarProducto";
-            this.btnModificarProducto.Size = new System.Drawing.Size(94, 73);
-            this.btnModificarProducto.TabIndex = 1;
-            this.btnModificarProducto.Text = "Modificar Producto";
-            this.btnModificarProducto.UseVisualStyleBackColor = true;
+            this.numPrecio.DecimalPlaces = 2;
+            this.numPrecio.Dock = System.Windows.Forms.DockStyle.Top;
+            this.numPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numPrecio.Location = new System.Drawing.Point(0, 318);
+            this.numPrecio.Name = "numPrecio";
+            this.numPrecio.Size = new System.Drawing.Size(352, 26);
+            this.numPrecio.TabIndex = 6;
+            this.numPrecio.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // btnEliminarProducto
+            // lblPrecio
             // 
-            this.btnEliminarProducto.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnEliminarProducto.FlatAppearance.BorderSize = 0;
-            this.btnEliminarProducto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(143)))), ((int)(((byte)(56)))));
-            this.btnEliminarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEliminarProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminarProducto.Location = new System.Drawing.Point(182, 0);
-            this.btnEliminarProducto.Name = "btnEliminarProducto";
-            this.btnEliminarProducto.Size = new System.Drawing.Size(92, 73);
-            this.btnEliminarProducto.TabIndex = 2;
-            this.btnEliminarProducto.Text = "Eliminar Producto";
-            this.btnEliminarProducto.UseVisualStyleBackColor = true;
+            this.lblPrecio.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrecio.Location = new System.Drawing.Point(0, 280);
+            this.lblPrecio.Name = "lblPrecio";
+            this.lblPrecio.Size = new System.Drawing.Size(352, 38);
+            this.lblPrecio.TabIndex = 5;
+            this.lblPrecio.Text = "Precio:";
+            this.lblPrecio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // btnLimpiar
+            // numCantidad
             // 
-            this.btnLimpiar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnLimpiar.FlatAppearance.BorderSize = 0;
-            this.btnLimpiar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(109)))), ((int)(((byte)(158)))));
-            this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiar.Location = new System.Drawing.Point(274, 0);
-            this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(78, 73);
-            this.btnLimpiar.TabIndex = 3;
-            this.btnLimpiar.Text = "Limpiar";
-            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.numCantidad.Dock = System.Windows.Forms.DockStyle.Top;
+            this.numCantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numCantidad.Location = new System.Drawing.Point(0, 254);
+            this.numCantidad.Name = "numCantidad";
+            this.numCantidad.Size = new System.Drawing.Size(352, 26);
+            this.numCantidad.TabIndex = 4;
+            this.numCantidad.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // lblCantidad
+            // 
+            this.lblCantidad.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblCantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCantidad.Location = new System.Drawing.Point(0, 216);
+            this.lblCantidad.Name = "lblCantidad";
+            this.lblCantidad.Size = new System.Drawing.Size(352, 38);
+            this.lblCantidad.TabIndex = 3;
+            this.lblCantidad.Text = "Cantidad:";
+            this.lblCantidad.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // txtDesc
+            // 
+            this.txtDesc.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtDesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDesc.Location = new System.Drawing.Point(0, 139);
+            this.txtDesc.Multiline = true;
+            this.txtDesc.Name = "txtDesc";
+            this.txtDesc.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.txtDesc.Size = new System.Drawing.Size(352, 77);
+            this.txtDesc.TabIndex = 2;
+            // 
+            // lblDesc
+            // 
+            this.lblDesc.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblDesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDesc.Location = new System.Drawing.Point(0, 101);
+            this.lblDesc.Name = "lblDesc";
+            this.lblDesc.Size = new System.Drawing.Size(352, 38);
+            this.lblDesc.TabIndex = 1;
+            this.lblDesc.Text = "Descripción:";
+            this.lblDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // pbProducto
+            // 
+            this.pbProducto.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pbProducto.Location = new System.Drawing.Point(0, 0);
+            this.pbProducto.Name = "pbProducto";
+            this.pbProducto.Size = new System.Drawing.Size(352, 101);
+            this.pbProducto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbProducto.TabIndex = 0;
+            this.pbProducto.TabStop = false;
+            // 
+            // pnlPrincipal
+            // 
+            this.pnlPrincipal.Controls.Add(this.dgvProductos);
+            this.pnlPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlPrincipal.Location = new System.Drawing.Point(0, 29);
+            this.pnlPrincipal.Name = "pnlPrincipal";
+            this.pnlPrincipal.Size = new System.Drawing.Size(649, 613);
+            this.pnlPrincipal.TabIndex = 2;
             // 
             // dgvProductos
             // 
@@ -396,11 +396,11 @@ namespace Murray.Vistas
             ((System.ComponentModel.ISupportInitialize)(this.pbLupa)).EndInit();
             this.pnlDerecho.ResumeLayout(false);
             this.pnlDerecho.PerformLayout();
-            this.pnlPrincipal.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbProducto)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numCantidad)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numPrecio)).EndInit();
             this.pnlBotones.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.numPrecio)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numCantidad)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbProducto)).EndInit();
+            this.pnlPrincipal.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).EndInit();
             this.ResumeLayout(false);
 
