@@ -30,154 +30,233 @@ namespace Murray.Vistas
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLogin));
-            this.pnlImagen = new System.Windows.Forms.Panel();
-            this.pbImagen = new System.Windows.Forms.PictureBox();
-            this.pnlPrincipal = new System.Windows.Forms.Panel();
-            this.btnCancelar = new System.Windows.Forms.Button();
-            this.btnEntrar = new System.Windows.Forms.Button();
-            this.txtContraseña = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.txtUsuario = new System.Windows.Forms.TextBox();
-            this.lblPass = new System.Windows.Forms.Label();
-            this.lblUsuario = new System.Windows.Forms.Label();
-            this.pnlImagen.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).BeginInit();
-            this.pnlPrincipal.SuspendLayout();
+            this.txtContraseña = new System.Windows.Forms.TextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.btnCerrar = new System.Windows.Forms.PictureBox();
+            this.btnMinimizar = new System.Windows.Forms.PictureBox();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             this.SuspendLayout();
             // 
-            // pnlImagen
+            // panel1
             // 
-            this.pnlImagen.Controls.Add(this.pbImagen);
-            this.pnlImagen.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnlImagen.Location = new System.Drawing.Point(0, 0);
-            this.pnlImagen.Name = "pnlImagen";
-            this.pnlImagen.Size = new System.Drawing.Size(159, 192);
-            this.pnlImagen.TabIndex = 0;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(185)))), ((int)(((byte)(80)))));
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(250, 330);
+            this.panel1.TabIndex = 0;
             // 
-            // pbImagen
+            // pictureBox1
             // 
-            this.pbImagen.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pbImagen.Image = global::Murray.Properties.Resources.atom;
-            this.pbImagen.Location = new System.Drawing.Point(0, 0);
-            this.pbImagen.Name = "pbImagen";
-            this.pbImagen.Size = new System.Drawing.Size(159, 192);
-            this.pbImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbImagen.TabIndex = 0;
-            this.pbImagen.TabStop = false;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(24, 46);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(198, 220);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
-            // pnlPrincipal
+            // label1
             // 
-            this.pnlPrincipal.Controls.Add(this.btnCancelar);
-            this.pnlPrincipal.Controls.Add(this.btnEntrar);
-            this.pnlPrincipal.Controls.Add(this.txtContraseña);
-            this.pnlPrincipal.Controls.Add(this.txtUsuario);
-            this.pnlPrincipal.Controls.Add(this.lblPass);
-            this.pnlPrincipal.Controls.Add(this.lblUsuario);
-            this.pnlPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlPrincipal.Location = new System.Drawing.Point(159, 0);
-            this.pnlPrincipal.Name = "pnlPrincipal";
-            this.pnlPrincipal.Size = new System.Drawing.Size(405, 192);
-            this.pnlPrincipal.TabIndex = 1;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(311, 33);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(433, 25);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Bienvenidos a su sistema de Ventas Murray";
             // 
-            // btnCancelar
+            // label3
             // 
-            this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancelar.FlatAppearance.BorderSize = 0;
-            this.btnCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(37)))), ((int)(((byte)(95)))));
-            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(11, 138);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(115, 36);
-            this.btnCancelar.TabIndex = 5;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
+            this.label3.AutoSize = true;
+            this.label3.Enabled = false;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(311, 167);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(444, 25);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "____________________________________";
             // 
-            // btnEntrar
+            // label2
             // 
-            this.btnEntrar.FlatAppearance.BorderSize = 0;
-            this.btnEntrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(224)))), ((int)(((byte)(136)))));
-            this.btnEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEntrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEntrar.Location = new System.Drawing.Point(276, 138);
-            this.btnEntrar.Name = "btnEntrar";
-            this.btnEntrar.Size = new System.Drawing.Size(106, 36);
-            this.btnEntrar.TabIndex = 4;
-            this.btnEntrar.Text = "Entrar";
-            this.btnEntrar.UseVisualStyleBackColor = true;
-            this.btnEntrar.Click += new System.EventHandler(this.BtnEntrar_Click);
-            // 
-            // txtContraseña
-            // 
-            this.txtContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtContraseña.Location = new System.Drawing.Point(152, 88);
-            this.txtContraseña.Name = "txtContraseña";
-            this.txtContraseña.PasswordChar = '*';
-            this.txtContraseña.Size = new System.Drawing.Size(230, 29);
-            this.txtContraseña.TabIndex = 3;
-            this.txtContraseña.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_KeyPress);
+            this.label2.AutoSize = true;
+            this.label2.Enabled = false;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(311, 102);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(444, 25);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "____________________________________";
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsuario.Location = new System.Drawing.Point(152, 31);
+            this.txtUsuario.BackColor = System.Drawing.Color.White;
+            this.txtUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsuario.Location = new System.Drawing.Point(316, 96);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(230, 29);
-            this.txtUsuario.TabIndex = 2;
-            this.txtUsuario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_KeyPress);
+            this.txtUsuario.Size = new System.Drawing.Size(428, 24);
+            this.txtUsuario.TabIndex = 4;
+            this.txtUsuario.Text = "USUARIO";
+            this.txtUsuario.Enter += new System.EventHandler(this.txtUsuario_Enter);
+            this.txtUsuario.Leave += new System.EventHandler(this.txtUsuario_Leave);
             // 
-            // lblPass
+            // txtContraseña
             // 
-            this.lblPass.AutoSize = true;
-            this.lblPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPass.Location = new System.Drawing.Point(6, 90);
-            this.lblPass.Name = "lblPass";
-            this.lblPass.Size = new System.Drawing.Size(140, 25);
-            this.lblPass.TabIndex = 1;
-            this.lblPass.Text = "Contraseña:";
+            this.txtContraseña.BackColor = System.Drawing.Color.White;
+            this.txtContraseña.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtContraseña.Location = new System.Drawing.Point(316, 161);
+            this.txtContraseña.Name = "txtContraseña";
+            this.txtContraseña.Size = new System.Drawing.Size(428, 24);
+            this.txtContraseña.TabIndex = 5;
+            this.txtContraseña.Text = "CONTRASEÑA";
+            this.txtContraseña.Enter += new System.EventHandler(this.txtContraseña_Enter);
+            this.txtContraseña.Leave += new System.EventHandler(this.txtContraseña_Leave);
             // 
-            // lblUsuario
+            // panel2
             // 
-            this.lblUsuario.AutoSize = true;
-            this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.Location = new System.Drawing.Point(6, 33);
-            this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(100, 25);
-            this.lblUsuario.TabIndex = 0;
-            this.lblUsuario.Text = "Usuario:";
+            this.panel2.Controls.Add(this.button2);
+            this.panel2.Controls.Add(this.button1);
+            this.panel2.Location = new System.Drawing.Point(342, 214);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(361, 42);
+            this.panel2.TabIndex = 6;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.LightGray;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(34, 13);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(108, 23);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "ACCEDER";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.LightGray;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(216, 13);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(107, 23);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "CANCELAR";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.btnMinimizar);
+            this.panel3.Controls.Add(this.btnCerrar);
+            this.panel3.Location = new System.Drawing.Point(546, 2);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(231, 31);
+            this.panel3.TabIndex = 7;
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
+            this.btnCerrar.Location = new System.Drawing.Point(197, 0);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(33, 31);
+            this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnCerrar.TabIndex = 0;
+            this.btnCerrar.TabStop = false;
+            this.btnCerrar.Click += new System.EventHandler(this.pictureBox2_Click_1);
+            // 
+            // btnMinimizar
+            // 
+            this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
+            this.btnMinimizar.Location = new System.Drawing.Point(158, 0);
+            this.btnMinimizar.Name = "btnMinimizar";
+            this.btnMinimizar.Size = new System.Drawing.Size(33, 31);
+            this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnMinimizar.TabIndex = 1;
+            this.btnMinimizar.TabStop = false;
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.Location = new System.Drawing.Point(409, 281);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(223, 20);
+            this.linkLabel1.TabIndex = 8;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "¿Eres Nuevo?,Registrate Aqui";
             // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(564, 192);
-            this.Controls.Add(this.pnlPrincipal);
-            this.Controls.Add(this.pnlImagen);
+            this.ClientSize = new System.Drawing.Size(780, 330);
+            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.txtContraseña);
+            this.Controls.Add(this.txtUsuario);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmLogin";
+            this.Opacity = 0.9D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
-            this.pnlImagen.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).EndInit();
-            this.pnlPrincipal.ResumeLayout(false);
-            this.pnlPrincipal.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel pnlImagen;
-        private System.Windows.Forms.PictureBox pbImagen;
-        private System.Windows.Forms.Panel pnlPrincipal;
-        private System.Windows.Forms.Label lblUsuario;
-        private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.Button btnEntrar;
-        private System.Windows.Forms.TextBox txtContraseña;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtUsuario;
-        private System.Windows.Forms.Label lblPass;
+        private System.Windows.Forms.TextBox txtContraseña;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.PictureBox btnMinimizar;
+        private System.Windows.Forms.PictureBox btnCerrar;
+        private System.Windows.Forms.LinkLabel linkLabel1;
 
         public System.Windows.Forms.TextBox TxtUsuario { get => txtUsuario; }
         public System.Windows.Forms.TextBox TxtContraseña { get => txtContraseña; }

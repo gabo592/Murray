@@ -4,9 +4,11 @@ namespace Murray.Vistas
 {
     public partial class FrmPrincipal : Form
     {
+        
         public FrmPrincipal()
         {
             InitializeComponent();
+            
         }
 
         private void FrmPrincipal_FormClosing(object sender, FormClosingEventArgs e)

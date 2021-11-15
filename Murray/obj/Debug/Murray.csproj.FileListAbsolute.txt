@@ -49,3 +49,15 @@ C:\Users\Meitc\source\repos\Murray\Murray\obj\Debug\Murray.exe
 C:\Users\Meitc\source\repos\Murray\Murray\obj\Debug\Murray.pdb
 C:\Users\Meitc\source\repos\Murray\Murray\bin\Debug\Common.dll
 C:\Users\Meitc\source\repos\Murray\Murray\bin\Debug\Common.pdb
+D:\Proyecto BD\Murray\Murray\bin\Debug\Common.dll
+D:\Proyecto BD\Murray\Murray\bin\Debug\Connection.dll
+D:\Proyecto BD\Murray\Murray\bin\Debug\Models.dll
+D:\Proyecto BD\Murray\Murray\bin\Debug\Common.pdb
+D:\Proyecto BD\Murray\Murray\bin\Debug\Connection.pdb
+D:\Proyecto BD\Murray\Murray\bin\Debug\Models.pdb
+D:\Proyecto BD\Murray\Murray\obj\Debug\Murray.Vistas.Compras.resources
+D:\Proyecto BD\Murray\Murray\obj\Debug\Murray.Vistas.Devolucion_Empresa_Proveedor.resources
+D:\Proyecto BD\Murray\Murray\obj\Debug\Murray.Vistas.Devoluciones_Cliente_Empresa.resources
+D:\Proyecto BD\Murray\Murray\obj\Debug\Murray.Vistas.Empleados.resources
+D:\Proyecto BD\Murray\Murray\obj\Debug\Murray.Vistas.FrmClientes.resources
+D:\Proyecto BD\Murray\Murray\obj\Debug\Murray.Vistas.FrmNewUser.resources

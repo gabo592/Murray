@@ -45,8 +45,11 @@ namespace Murray.Vistas
             this.seguridadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ventasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.productosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.menuBar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // contextMenuStrip1
@@ -66,11 +69,10 @@ namespace Murray.Vistas
             this.proveedoresToolStripMenuItem,
             this.reportesToolStripMenuItem,
             this.seguridadToolStripMenuItem,
-            this.ventasToolStripMenuItem,
-            this.productosToolStripMenuItem});
+            this.ventasToolStripMenuItem});
             this.menuBar.Location = new System.Drawing.Point(0, 0);
             this.menuBar.Name = "menuBar";
-            this.menuBar.Size = new System.Drawing.Size(943, 33);
+            this.menuBar.Size = new System.Drawing.Size(937, 33);
             this.menuBar.TabIndex = 3;
             this.menuBar.Text = "menuStrip1";
             // 
@@ -153,7 +155,7 @@ namespace Murray.Vistas
             // 
             this.usuariosToolStripMenuItem.Image = global::Murray.Properties.Resources.user;
             this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
-            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(180, 30);
+            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(157, 30);
             this.usuariosToolStripMenuItem.Text = "Usuarios";
             // 
             // ventasToolStripMenuItem
@@ -163,21 +165,40 @@ namespace Murray.Vistas
             this.ventasToolStripMenuItem.Size = new System.Drawing.Size(96, 29);
             this.ventasToolStripMenuItem.Text = "Ventas";
             // 
-            // productosToolStripMenuItem
+            // pictureBox1
             // 
-            this.productosToolStripMenuItem.Image = global::Murray.Properties.Resources.box;
-            this.productosToolStripMenuItem.Name = "productosToolStripMenuItem";
-            this.productosToolStripMenuItem.Size = new System.Drawing.Size(125, 29);
-            this.productosToolStripMenuItem.Text = "Productos";
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(386, 168);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(173, 139);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(0, 418);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(45, 43);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 6;
+            this.pictureBox2.TabStop = false;
             // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(943, 370);
+            this.ClientSize = new System.Drawing.Size(937, 462);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.menuBar);
+            this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.IsMdiContainer = true;
             this.Name = "FrmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Murray - Principal";
@@ -185,6 +206,8 @@ namespace Murray.Vistas
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmPrincipal_FormClosing);
             this.menuBar.ResumeLayout(false);
             this.menuBar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -206,6 +229,7 @@ namespace Murray.Vistas
         private System.Windows.Forms.ToolStripMenuItem seguridadToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem usuariosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ventasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem productosToolStripMenuItem;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
