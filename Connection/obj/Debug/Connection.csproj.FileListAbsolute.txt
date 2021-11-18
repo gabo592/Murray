@@ -9,3 +9,14 @@ C:\Users\Meitc\source\repos\Murray\Connection\obj\Debug\Connection.dll
 C:\Users\Meitc\source\repos\Murray\Connection\obj\Debug\Connection.pdb
 C:\Users\Meitc\source\repos\Murray\Connection\bin\Debug\Common.dll
 C:\Users\Meitc\source\repos\Murray\Connection\bin\Debug\Common.pdb
+C:\Users\gabri\source\repos\Murray\Connection\bin\Debug\Connection.dll
+C:\Users\gabri\source\repos\Murray\Connection\bin\Debug\Connection.pdb
+C:\Users\gabri\source\repos\Murray\Connection\bin\Debug\Common.dll
+C:\Users\gabri\source\repos\Murray\Connection\bin\Debug\Models.dll
+C:\Users\gabri\source\repos\Murray\Connection\bin\Debug\Common.pdb
+C:\Users\gabri\source\repos\Murray\Connection\bin\Debug\Models.pdb
+C:\Users\gabri\source\repos\Murray\Connection\obj\Debug\Connection.csproj.AssemblyReference.cache
+C:\Users\gabri\source\repos\Murray\Connection\obj\Debug\Connection.csproj.CoreCompileInputs.cache
+C:\Users\gabri\source\repos\Murray\Connection\obj\Debug\Connection.csproj.CopyComplete
+C:\Users\gabri\source\repos\Murray\Connection\obj\Debug\Connection.dll
+C:\Users\gabri\source\repos\Murray\Connection\obj\Debug\Connection.pdb
