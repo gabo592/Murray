@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Murray.Vistas;
+using Murray.Vistas.Usuarios;
 
 namespace Murray
 {
@@ -17,7 +18,7 @@ namespace Murray
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmPrincipal());
+            Application.Run(new FrmInfoUsuarios());
         }
     }
 }

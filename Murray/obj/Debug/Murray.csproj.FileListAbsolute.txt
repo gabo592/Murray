@@ -140,3 +140,5 @@ C:\Users\gabri\source\repos\Murray\Murray\bin\Debug\Bunifu.UI.WinForms.BunifuToo
 C:\Users\gabri\source\repos\Murray\Murray\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.xml
 C:\Users\gabri\source\repos\Murray\Murray\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.xml
 C:\Users\gabri\source\repos\Murray\Murray\obj\Debug\Murray.exe.licenses
+C:\Users\gabri\source\repos\Murray\Murray\obj\Debug\Murray.Vistas.Usuarios.FrmUsuarios.resources
+C:\Users\gabri\source\repos\Murray\Murray\obj\Debug\Murray.Vistas.Usuarios.FrmInfoUsuarios.resources
