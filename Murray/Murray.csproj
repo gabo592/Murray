@@ -158,6 +158,18 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\DaoFactory.cs" />
     <Compile Include="Services\Identity\Login.cs" />
+    <Compile Include="Vistas\Contactos\FrmContactos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Contactos\FrmContactos.Designer.cs">
+      <DependentUpon>FrmContactos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Contactos\FrmInfoContacto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Contactos\FrmInfoContacto.Designer.cs">
+      <DependentUpon>FrmInfoContacto.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\Principal\FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -193,6 +205,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Vistas\Contactos\FrmContactos.resx">
+      <DependentUpon>FrmContactos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Contactos\FrmInfoContacto.resx">
+      <DependentUpon>FrmInfoContacto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Principal\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -292,6 +310,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contact-book.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

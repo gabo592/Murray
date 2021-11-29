@@ -20,7 +20,12 @@
       "ProjectGuid": "9053c156-227e-42fd-b691-36ac3e98c34c",
       "DisplayName": "Models",
       "ColorIndex": 2
+    },
+    "fe1aa579-fdd7-4a86-b500-01e85dc4ea9e": {
+      "ProjectGuid": "fe1aa579-fdd7-4a86-b500-01e85dc4ea9e",
+      "DisplayName": "Connection",
+      "ColorIndex": 3
     }
   },
-  "NextColorIndex": 3
+  "NextColorIndex": 4
 }

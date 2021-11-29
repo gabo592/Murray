@@ -142,3 +142,5 @@ C:\Users\gabri\source\repos\Murray\Murray\bin\Debug\Bunifu.UI.WinForms.BunifuUse
 C:\Users\gabri\source\repos\Murray\Murray\obj\Debug\Murray.exe.licenses
 C:\Users\gabri\source\repos\Murray\Murray\obj\Debug\Murray.Vistas.Usuarios.FrmUsuarios.resources
 C:\Users\gabri\source\repos\Murray\Murray\obj\Debug\Murray.Vistas.Usuarios.FrmInfoUsuarios.resources
+C:\Users\gabri\source\repos\Murray\Murray\obj\Debug\Murray.Vistas.Clientes.FrmClientes.resources
+C:\Users\gabri\source\repos\Murray\Murray\obj\Debug\Murray.Vistas.Contactos.FrmInfoContacto.resources
