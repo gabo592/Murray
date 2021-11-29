@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "a342b42c-e5bb-4148-8d92-adeed6dbc56d": {
+      "ProjectGuid": "a342b42c-e5bb-4148-8d92-adeed6dbc56d",
+      "DisplayName": "Test",
+      "ColorIndex": 0
+    },
+    "a58a4cde-f6b2-4505-a8b5-acc6a5de8ddb": {
+      "ProjectGuid": "a58a4cde-f6b2-4505-a8b5-acc6a5de8ddb",
+      "DisplayName": "Murray",
+      "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Archivos varios",
+      "ColorIndex": -1
+    },
+    "9053c156-227e-42fd-b691-36ac3e98c34c": {
+      "ProjectGuid": "9053c156-227e-42fd-b691-36ac3e98c34c",
+      "DisplayName": "Models",
+      "ColorIndex": 2
+    },
+    "fe1aa579-fdd7-4a86-b500-01e85dc4ea9e": {
+      "ProjectGuid": "fe1aa579-fdd7-4a86-b500-01e85dc4ea9e",
+      "DisplayName": "Connection",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}

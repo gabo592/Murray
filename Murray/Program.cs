@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Murray.Vistas;
+using Murray.Vistas.Contactos;
 
 namespace Murray
 {
@@ -17,9 +17,7 @@ namespace Murray
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            FrmLogin login = new FrmLogin();
-            login.Show();
-            Application.Run();
+            Application.Run(new FrmInfoContacto());
         }
     }
 }
