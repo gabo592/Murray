@@ -46,7 +46,11 @@
     <Compile Include="Constants\StoredProcedures.cs" />
     <Compile Include="Database.cs" />
     <Compile Include="Factory.cs" />
+    <Compile Include="Identity\ContactoDao.cs" />
+    <Compile Include="Identity\EmpleadoDao.cs" />
     <Compile Include="Identity\UserDao.cs" />
+    <Compile Include="Interfaces\IContactoDao.cs" />
+    <Compile Include="Interfaces\IEmpleadoDao.cs" />
     <Compile Include="Interfaces\IUserDao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
