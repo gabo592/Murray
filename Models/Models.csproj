@@ -41,10 +41,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Enums\Roles.cs" />
-    <Compile Include="Identity\Contacto.cs" />
-    <Compile Include="Identity\Empleado.cs" />
-    <Compile Include="Identity\User.cs" />
     <Compile Include="Common\Categoria.cs" />
     <Compile Include="Common\Contacto.cs" />
     <Compile Include="Common\Departamento.cs" />

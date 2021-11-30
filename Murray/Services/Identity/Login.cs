@@ -1,6 +1,7 @@
 ﻿using Common.Util;
 using Connection.Interfaces;
 using Models.Identity;
+using Murray.Services.Base;
 using System;
 
 namespace Murray.Services.Identity
@@ -9,7 +10,7 @@ namespace Murray.Services.Identity
     ///     Clase auxiliar para el uso en la vista de
     ///     login
     /// </summary>
-    internal class Login : IDisposable
+    internal class Login : ServiceBase
     {
         #region Private Fields
 
@@ -18,11 +19,6 @@ namespace Murray.Services.Identity
         /// </summary>
         private readonly IUserDao Dao;
 
-        /// <summary>
-        ///     Administrador de erroes
-        /// </summary>
-        private readonly ErrorHandler Handler;
-
         #endregion
 
         #region Constructors
@@ -30,9 +26,8 @@ namespace Murray.Services.Identity
         /// <summary>
         ///     Constructor
         /// </summary>
-        public Login(ErrorHandler handler)
+        public Login(ErrorHandler handler) : base(handler)
         {
-            Handler = handler;
             Dao = DaoFactory.Get<IUserDao>(handler);
         }
 
@@ -47,7 +42,7 @@ namespace Murray.Services.Identity
         /// <param name="password">
         ///     Contrasena del usuario
         /// </param>
-        public User DoLogin(string username, string password)
+        public Usuario DoLogin(string username, string password)
         {
             if (string.IsNullOrEmpty(username))
                 Handler.Add("USERNAME_IS_EMPTY");
@@ -56,13 +51,13 @@ namespace Murray.Services.Identity
                 Handler.Add("PASSWORD_IS_EMPTY");
 
             if (Handler.HasError())
-                return new User();
+                return new Usuario();
 
             return Dao.Login(username, password);
         }
 
         /// <inheritdoc cref="IDisposable.Dispose"/>
-        public void Dispose()
+        public override void Dispose()
         {
             Dao.Dispose();
             Handler.Clear();

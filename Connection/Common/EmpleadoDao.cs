@@ -1,16 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Common.Util;
-using Models.Identity;
+﻿using Common.Util;
 using Connection.Base;
 using Connection.Constants;
 using Connection.Interfaces;
+using Models.Common;
 
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
-namespace Connection.Identity
+namespace Connection.Common
 {
     /// <inheritdoc cref="IEmpleadoDao">
     internal class EmpleadoDao : BaseDao<Empleado>, IEmpleadoDao
@@ -68,7 +66,7 @@ namespace Connection.Identity
         /// <inheritdoc cref="IEmpleadoDao.Read(bool, int)"/>
         public IEnumerable<Empleado> Read(bool estado, int idContacto)
         {
-            return Read(StoredProcedures.EmpleadoRead, new Dictionary<string, object>
+            return Read(StoredProcedures.EmpleadoGet, new Dictionary<string, object>
             {
                 ["Id"] = null,
                 ["Estado"] = Convert.ToInt16(estado),

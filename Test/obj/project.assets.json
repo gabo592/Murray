@@ -287,11 +287,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\Source\\Repos\\Murray\\Test\\Test.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\New folder\\Murray\\Murray\\Test\\Test.csproj",
       "projectName": "Test",
-      "projectPath": "C:\\Users\\Usuario\\Source\\Repos\\Murray\\Test\\Test.csproj",
+      "projectPath": "C:\\Users\\Usuario\\Desktop\\New folder\\Murray\\Murray\\Test\\Test.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\Source\\Repos\\Murray\\Test\\obj\\",
+      "outputPath": "C:\\Users\\Usuario\\Desktop\\New folder\\Murray\\Murray\\Test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -308,17 +308,17 @@
         "net472": {
           "targetAlias": "net472",
           "projectReferences": {
-            "C:\\Users\\Usuario\\Source\\Repos\\Murray\\Common\\Common.csproj": {
-              "projectPath": "C:\\Users\\Usuario\\Source\\Repos\\Murray\\Common\\Common.csproj"
+            "C:\\Users\\Usuario\\Desktop\\New folder\\Murray\\Murray\\Common\\Common.csproj": {
+              "projectPath": "C:\\Users\\Usuario\\Desktop\\New folder\\Murray\\Murray\\Common\\Common.csproj"
             },
-            "C:\\Users\\Usuario\\Source\\Repos\\Murray\\Connection\\Connection.csproj": {
-              "projectPath": "C:\\Users\\Usuario\\Source\\Repos\\Murray\\Connection\\Connection.csproj"
+            "C:\\Users\\Usuario\\Desktop\\New folder\\Murray\\Murray\\Connection\\Connection.csproj": {
+              "projectPath": "C:\\Users\\Usuario\\Desktop\\New folder\\Murray\\Murray\\Connection\\Connection.csproj"
             },
-            "C:\\Users\\Usuario\\Source\\Repos\\Murray\\Models\\Models.csproj": {
-              "projectPath": "C:\\Users\\Usuario\\Source\\Repos\\Murray\\Models\\Models.csproj"
+            "C:\\Users\\Usuario\\Desktop\\New folder\\Murray\\Murray\\Models\\Models.csproj": {
+              "projectPath": "C:\\Users\\Usuario\\Desktop\\New folder\\Murray\\Murray\\Models\\Models.csproj"
             },
-            "C:\\Users\\Usuario\\Source\\Repos\\Murray\\Murray\\Murray.csproj": {
-              "projectPath": "C:\\Users\\Usuario\\Source\\Repos\\Murray\\Murray\\Murray.csproj"
+            "C:\\Users\\Usuario\\Desktop\\New folder\\Murray\\Murray\\Murray\\Murray.csproj": {
+              "projectPath": "C:\\Users\\Usuario\\Desktop\\New folder\\Murray\\Murray\\Murray\\Murray.csproj"
             }
           }
         }

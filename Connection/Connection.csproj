@@ -48,8 +48,8 @@
     <Compile Include="Constants\StoredProcedures.cs" />
     <Compile Include="Database.cs" />
     <Compile Include="Factory.cs" />
-    <Compile Include="Identity\ContactoDao.cs" />
-    <Compile Include="Identity\EmpleadoDao.cs" />
+    <Compile Include="Common\ContactoDao.cs" />
+    <Compile Include="Common\EmpleadoDao.cs" />
     <Compile Include="Identity\UserDao.cs" />
     <Compile Include="Interfaces\IDepartamentoDao.cs" />
     <Compile Include="Interfaces\IContactoDao.cs" />

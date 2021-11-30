@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using Connection.Base;
-using Models.Identity;
+using Models.Common;
 
 namespace Connection.Interfaces
 {

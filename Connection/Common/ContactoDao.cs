@@ -1,15 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Common.Util;
+﻿using Common.Util;
 using Connection.Base;
 using Connection.Constants;
 using Connection.Interfaces;
-using Models.Identity;
+using Models.Common;
 
-namespace Connection.Identity
+using System.Collections.Generic;
+using System.Linq;
+
+namespace Connection.Common
 {
     internal class ContactoDao : BaseDao<Contacto>, IContactoDao
     {
@@ -47,7 +45,7 @@ namespace Connection.Identity
         /// <inheritdoc cref="IContactoDao.Read(string)"/>
         public IEnumerable<Contacto> Read(string value)
         {
-            return Read(StoredProcedures.ContactoRead, new Dictionary<string, object>
+            return Read(StoredProcedures.ContactoGet, new Dictionary<string, object>
             {
                 ["Id"] = null,
                 ["PrimerNombre"] = value,

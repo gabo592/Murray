@@ -20,3 +20,14 @@ C:\Users\gabri\source\repos\Murray\Connection\obj\Debug\Connection.csproj.CoreCo
 C:\Users\gabri\source\repos\Murray\Connection\obj\Debug\Connection.csproj.CopyComplete
 C:\Users\gabri\source\repos\Murray\Connection\obj\Debug\Connection.dll
 C:\Users\gabri\source\repos\Murray\Connection\obj\Debug\Connection.pdb
+C:\Users\Usuario\Desktop\New folder\Murray\Murray\Connection\bin\Debug\Connection.dll
+C:\Users\Usuario\Desktop\New folder\Murray\Murray\Connection\bin\Debug\Connection.pdb
+C:\Users\Usuario\Desktop\New folder\Murray\Murray\Connection\bin\Debug\Common.dll
+C:\Users\Usuario\Desktop\New folder\Murray\Murray\Connection\bin\Debug\Models.dll
+C:\Users\Usuario\Desktop\New folder\Murray\Murray\Connection\bin\Debug\Common.pdb
+C:\Users\Usuario\Desktop\New folder\Murray\Murray\Connection\bin\Debug\Models.pdb
+C:\Users\Usuario\Desktop\New folder\Murray\Murray\Connection\obj\Debug\Connection.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\New folder\Murray\Murray\Connection\obj\Debug\Connection.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\New folder\Murray\Murray\Connection\obj\Debug\Connection.csproj.CopyComplete
+C:\Users\Usuario\Desktop\New folder\Murray\Murray\Connection\obj\Debug\Connection.dll
+C:\Users\Usuario\Desktop\New folder\Murray\Murray\Connection\obj\Debug\Connection.pdb
