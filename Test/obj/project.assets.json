@@ -282,19 +282,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gabri\\.nuget\\packages\\": {}
+    "C:\\Users\\Usuario\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gabri\\source\\repos\\Murray\\Test\\Test.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\Source\\Repos\\Murray\\Test\\Test.csproj",
       "projectName": "Test",
-      "projectPath": "C:\\Users\\gabri\\source\\repos\\Murray\\Test\\Test.csproj",
-      "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gabri\\source\\repos\\Murray\\Test\\obj\\",
+      "projectPath": "C:\\Users\\Usuario\\Source\\Repos\\Murray\\Test\\Test.csproj",
+      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Usuario\\Source\\Repos\\Murray\\Test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -302,24 +302,23 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://nuget.telerik.com/nuget": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net472": {
           "targetAlias": "net472",
           "projectReferences": {
-            "C:\\Users\\gabri\\source\\repos\\Murray\\Common\\Common.csproj": {
-              "projectPath": "C:\\Users\\gabri\\source\\repos\\Murray\\Common\\Common.csproj"
+            "C:\\Users\\Usuario\\Source\\Repos\\Murray\\Common\\Common.csproj": {
+              "projectPath": "C:\\Users\\Usuario\\Source\\Repos\\Murray\\Common\\Common.csproj"
             },
-            "C:\\Users\\gabri\\source\\repos\\Murray\\Connection\\Connection.csproj": {
-              "projectPath": "C:\\Users\\gabri\\source\\repos\\Murray\\Connection\\Connection.csproj"
+            "C:\\Users\\Usuario\\Source\\Repos\\Murray\\Connection\\Connection.csproj": {
+              "projectPath": "C:\\Users\\Usuario\\Source\\Repos\\Murray\\Connection\\Connection.csproj"
             },
-            "C:\\Users\\gabri\\source\\repos\\Murray\\Models\\Models.csproj": {
-              "projectPath": "C:\\Users\\gabri\\source\\repos\\Murray\\Models\\Models.csproj"
+            "C:\\Users\\Usuario\\Source\\Repos\\Murray\\Models\\Models.csproj": {
+              "projectPath": "C:\\Users\\Usuario\\Source\\Repos\\Murray\\Models\\Models.csproj"
             },
-            "C:\\Users\\gabri\\source\\repos\\Murray\\Murray\\Murray.csproj": {
-              "projectPath": "C:\\Users\\gabri\\source\\repos\\Murray\\Murray\\Murray.csproj"
+            "C:\\Users\\Usuario\\Source\\Repos\\Murray\\Murray\\Murray.csproj": {
+              "projectPath": "C:\\Users\\Usuario\\Source\\Repos\\Murray\\Murray\\Murray.csproj"
             }
           }
         }
@@ -350,13 +349,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema al leer el archivo de caché C:\\Users\\gabri\\source\\repos\\Murray\\Test\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }

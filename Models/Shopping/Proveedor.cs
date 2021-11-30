@@ -1,12 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Models.Interfaces;
 
 namespace Models.Shopping
 {
-    class Proveedor
+    public class Proveedor : IIdentity, IActivable
     {
+        /// <inheritdoc cref="IIdentity.Id"/>
+        public int Id { get; set; }
+
+        /// <inheritdoc cref="IActivable.Estado"/>
+        public bool Estado { get; set; }
+
+        #region Foreing Key
+
+        /// <summary>
+        ///     Id del Contacto
+        /// </summary>
+        public int IdContacto { get; set; }
+
+        #endregion
     }
 }

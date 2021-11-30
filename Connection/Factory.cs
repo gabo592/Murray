@@ -1,4 +1,5 @@
 ﻿using Common.Util;
+using Connection.Common;
 using Connection.Identity;
 using Connection.Interfaces;
 using System;
@@ -18,7 +19,8 @@ namespace Connection
         /// </summary>
         private static readonly IDictionary<Type, Type> Dao = new Dictionary<Type, Type>
         {
-            [typeof(IUserDao)] = typeof(UserDao)
+            [typeof(IUserDao)] = typeof(UserDao),
+            [typeof(IDepartamentoDao)] = typeof(DepartamentoDao)
         };
 
         #endregion

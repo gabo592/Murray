@@ -47,7 +47,7 @@
     <Compile Include="Common\Empleado.cs" />
     <Compile Include="Common\Municipio.cs" />
     <Compile Include="Common\Producto.cs" />
-    <Compile Include="Identity\User.cs" />
+    <Compile Include="Identity\Usuario.cs" />
     <Compile Include="Interfaces\IActivable.cs" />
     <Compile Include="Interfaces\IIdentity.cs" />
     <Compile Include="Interfaces\INameable.cs" />

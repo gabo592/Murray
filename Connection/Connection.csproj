@@ -43,10 +43,13 @@
   <ItemGroup>
     <Compile Include="Base\BaseDao.cs" />
     <Compile Include="Base\IDao.cs" />
+    <Compile Include="Base\Validations.cs" />
+    <Compile Include="Common\DepartamentoDao.cs" />
     <Compile Include="Constants\StoredProcedures.cs" />
     <Compile Include="Database.cs" />
     <Compile Include="Factory.cs" />
     <Compile Include="Identity\UserDao.cs" />
+    <Compile Include="Interfaces\IDepartamentoDao.cs" />
     <Compile Include="Interfaces\IUserDao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -59,6 +62,10 @@
       <Project>{9053c156-227e-42fd-b691-36ac3e98c34c}</Project>
       <Name>Models</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Sale\" />
+    <Folder Include="Shopping\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -10,7 +10,7 @@ using System.Linq;
 namespace Connection.Identity
 {
     /// <inheritdoc cref="IUserDao"/>
-    internal class UserDao : BaseDao<User>, IUserDao
+    internal class UserDao : BaseDao<Usuario>, IUserDao
     {
         #region Constructors
 
@@ -25,25 +25,25 @@ namespace Connection.Identity
         #endregion
 
         /// <inheritdoc cref="IDao{TModel}.Create(TModel)"/>
-        public override User Create(User model)
+        public override Usuario Create(Usuario model)
         {
             throw new System.NotImplementedException();
         }
 
         /// <inheritdoc cref="IDao{TModel}.Delete(int)"/>
-        public override User Delete(int id)
+        public override Usuario Delete(int id)
         {
             throw new System.NotImplementedException();
         }
 
         /// <inheritdoc cref="IDao{TModel}.Read()"/>
-        public override IEnumerable<User> Read()
+        public override IEnumerable<Usuario> Read()
         {
             return Read(string.Empty);
         }
 
         /// <inheritdoc cref="IUserDao.Read(string)"/>
-        public IEnumerable<User> Read(string username)
+        public IEnumerable<Usuario> Read(string username)
         {
             return Read(StoredProcedures.GetUsers, new Dictionary<string, object>
             {
@@ -52,26 +52,26 @@ namespace Connection.Identity
         }
 
         /// <inheritdoc cref="IDao{TModel}.Update(int, TModel)"/>
-        public override User Update(int id, User model)
+        public override Usuario Update(int id, Usuario model)
         {
             throw new System.NotImplementedException();
         }
 
         /// <inheritdoc cref="IUserDao.Login(string, string)"/>
-        public User Login(string username, string password)
+        public Usuario Login(string username, string password)
         {
             if (username.Length > 50)
                 Handler.Add("USERNAME_LENGTH_EXCEED");
 
             if (Handler.HasError())
-                return new User();
+                return new Usuario();
 
             return Read(StoredProcedures.UserLogin, new Dictionary<string, object>
             {
                 ["username"] = username,
                 ["password"] = password
 
-            }).FirstOrDefault() ?? new User();
+            }).FirstOrDefault() ?? new Usuario();
         }  
     }
 }

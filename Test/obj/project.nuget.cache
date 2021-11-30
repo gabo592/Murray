@@ -1,20 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "f2aTe6Z7+pbjQE6YYmGeUbcDfrwhW74AeOdxtibno48OyFlx0Bg5sIeu3SuBVkEVH/MZmziT7kYJE11eSdIUmA==",
+  "dgSpecHash": "L7BGUpNXRxnEOpuhOFW7Vx4ouqx9oNwTCVGHgoAGk2/k9r3RFxV6XUZC4pEmIAKOdQiS7Cjr6iDqlLeqRQBVJA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\gabri\\source\\repos\\Murray\\Test\\Test.csproj",
+  "projectFilePath": "C:\\Users\\Usuario\\Source\\Repos\\Murray\\Test\\Test.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\gabri\\.nuget\\packages\\microsoft.codecoverage\\17.0.0\\microsoft.codecoverage.17.0.0.nupkg.sha512",
-    "C:\\Users\\gabri\\.nuget\\packages\\microsoft.net.test.sdk\\17.0.0\\microsoft.net.test.sdk.17.0.0.nupkg.sha512",
-    "C:\\Users\\gabri\\.nuget\\packages\\nunit\\3.13.2\\nunit.3.13.2.nupkg.sha512",
-    "C:\\Users\\gabri\\.nuget\\packages\\nunit3testadapter\\4.0.0\\nunit3testadapter.4.0.0.nupkg.sha512"
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.codecoverage\\17.0.0\\microsoft.codecoverage.17.0.0.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.net.test.sdk\\17.0.0\\microsoft.net.test.sdk.17.0.0.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\nunit\\3.13.2\\nunit.3.13.2.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\nunit3testadapter\\4.0.0\\nunit3testadapter.4.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema al leer el archivo de caché C:\\Users\\gabri\\source\\repos\\Murray\\Test\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }

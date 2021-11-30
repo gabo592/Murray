@@ -8,7 +8,7 @@ namespace Connection.Interfaces
     ///     Conexion a base de datos relacionado con el objeto de usuarios
     ///     del sistema
     /// </summary>
-    public interface IUserDao : IDao<User>
+    public interface IUserDao : IDao<Usuario>
     {
         /// <summary>
         ///     Realiza la validacion del login de usuario
@@ -19,7 +19,7 @@ namespace Connection.Interfaces
         /// <param name="password">
         ///     Constrasena del usuario
         /// </param>
-        User Login(string username, string password);
+        Usuario Login(string username, string password);
 
         /// <summary>
         ///     Busca todos los usuarios de la base de datos
@@ -27,6 +27,6 @@ namespace Connection.Interfaces
         /// <param name="username">
         ///     Nombre de usuario de filtro
         /// </param>
-        IEnumerable<User> Read(string username);
+        IEnumerable<Usuario> Read(string username);
     }
 }
