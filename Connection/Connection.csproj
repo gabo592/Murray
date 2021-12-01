@@ -44,18 +44,36 @@
     <Compile Include="Base\BaseDao.cs" />
     <Compile Include="Base\IDao.cs" />
     <Compile Include="Base\Validations.cs" />
+    <Compile Include="Common\ProductoDao.cs" />
+    <Compile Include="Common\MunicipioDao.cs" />
+    <Compile Include="Common\CategoriaDao.cs" />
     <Compile Include="Common\DepartamentoDao.cs" />
     <Compile Include="Constants\StoredProcedures.cs" />
     <Compile Include="Database.cs" />
     <Compile Include="Factory.cs" />
     <Compile Include="Common\ContactoDao.cs" />
     <Compile Include="Common\EmpleadoDao.cs" />
-    <Compile Include="Identity\UserDao.cs" />
-    <Compile Include="Interfaces\IDepartamentoDao.cs" />
-    <Compile Include="Interfaces\IContactoDao.cs" />
-    <Compile Include="Interfaces\IEmpleadoDao.cs" />
-    <Compile Include="Interfaces\IUserDao.cs" />
+    <Compile Include="Identity\UsuarioDao.cs" />
+    <Compile Include="Interfaces\Common\ICategoriaDao.cs" />
+    <Compile Include="Interfaces\Common\IProductoDao.cs" />
+    <Compile Include="Interfaces\Common\IMunicipioDao.cs" />
+    <Compile Include="Interfaces\Common\IDepartamentoDao.cs" />
+    <Compile Include="Interfaces\Common\IContactoDao.cs" />
+    <Compile Include="Interfaces\Common\IEmpleadoDao.cs" />
+    <Compile Include="Interfaces\Identity\IUsuarioDao.cs" />
+    <Compile Include="Interfaces\Sale\IDetalleVentaDao.cs" />
+    <Compile Include="Interfaces\Sale\IVentaDao.cs" />
+    <Compile Include="Interfaces\Sale\IClienteDao.cs" />
+    <Compile Include="Interfaces\Shopping\IProveedorDao.cs" />
+    <Compile Include="Interfaces\Shopping\IDetalleCompraDao.cs" />
+    <Compile Include="Interfaces\Shopping\ICompraDao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sale\DetalleVentaDao.cs" />
+    <Compile Include="Sale\VentaDao.cs" />
+    <Compile Include="Sale\ClienteDao.cs" />
+    <Compile Include="Shopping\CompraDao.cs" />
+    <Compile Include="Shopping\DetalleCompraDao.cs" />
+    <Compile Include="Shopping\ProveedorDao.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Common\Common.csproj">
@@ -67,9 +85,6 @@
       <Name>Models</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Sale\" />
-    <Folder Include="Shopping\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

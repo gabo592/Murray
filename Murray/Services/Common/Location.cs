@@ -1,5 +1,5 @@
 ﻿using Common.Util;
-using Connection.Interfaces;
+using Connection.Interfaces.Common;
 using Murray.Services.Base;
 using System;
 

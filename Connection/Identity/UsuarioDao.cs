@@ -1,7 +1,7 @@
 ﻿using Common.Util;
 using Connection.Base;
 using Connection.Constants;
-using Connection.Interfaces;
+using Connection.Interfaces.Identity;
 using Models.Identity;
 
 using System.Collections.Generic;
@@ -9,15 +9,15 @@ using System.Linq;
 
 namespace Connection.Identity
 {
-    /// <inheritdoc cref="IUserDao"/>
-    internal class UserDao : BaseDao<Usuario>, IUserDao
+    /// <inheritdoc cref="IUsuarioDao"/>
+    internal class UsuarioDao : BaseDao<Usuario>, IUsuarioDao
     {
         #region Constructors
 
         /// <summary>
         ///     Constructor base
         /// </summary>
-        public UserDao(string connectionString, ErrorHandler handler) : base(connectionString, handler)
+        public UsuarioDao(string connectionString, ErrorHandler handler) : base(connectionString, handler)
         {
 
         }
@@ -42,10 +42,10 @@ namespace Connection.Identity
             return Read(string.Empty);
         }
 
-        /// <inheritdoc cref="IUserDao.Read(string)"/>
+        /// <inheritdoc cref="IUsuarioDao.Read(string)"/>
         public IEnumerable<Usuario> Read(string username)
         {
-            return Read(StoredProcedures.GetUsers, new Dictionary<string, object>
+            return Read(StoredProcedures.UsuarioGet, new Dictionary<string, object>
             {
                 ["username"] = username
             });
@@ -57,7 +57,7 @@ namespace Connection.Identity
             throw new System.NotImplementedException();
         }
 
-        /// <inheritdoc cref="IUserDao.Login(string, string)"/>
+        /// <inheritdoc cref="IUsuarioDao.Login(string, string)"/>
         public Usuario Login(string username, string password)
         {
             if (username.Length > 50)
@@ -66,7 +66,7 @@ namespace Connection.Identity
             if (Handler.HasError())
                 return new Usuario();
 
-            return Read(StoredProcedures.UserLogin, new Dictionary<string, object>
+            return Read(StoredProcedures.UsuarioLogin, new Dictionary<string, object>
             {
                 ["username"] = username,
                 ["password"] = password

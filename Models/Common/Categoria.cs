@@ -5,7 +5,7 @@ namespace Models.Common
     /// <summary>
     ///     Modelado de la tabla Categoria
     /// </summary>
-    public class Categoria : IIdentity, INameable
+    public class Categoria : IIdentity, INameable, IActivable
     {
         /// <inheritdoc cref="IIdentity.Id"/>
         public int Id { get; set; }
@@ -13,13 +13,7 @@ namespace Models.Common
         /// <inheritdoc cref="INameable.Nombre"/>
         public string Nombre { get; set; }
 
-        #region Foreing Key
-
-        /// <summary>
-        ///     Id del Producto
-        /// </summary>
-        public int IdProducto { get; set; }
-
-        #endregion
+        /// <inheritdoc cref="IActivable.Estado"/>
+        public bool Estado { get; set; }
     }
 }

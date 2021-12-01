@@ -1,5 +1,5 @@
 ﻿using Common.Util;
-using Connection.Interfaces;
+using Connection.Interfaces.Identity;
 using Models.Identity;
 using Murray.Services.Base;
 using System;
@@ -17,7 +17,7 @@ namespace Murray.Services.Identity
         /// <summary>
         ///     DAO de conexion con el usuario
         /// </summary>
-        private readonly IUserDao Dao;
+        private readonly IUsuarioDao Dao;
 
         #endregion
 
@@ -28,7 +28,7 @@ namespace Murray.Services.Identity
         /// </summary>
         public Login(ErrorHandler handler) : base(handler)
         {
-            Dao = DaoFactory.Get<IUserDao>(handler);
+            Dao = DaoFactory.Get<IUsuarioDao>(handler);
         }
 
         #endregion

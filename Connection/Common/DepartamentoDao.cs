@@ -1,7 +1,7 @@
 ﻿using Common.Util;
 using Connection.Base;
 using Connection.Constants;
-using Connection.Interfaces;
+using Connection.Interfaces.Common;
 using Models.Common;
 
 using System.Collections.Generic;
@@ -27,7 +27,7 @@ namespace Connection.Common
         /// <inheritdoc cref="IDao{TModel}.Create(TModel)"/>
         public override Departamento Create(Departamento model)
         {
-            if (Validate(model))
+            if (Validate(model, Operation.CREATE))
                 return new Departamento();
 
             return Read(StoredProcedures.DepartamentoCreate, new Dictionary<string, object>
@@ -65,7 +65,7 @@ namespace Connection.Common
         /// <inheritdoc cref="IDao{TModel}.Update(int, TModel)"/>
         public override Departamento Update(int id, Departamento model)
         {
-            if (Validate(model))
+            if (Validate(model, Operation.UPDATE))
                 return new Departamento();
 
             return Read(StoredProcedures.DepartamentoUpdate, new Dictionary<string, object>
@@ -81,12 +81,9 @@ namespace Connection.Common
         /// <summary>
         ///     Validaciones propias de un depatamento
         /// </summary>
-        /// <param name="model">
-        ///     Departamento a validar
-        /// </param>
-        private bool Validate(Departamento model)
+        private bool Validate(Departamento model, Operation operation)
         {
-            if (!Validations.Validate(model, Handler))
+            if (!Validations.Validate(model, Handler, operation))
                 return false;
 
             if (model.Nombre.Length > 50)

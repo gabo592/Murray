@@ -1,8 +1,9 @@
-﻿using System.Collections.Generic;
-using Connection.Base;
+﻿using Connection.Base;
 using Models.Common;
 
-namespace Connection.Interfaces
+using System.Collections.Generic;
+
+namespace Connection.Interfaces.Common
 {
     /// <summary>
     ///     Conexion a la base de datos con el objeto Empleado

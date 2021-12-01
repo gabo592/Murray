@@ -2,7 +2,7 @@
 using Models.Common;
 using System.Collections.Generic;
 
-namespace Connection.Interfaces
+namespace Connection.Interfaces.Common
 {
     /// <summary>
     ///     DAO del modelo de departamento
@@ -12,9 +12,9 @@ namespace Connection.Interfaces
         /// <summary>
         ///     Busca todos los departamento de la base de datos
         /// </summary>
-        /// <param name="nombre">
+        /// <param name="value">
         ///     Nombre a filtrar
         /// </param>
-        IEnumerable<Departamento> Read(string nombre);
+        IEnumerable<Departamento> Read(string value);
     }
 }

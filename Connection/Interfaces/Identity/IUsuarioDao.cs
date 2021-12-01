@@ -1,14 +1,15 @@
 ﻿using Connection.Base;
 using Models.Identity;
+
 using System.Collections.Generic;
 
-namespace Connection.Interfaces
+namespace Connection.Interfaces.Identity
 {
     /// <summary>
     ///     Conexion a base de datos relacionado con el objeto de usuarios
     ///     del sistema
     /// </summary>
-    public interface IUserDao : IDao<Usuario>
+    public interface IUsuarioDao : IDao<Usuario>
     {
         /// <summary>
         ///     Realiza la validacion del login de usuario

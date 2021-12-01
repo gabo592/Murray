@@ -1,4 +1,4 @@
-using Connection.Interfaces;
+using Connection.Interfaces.Identity;
 using NUnit.Framework;
 using System.Linq;
 
@@ -6,12 +6,12 @@ namespace Test
 {
     public class UserDaoTest
     {
-        private IUserDao Dao;
+        private IUsuarioDao Dao;
 
         [SetUp]
         public void Setup()
         {
-            Dao = Connection.Factory.Invoke<IUserDao>(
+            Dao = Connection.Factory.Invoke<IUsuarioDao>(
                 "Data Source=ZEPHYRUS-MARAT;Initial Catalog=Murray;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False",
                 new Common.Util.ErrorHandler()
             );

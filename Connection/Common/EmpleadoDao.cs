@@ -1,10 +1,9 @@
 ﻿using Common.Util;
 using Connection.Base;
 using Connection.Constants;
-using Connection.Interfaces;
+using Connection.Interfaces.Common;
 using Models.Common;
 
-using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -14,6 +13,7 @@ namespace Connection.Common
     internal class EmpleadoDao : BaseDao<Empleado>, IEmpleadoDao
     {
         #region Constructor
+
         /// <summary>
         ///     Constructor base
         /// </summary>
@@ -27,19 +27,19 @@ namespace Connection.Common
         {
 
         }
+
         #endregion Constructor
 
         /// <inheritdoc cref="IDao{TModel}.Create(TModel)">
         public override Empleado Create(Empleado model)
         {
             if (Handler.HasError())
-            {
                 return new Empleado();
-            }
 
             return Read(StoredProcedures.EmpleadoCreate, new Dictionary<string, object>
             {
                 ["IdContacto"] = model.IdContacto
+
             }).FirstOrDefault() ?? new Empleado();
         }
 
@@ -47,20 +47,19 @@ namespace Connection.Common
         public override Empleado Delete(int id)
         {
             if (Handler.HasError())
-            {
                 return new Empleado();
-            }
 
             return Read(StoredProcedures.EmpledaoDelete, new Dictionary<string, object>
             {
                 ["Id"] = id
+
             }).FirstOrDefault() ?? new Empleado();
         }
 
         /// <inheritdoc cref="IDao{TModel}.Read"/>
         public override IEnumerable<Empleado> Read()
         {
-            return Read(string.Empty);
+            return Read(StoredProcedures.EmpleadoGet);
         }
 
         /// <inheritdoc cref="IEmpleadoDao.Read(bool, int)"/>
@@ -68,8 +67,7 @@ namespace Connection.Common
         {
             return Read(StoredProcedures.EmpleadoGet, new Dictionary<string, object>
             {
-                ["Id"] = null,
-                ["Estado"] = Convert.ToInt16(estado),
+                ["Estado"] = estado,
                 ["IdContacto"] = idContacto
             });
         }
@@ -81,6 +79,7 @@ namespace Connection.Common
             {
                 ["Id"] = id,
                 ["IdContacto"] = model.IdContacto
+
             }).FirstOrDefault() ?? new Empleado();
         }
     }

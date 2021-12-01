@@ -1,7 +1,15 @@
 ﻿using Common.Util;
+
 using Connection.Common;
 using Connection.Identity;
-using Connection.Interfaces;
+using Connection.Sale;
+using Connection.Shopping;
+
+using Connection.Interfaces.Identity;
+using Connection.Interfaces.Common;
+using Connection.Interfaces.Sale;
+using Connection.Interfaces.Shopping;
+
 using System;
 using System.Collections.Generic;
 
@@ -19,8 +27,26 @@ namespace Connection
         /// </summary>
         private static readonly IDictionary<Type, Type> Dao = new Dictionary<Type, Type>
         {
-            [typeof(IUserDao)] = typeof(UserDao),
-            [typeof(IDepartamentoDao)] = typeof(DepartamentoDao)
+            // Identity
+            [typeof(IUsuarioDao)] = typeof(UsuarioDao),
+
+            // Common
+            [typeof(ICategoriaDao)] = typeof(CategoriaDao),
+            [typeof(IContactoDao)] = typeof(ContactoDao),
+            [typeof(IDepartamentoDao)] = typeof(DepartamentoDao),
+            [typeof(IEmpleadoDao)] = typeof(EmpleadoDao),
+            [typeof(IMunicipioDao)] = typeof(MunicipioDao),
+            [typeof(IProductoDao)] = typeof(ProductoDao),
+
+            // Sale
+            [typeof(IClienteDao)] = typeof(ClienteDao),
+            [typeof(IVentaDao)] = typeof(VentaDao),
+            [typeof(IDetalleVentaDao)] = typeof(DetalleVentaDao),
+
+            // Shopping
+            [typeof(IProveedorDao)] = typeof(ProveedorDao),
+            [typeof(ICompraDao)] = typeof(CompraDao),
+            [typeof(IDetalleCompraDao)] = typeof(DetalleCompraDao)
         };
 
         #endregion

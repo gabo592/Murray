@@ -1,7 +1,7 @@
 ﻿using Common.Util;
 using Connection.Base;
 using Connection.Constants;
-using Connection.Interfaces;
+using Connection.Interfaces.Common;
 using Models.Common;
 
 using System.Collections.Generic;
@@ -9,12 +9,18 @@ using System.Linq;
 
 namespace Connection.Common
 {
+    /// <inheritdoc cref="IContactoDao"/>
     internal class ContactoDao : BaseDao<Contacto>, IContactoDao
     {
         #region Constructor
+
+        /// <summary>
+        ///     Contructor por defecto
+        /// </summary>
         public ContactoDao(string connectionString, ErrorHandler handler) : base(connectionString, handler)
         {
         }
+
         #endregion
 
         /// <inheritdoc cref="IDao{TModel}.Create(TModel)"/>/>
@@ -30,6 +36,7 @@ namespace Connection.Common
                 ["Direccion"] = model.Direccion,
                 ["RazonSocial"] = model.RazonSocial,
                 ["IdMunicipio"] = model.IdMunicipio
+
             }).FirstOrDefault() ?? new Contacto();
         }
 
@@ -39,6 +46,7 @@ namespace Connection.Common
             return Read(StoredProcedures.ContactoDelete, new Dictionary<string, object>
             {
                 ["Id"] = id
+
             }).FirstOrDefault() ?? new Contacto();
         }
 
@@ -47,15 +55,12 @@ namespace Connection.Common
         {
             return Read(StoredProcedures.ContactoGet, new Dictionary<string, object>
             {
-                ["Id"] = null,
                 ["PrimerNombre"] = value,
                 ["SegundoNombre"] = value,
                 ["PrimerApellido"] = value,
                 ["SegundoApellido"] = value,
-                ["FechaNacimiento"] = null,
                 ["Direccion"] = value,
-                ["RazonSocial"] = value,
-                ["IdMunicipio"] = null
+                ["RazonSocial"] = value
             });
         }
 
@@ -79,6 +84,7 @@ namespace Connection.Common
                 ["Direccion"] = model.Direccion,
                 ["RazonSocial"] = model.RazonSocial,
                 ["IdMunicipio"] = model.IdMunicipio
+
             }).FirstOrDefault() ?? new Contacto();
         }
     }
