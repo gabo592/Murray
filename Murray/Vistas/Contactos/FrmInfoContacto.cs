@@ -16,5 +16,10 @@ namespace Murray.Vistas.Contactos
         {
             InitializeComponent();
         }
+
+        private void Salir(object sender, EventArgs args)
+        {
+            Close();
+        }
     }
 }

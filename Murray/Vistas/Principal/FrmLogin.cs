@@ -21,5 +21,18 @@ namespace Murray.Vistas
         {
             Application.Exit();
         }
+
+        private void Login()
+        {
+            //Validaciones
+            FrmPrincipal principal = new FrmPrincipal();
+            principal.Show();
+            Close();
+        }
+
+        private void BtnIniciarSesion_Click(object sender, EventArgs e)
+        {
+            Login();
+        }
     }
 }

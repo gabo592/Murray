@@ -86,7 +86,7 @@
             this.pnlBarraSup.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlBarraSup.Location = new System.Drawing.Point(0, 0);
             this.pnlBarraSup.Name = "pnlBarraSup";
-            this.pnlBarraSup.Size = new System.Drawing.Size(1039, 25);
+            this.pnlBarraSup.Size = new System.Drawing.Size(1067, 25);
             this.pnlBarraSup.TabIndex = 0;
             this.pnlBarraSup.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ArrastrarVentana);
             // 
@@ -122,7 +122,7 @@
             this.menuTransitionMostrar.SetDecoration(this.pbMinimizar, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.pbMinimizar.Dock = System.Windows.Forms.DockStyle.Right;
             this.pbMinimizar.Image = global::Murray.Properties.Resources.substract;
-            this.pbMinimizar.Location = new System.Drawing.Point(851, 0);
+            this.pbMinimizar.Location = new System.Drawing.Point(879, 0);
             this.pbMinimizar.Name = "pbMinimizar";
             this.pbMinimizar.Size = new System.Drawing.Size(47, 25);
             this.pbMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -137,7 +137,7 @@
             this.menuTransitionMostrar.SetDecoration(this.pbRestaurar, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.pbRestaurar.Dock = System.Windows.Forms.DockStyle.Right;
             this.pbRestaurar.Image = global::Murray.Properties.Resources.squares;
-            this.pbRestaurar.Location = new System.Drawing.Point(898, 0);
+            this.pbRestaurar.Location = new System.Drawing.Point(926, 0);
             this.pbRestaurar.Name = "pbRestaurar";
             this.pbRestaurar.Size = new System.Drawing.Size(47, 25);
             this.pbRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -152,7 +152,7 @@
             this.menuTransitionMostrar.SetDecoration(this.pbMaximizar, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.pbMaximizar.Dock = System.Windows.Forms.DockStyle.Right;
             this.pbMaximizar.Image = global::Murray.Properties.Resources.square;
-            this.pbMaximizar.Location = new System.Drawing.Point(945, 0);
+            this.pbMaximizar.Location = new System.Drawing.Point(973, 0);
             this.pbMaximizar.Name = "pbMaximizar";
             this.pbMaximizar.Size = new System.Drawing.Size(47, 25);
             this.pbMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -167,7 +167,7 @@
             this.menuTransitionMostrar.SetDecoration(this.pbCerrar, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.pbCerrar.Dock = System.Windows.Forms.DockStyle.Right;
             this.pbCerrar.Image = global::Murray.Properties.Resources.close;
-            this.pbCerrar.Location = new System.Drawing.Point(992, 0);
+            this.pbCerrar.Location = new System.Drawing.Point(1020, 0);
             this.pbCerrar.Name = "pbCerrar";
             this.pbCerrar.Size = new System.Drawing.Size(47, 25);
             this.pbCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -185,7 +185,7 @@
             this.pnlIzq.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlIzq.Location = new System.Drawing.Point(0, 25);
             this.pnlIzq.Name = "pnlIzq";
-            this.pnlIzq.Size = new System.Drawing.Size(200, 491);
+            this.pnlIzq.Size = new System.Drawing.Size(200, 504);
             this.pnlIzq.TabIndex = 1;
             // 
             // gradientPanelIzq
@@ -213,7 +213,7 @@
             this.gradientPanelIzq.Location = new System.Drawing.Point(0, 0);
             this.gradientPanelIzq.Name = "gradientPanelIzq";
             this.gradientPanelIzq.Quality = 10;
-            this.gradientPanelIzq.Size = new System.Drawing.Size(200, 491);
+            this.gradientPanelIzq.Size = new System.Drawing.Size(200, 504);
             this.gradientPanelIzq.TabIndex = 0;
             // 
             // btnSeguridad
@@ -267,7 +267,7 @@
             this.btnSeguridad.IdleIconLeftImage = global::Murray.Properties.Resources.security;
             this.btnSeguridad.IdleIconRightImage = null;
             this.btnSeguridad.IndicateFocus = false;
-            this.btnSeguridad.Location = new System.Drawing.Point(0, 288);
+            this.btnSeguridad.Location = new System.Drawing.Point(0, 282);
             this.btnSeguridad.Name = "btnSeguridad";
             this.btnSeguridad.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnSeguridad.OnDisabledState.BorderRadius = 1;
@@ -303,11 +303,13 @@
             this.btnSeguridad.OnPressedState.IconRightImage = null;
             this.btnSeguridad.Size = new System.Drawing.Size(200, 39);
             this.btnSeguridad.TabIndex = 9;
+            this.btnSeguridad.Tag = "Seguridad";
             this.btnSeguridad.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnSeguridad.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnSeguridad.TextMarginLeft = 0;
             this.btnSeguridad.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnSeguridad.UseDefaultRadiusAndThickness = true;
+            this.btnSeguridad.Click += new System.EventHandler(this.BotonMenu_Click);
             // 
             // btnEmpleados
             // 
@@ -360,7 +362,7 @@
             this.btnEmpleados.IdleIconLeftImage = global::Murray.Properties.Resources.empleados;
             this.btnEmpleados.IdleIconRightImage = null;
             this.btnEmpleados.IndicateFocus = false;
-            this.btnEmpleados.Location = new System.Drawing.Point(0, 249);
+            this.btnEmpleados.Location = new System.Drawing.Point(0, 243);
             this.btnEmpleados.Name = "btnEmpleados";
             this.btnEmpleados.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnEmpleados.OnDisabledState.BorderRadius = 1;
@@ -396,11 +398,13 @@
             this.btnEmpleados.OnPressedState.IconRightImage = null;
             this.btnEmpleados.Size = new System.Drawing.Size(200, 39);
             this.btnEmpleados.TabIndex = 8;
+            this.btnEmpleados.Tag = "Empleados";
             this.btnEmpleados.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnEmpleados.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnEmpleados.TextMarginLeft = 0;
             this.btnEmpleados.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnEmpleados.UseDefaultRadiusAndThickness = true;
+            this.btnEmpleados.Click += new System.EventHandler(this.BotonMenu_Click);
             // 
             // btnProveedores
             // 
@@ -453,7 +457,7 @@
             this.btnProveedores.IdleIconLeftImage = global::Murray.Properties.Resources.delivery_truck;
             this.btnProveedores.IdleIconRightImage = null;
             this.btnProveedores.IndicateFocus = false;
-            this.btnProveedores.Location = new System.Drawing.Point(0, 210);
+            this.btnProveedores.Location = new System.Drawing.Point(0, 204);
             this.btnProveedores.Name = "btnProveedores";
             this.btnProveedores.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnProveedores.OnDisabledState.BorderRadius = 1;
@@ -489,11 +493,13 @@
             this.btnProveedores.OnPressedState.IconRightImage = null;
             this.btnProveedores.Size = new System.Drawing.Size(200, 39);
             this.btnProveedores.TabIndex = 7;
+            this.btnProveedores.Tag = "Proveedores";
             this.btnProveedores.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnProveedores.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnProveedores.TextMarginLeft = 0;
             this.btnProveedores.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnProveedores.UseDefaultRadiusAndThickness = true;
+            this.btnProveedores.Click += new System.EventHandler(this.BotonMenu_Click);
             // 
             // btnProductos
             // 
@@ -546,7 +552,7 @@
             this.btnProductos.IdleIconLeftImage = global::Murray.Properties.Resources.box;
             this.btnProductos.IdleIconRightImage = null;
             this.btnProductos.IndicateFocus = false;
-            this.btnProductos.Location = new System.Drawing.Point(0, 171);
+            this.btnProductos.Location = new System.Drawing.Point(0, 165);
             this.btnProductos.Name = "btnProductos";
             this.btnProductos.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnProductos.OnDisabledState.BorderRadius = 1;
@@ -582,11 +588,13 @@
             this.btnProductos.OnPressedState.IconRightImage = null;
             this.btnProductos.Size = new System.Drawing.Size(200, 39);
             this.btnProductos.TabIndex = 6;
+            this.btnProductos.Tag = "Productos";
             this.btnProductos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnProductos.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnProductos.TextMarginLeft = 0;
             this.btnProductos.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnProductos.UseDefaultRadiusAndThickness = true;
+            this.btnProductos.Click += new System.EventHandler(this.BotonMenu_Click);
             // 
             // btnCompras
             // 
@@ -639,7 +647,7 @@
             this.btnCompras.IdleIconLeftImage = global::Murray.Properties.Resources.carts;
             this.btnCompras.IdleIconRightImage = null;
             this.btnCompras.IndicateFocus = false;
-            this.btnCompras.Location = new System.Drawing.Point(0, 132);
+            this.btnCompras.Location = new System.Drawing.Point(0, 126);
             this.btnCompras.Name = "btnCompras";
             this.btnCompras.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnCompras.OnDisabledState.BorderRadius = 1;
@@ -675,11 +683,13 @@
             this.btnCompras.OnPressedState.IconRightImage = null;
             this.btnCompras.Size = new System.Drawing.Size(200, 39);
             this.btnCompras.TabIndex = 5;
+            this.btnCompras.Tag = "Compras";
             this.btnCompras.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnCompras.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnCompras.TextMarginLeft = 0;
             this.btnCompras.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnCompras.UseDefaultRadiusAndThickness = true;
+            this.btnCompras.Click += new System.EventHandler(this.BotonMenu_Click);
             // 
             // btnVentas
             // 
@@ -732,7 +742,7 @@
             this.btnVentas.IdleIconLeftImage = global::Murray.Properties.Resources.ventas;
             this.btnVentas.IdleIconRightImage = null;
             this.btnVentas.IndicateFocus = false;
-            this.btnVentas.Location = new System.Drawing.Point(0, 93);
+            this.btnVentas.Location = new System.Drawing.Point(0, 87);
             this.btnVentas.Name = "btnVentas";
             this.btnVentas.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnVentas.OnDisabledState.BorderRadius = 1;
@@ -768,11 +778,13 @@
             this.btnVentas.OnPressedState.IconRightImage = null;
             this.btnVentas.Size = new System.Drawing.Size(200, 39);
             this.btnVentas.TabIndex = 4;
+            this.btnVentas.Tag = "Ventas";
             this.btnVentas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnVentas.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnVentas.TextMarginLeft = 0;
             this.btnVentas.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnVentas.UseDefaultRadiusAndThickness = true;
+            this.btnVentas.Click += new System.EventHandler(this.BotonMenu_Click);
             // 
             // btnClientes
             // 
@@ -825,7 +837,7 @@
             this.btnClientes.IdleIconLeftImage = global::Murray.Properties.Resources.team;
             this.btnClientes.IdleIconRightImage = null;
             this.btnClientes.IndicateFocus = false;
-            this.btnClientes.Location = new System.Drawing.Point(0, 54);
+            this.btnClientes.Location = new System.Drawing.Point(0, 48);
             this.btnClientes.Name = "btnClientes";
             this.btnClientes.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnClientes.OnDisabledState.BorderRadius = 1;
@@ -861,11 +873,13 @@
             this.btnClientes.OnPressedState.IconRightImage = null;
             this.btnClientes.Size = new System.Drawing.Size(200, 39);
             this.btnClientes.TabIndex = 3;
+            this.btnClientes.Tag = "Clientes";
             this.btnClientes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnClientes.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnClientes.TextMarginLeft = 0;
             this.btnClientes.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnClientes.UseDefaultRadiusAndThickness = true;
+            this.btnClientes.Click += new System.EventHandler(this.BotonMenu_Click);
             // 
             // separadorLogo
             // 
@@ -878,7 +892,7 @@
             this.separadorLogo.LineColor = System.Drawing.Color.Silver;
             this.separadorLogo.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Solid;
             this.separadorLogo.LineThickness = 1;
-            this.separadorLogo.Location = new System.Drawing.Point(0, 46);
+            this.separadorLogo.Location = new System.Drawing.Point(0, 40);
             this.separadorLogo.Name = "separadorLogo";
             this.separadorLogo.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
             this.separadorLogo.Size = new System.Drawing.Size(200, 8);
@@ -890,7 +904,7 @@
             this.pnlTitulo.Controls.Add(this.pbLogo);
             this.menuTransitionMostrar.SetDecoration(this.pnlTitulo, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.pnlTitulo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlTitulo.Location = new System.Drawing.Point(0, 11);
+            this.pnlTitulo.Location = new System.Drawing.Point(0, 5);
             this.pnlTitulo.Name = "pnlTitulo";
             this.pnlTitulo.Size = new System.Drawing.Size(200, 35);
             this.pnlTitulo.TabIndex = 1;
@@ -926,7 +940,7 @@
             this.pnlSeparadorMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlSeparadorMenu.Location = new System.Drawing.Point(0, 0);
             this.pnlSeparadorMenu.Name = "pnlSeparadorMenu";
-            this.pnlSeparadorMenu.Size = new System.Drawing.Size(200, 11);
+            this.pnlSeparadorMenu.Size = new System.Drawing.Size(200, 5);
             this.pnlSeparadorMenu.TabIndex = 0;
             // 
             // pnlPrincipal
@@ -936,7 +950,7 @@
             this.pnlPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlPrincipal.Location = new System.Drawing.Point(200, 25);
             this.pnlPrincipal.Name = "pnlPrincipal";
-            this.pnlPrincipal.Size = new System.Drawing.Size(839, 491);
+            this.pnlPrincipal.Size = new System.Drawing.Size(867, 504);
             this.pnlPrincipal.TabIndex = 2;
             // 
             // menuTransitionMostrar
@@ -951,7 +965,7 @@
             animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
             animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
             animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            animation1.Padding = new System.Windows.Forms.Padding(0);
             animation1.RotateCoeff = 0F;
             animation1.RotateLimit = 0F;
             animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
@@ -964,7 +978,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1039, 516);
+            this.ClientSize = new System.Drawing.Size(1067, 529);
             this.Controls.Add(this.pnlPrincipal);
             this.Controls.Add(this.pnlIzq);
             this.Controls.Add(this.pnlBarraSup);
@@ -974,6 +988,7 @@
             this.Name = "FrmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Principal";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.pnlBarraSup.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbMenu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMinimizar)).EndInit();

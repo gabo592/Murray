@@ -16,5 +16,11 @@ namespace Murray.Vistas.Contactos
         {
             InitializeComponent();
         }
+
+        private void Botones_Click(object sender, EventArgs args)
+        {
+            FrmInfoContacto infoContacto = new FrmInfoContacto();
+            infoContacto.ShowDialog();
+        }
     }
 }
