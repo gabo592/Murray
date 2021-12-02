@@ -16,5 +16,10 @@ namespace Murray.Vistas.Usuarios
         {
             InitializeComponent();
         }
+
+        private void Cerrar(object sender, EventArgs args)
+        {
+            Close();
+        }
     }
 }

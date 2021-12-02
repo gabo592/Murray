@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Murray.Vistas.Compras;
+using Murray.Vistas;
 
 namespace Murray
 {
@@ -17,7 +17,9 @@ namespace Murray
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmCompras());
+            FrmLogin login = new FrmLogin();
+            login.Show();
+            Application.Run();
         }
     }
 }

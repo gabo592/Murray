@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Murray.Vistas.Contactos
+namespace Murray.Vistas.Productos
 {
-    public partial class FrmInfoContacto : Form
+    public partial class FrmCategoriasProductos : Form
     {
-        public FrmInfoContacto()
+        public FrmCategoriasProductos()
         {
             InitializeComponent();
-        }
-
-        private void Salir(object sender, EventArgs args)
-        {
-            Close();
         }
     }
 }

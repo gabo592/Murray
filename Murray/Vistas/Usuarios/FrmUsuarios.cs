@@ -16,5 +16,11 @@ namespace Murray.Vistas.Usuarios
         {
             InitializeComponent();
         }
+
+        private void MostrarInfoUsuarios(object sender, EventArgs args)
+        {
+            FrmInfoUsuarios infoUsuarios = new FrmInfoUsuarios();
+            infoUsuarios.ShowDialog();
+        }
     }
 }

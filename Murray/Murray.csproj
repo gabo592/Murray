@@ -190,6 +190,12 @@
     <Compile Include="Vistas\Principal\FrmPrincipal.Designer.cs">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\Productos\FrmCategoriasProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Productos\FrmCategoriasProductos.Designer.cs">
+      <DependentUpon>FrmCategoriasProductos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\Productos\FrmProductos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -239,6 +245,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Principal\FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Productos\FrmCategoriasProductos.resx">
+      <DependentUpon>FrmCategoriasProductos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Productos\FrmProductos.resx">
       <DependentUpon>FrmProductos.cs</DependentUpon>
@@ -354,6 +363,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ganancias.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

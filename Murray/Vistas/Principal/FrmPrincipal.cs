@@ -23,6 +23,8 @@ namespace Murray.Vistas
         {
             pbRestaurar.Visible = false;
             pnlIzq.Visible = false;
+            pbMaximizar.Visible = false;
+            pbRestaurar.Visible = true;
         }
 
         #region Metodos externos
@@ -88,5 +90,62 @@ namespace Murray.Vistas
             pictureBox.BackColor = Color.FromArgb(30, 30, 46);
         }
         #endregion Funcionalidad personalizada
+
+        #region Insertar formularios
+        private Form childForm = null;
+        private void AddForm(Form current)
+        {
+            if (childForm != null)
+            {
+                childForm.Close();
+            }
+
+            childForm = current;
+
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+
+            pnlPrincipal.Controls.Add(childForm);
+            pnlPrincipal.Tag = childForm;
+
+            childForm.BringToFront();
+            childForm.Show();
+        }
+        #endregion Insertar forumlarios
+
+        private void BotonMenu_Click(object sender, EventArgs args)
+        {
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton boton = (Bunifu.UI.WinForms.BunifuButton.BunifuButton)sender;
+            string clave = boton.Tag.ToString();
+
+            switch (clave)
+            {
+                case "Clientes":
+                    AddForm(new Contactos.FrmContactos());
+                    break;
+                case "Ventas":
+                    AddForm(new Ventas.FrmCaja());
+                    break;
+                case "Compras":
+                    AddForm(new Compras.FrmCompras());
+                    break;
+                case "Productos":
+                    AddForm(new Productos.FrmProductos());
+                    break;
+                case "Proveedores":
+                    AddForm(new Contactos.FrmContactos());
+                    break;
+                case "Empleados":
+                    AddForm(new Contactos.FrmContactos());
+                    break;
+                case "Seguridad":
+                    AddForm(new Usuarios.FrmUsuarios());
+                    break;
+                default:
+                    MessageBox.Show(this, "No se encuentra el formulario especificado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    break;
+            }
+        }
     }
 }

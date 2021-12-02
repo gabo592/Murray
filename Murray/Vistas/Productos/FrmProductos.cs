@@ -16,5 +16,11 @@ namespace Murray.Vistas.Productos
         {
             InitializeComponent();
         }
+
+        private void MostrarCategorias(object sender, EventArgs args)
+        {
+            FrmCategoriasProductos categoriasProductos = new FrmCategoriasProductos();
+            categoriasProductos.ShowDialog();
+        }
     }
 }
