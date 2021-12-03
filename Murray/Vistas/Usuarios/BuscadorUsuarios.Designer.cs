@@ -1,7 +1,4 @@
-﻿using Murray.ViewModels.Identity;
-using System;
-
-namespace Murray.Vistas.Usuarios
+﻿namespace Murray.Vistas.Usuarios
 {
     partial class BuscadorUsuarios
     {
@@ -21,26 +18,6 @@ namespace Murray.Vistas.Usuarios
                 components.Dispose();
             }
             base.Dispose(disposing);
-        }
-
-        protected override void OnAgregarClick(object sender, EventArgs e)
-        {
-            
-        }
-
-        protected override void OnBuscarTxtChange(string query)
-        {
-            LoadDatagrid<UsuarioView>(Service.GetUsers(query));
-        }
-
-        protected override void OnEditarClick(object sender, EventArgs e)
-        {
-            var selected = GetSelected<UsuarioView>();
-        }
-
-        protected override void OnEliminarClick(object sender, EventArgs e)
-        {
-            var selected = GetSelected<UsuarioView>();
         }
 
         #region Windows Form Designer generated code

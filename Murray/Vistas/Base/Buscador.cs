@@ -7,6 +7,8 @@ namespace Murray.Vistas.Base
 {
     public abstract partial class Buscador : Form
     {
+        protected string LastQuery = string.Empty;
+
         public Buscador()
         {
             InitializeComponent();
@@ -30,12 +32,14 @@ namespace Murray.Vistas.Base
         {
             DataGrid.DataSource = records.ToArray();
         }
-
+        protected void HideAgregarBtn() => btnAgregar.Hide();
+        protected void HideEliminarBtn() => btnEliminar.Hide();
         #endregion
 
         private void txtBuscar_TextChanged(object sender, EventArgs e)
         {
-            OnBuscarTxtChange(txtBuscar.Text);
+            LastQuery = txtBuscar.Text;
+            OnBuscarTxtChange(LastQuery);
         }
         private void btnEliminar_Click(object sender, EventArgs e)
         {

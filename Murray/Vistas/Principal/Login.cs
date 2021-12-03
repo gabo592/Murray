@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace Murray.Vistas
 {
-    public partial class FrmLogin : Form
+    public partial class Login : Form
     {
         #region Dependencies
 
@@ -18,14 +18,14 @@ namespace Murray.Vistas
         /// <summary>
         ///     Servicio de inicio de sesion
         /// </summary>
-        private readonly Login Service;
+        private readonly Services.Identity.Login Service;
 
         #endregion
 
-        public FrmLogin()
+        public Login()
         {
             Handler = new ErrorHandler();
-            Service = new Login(Handler);
+            Service = new Services.Identity.Login(Handler);
 
             InitializeComponent();
         }
@@ -51,7 +51,7 @@ namespace Murray.Vistas
                 return;
             }
 
-            FrmPrincipal principal = new FrmPrincipal();
+            Principal principal = new Principal();
             principal.Show();
 
             Close();

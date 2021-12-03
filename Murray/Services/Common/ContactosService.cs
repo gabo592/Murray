@@ -2,6 +2,7 @@
 using Connection.Interfaces.Common;
 using Connection.Interfaces.Sale;
 using Connection.Interfaces.Shopping;
+using Models.Common;
 using Murray.Services.Base;
 using Murray.ViewModels.Common;
 using System.Collections.Generic;
@@ -56,6 +57,27 @@ namespace Murray.Services.Common
                     Roles = string.Join(",", roles),
                 };
             });
+        }
+
+        public Contacto GetContact(int id)
+        {
+            return ContactoDao.GetById(id);
+        }
+
+        public IEnumerable<Municipio> GetMunicipios()
+        {
+            return MunicipioDao.Read();
+        }
+
+        public Contacto SaveContact(Contacto record)
+        {
+            var isNew = record.Id.Equals(default);
+            return isNew ? ContactoDao.Create(record) : ContactoDao.Update(record.Id, record);
+        }
+
+        public Contacto DeleteContact(int id)
+        {
+            return ContactoDao.Delete(id);
         }
 
         public override void Dispose()

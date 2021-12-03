@@ -182,11 +182,11 @@
     <Compile Include="Vistas\Compras\BuscadorCompras.Designer.cs">
       <DependentUpon>BuscadorCompras.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\Compras\FrmCompras.cs">
+    <Compile Include="Vistas\Compras\EditorCompras.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\Compras\FrmCompras.Designer.cs">
-      <DependentUpon>FrmCompras.cs</DependentUpon>
+    <Compile Include="Vistas\Compras\EditorCompras.Designer.cs">
+      <DependentUpon>EditorCompras.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\Contactos\BuscadorContactos.cs">
       <SubType>Form</SubType>
@@ -194,23 +194,23 @@
     <Compile Include="Vistas\Contactos\BuscadorContactos.Designer.cs">
       <DependentUpon>BuscadorContactos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\Contactos\FrmInfoContacto.cs">
+    <Compile Include="Vistas\Contactos\EditorContactos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\Contactos\FrmInfoContacto.Designer.cs">
-      <DependentUpon>FrmInfoContacto.cs</DependentUpon>
+    <Compile Include="Vistas\Contactos\EditorContactos.Designer.cs">
+      <DependentUpon>EditorContactos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\Principal\FrmLogin.cs">
+    <Compile Include="Vistas\Principal\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\Principal\FrmLogin.Designer.cs">
-      <DependentUpon>FrmLogin.cs</DependentUpon>
+    <Compile Include="Vistas\Principal\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\Principal\FrmPrincipal.cs">
+    <Compile Include="Vistas\Principal\Principal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\Principal\FrmPrincipal.Designer.cs">
-      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    <Compile Include="Vistas\Principal\Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\Productos\BuscadorProductos.cs">
       <SubType>Form</SubType>
@@ -224,12 +224,6 @@
     <Compile Include="Vistas\Productos\EditorProductos.Designer.cs">
       <DependentUpon>EditorProductos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\Usuarios\FrmInfoUsuarios.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vistas\Usuarios\FrmInfoUsuarios.Designer.cs">
-      <DependentUpon>FrmInfoUsuarios.cs</DependentUpon>
-    </Compile>
     <Compile Include="Vistas\Usuarios\BuscadorUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -242,12 +236,11 @@
     <Compile Include="Vistas\Ventas\BuscadorVentas.Designer.cs">
       <DependentUpon>BuscadorVentas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\ViewUtil.cs" />
-    <Compile Include="Vistas\Ventas\FrmCaja.cs">
+    <Compile Include="Vistas\Ventas\EditorVentas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\Ventas\FrmCaja.Designer.cs">
-      <DependentUpon>FrmCaja.cs</DependentUpon>
+    <Compile Include="Vistas\Ventas\EditorVentas.Designer.cs">
+      <DependentUpon>EditorVentas.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -266,20 +259,20 @@
     <EmbeddedResource Include="Vistas\Compras\BuscadorCompras.resx">
       <DependentUpon>BuscadorCompras.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\Compras\FrmCompras.resx">
-      <DependentUpon>FrmCompras.cs</DependentUpon>
+    <EmbeddedResource Include="Vistas\Compras\EditorCompras.resx">
+      <DependentUpon>EditorCompras.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Contactos\BuscadorContactos.resx">
       <DependentUpon>BuscadorContactos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\Contactos\FrmInfoContacto.resx">
-      <DependentUpon>FrmInfoContacto.cs</DependentUpon>
+    <EmbeddedResource Include="Vistas\Contactos\EditorContactos.resx">
+      <DependentUpon>EditorContactos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\Principal\FrmLogin.resx">
-      <DependentUpon>FrmLogin.cs</DependentUpon>
+    <EmbeddedResource Include="Vistas\Principal\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\Principal\FrmPrincipal.resx">
-      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    <EmbeddedResource Include="Vistas\Principal\Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Productos\BuscadorProductos.resx">
       <DependentUpon>BuscadorProductos.cs</DependentUpon>
@@ -287,17 +280,14 @@
     <EmbeddedResource Include="Vistas\Productos\EditorProductos.resx">
       <DependentUpon>EditorProductos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\Usuarios\FrmInfoUsuarios.resx">
-      <DependentUpon>FrmInfoUsuarios.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Usuarios\BuscadorUsuarios.resx">
       <DependentUpon>BuscadorUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Ventas\BuscadorVentas.resx">
       <DependentUpon>BuscadorVentas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\Ventas\FrmCaja.resx">
-      <DependentUpon>FrmCaja.cs</DependentUpon>
+    <EmbeddedResource Include="Vistas\Ventas\EditorVentas.resx">
+      <DependentUpon>EditorVentas.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

@@ -1,7 +1,4 @@
-﻿using Murray.ViewModels.Shopping;
-using System;
-
-namespace Murray.Vistas.Compras
+﻿namespace Murray.Vistas.Compras
 {
     partial class BuscadorCompras
     {
@@ -21,26 +18,6 @@ namespace Murray.Vistas.Compras
                 components.Dispose();
             }
             base.Dispose(disposing);
-        }
-
-        protected override void OnAgregarClick(object sender, EventArgs e)
-        {
-
-        }
-
-        protected override void OnBuscarTxtChange(string query)
-        {
-            LoadDatagrid<CompraView>(Service.GetCompras(query));
-        }
-
-        protected override void OnEditarClick(object sender, EventArgs e)
-        {
-            var selected = GetSelected<CompraView>();
-        }
-
-        protected override void OnEliminarClick(object sender, EventArgs e)
-        {
-            var selected = GetSelected<CompraView>();
         }
 
         #region Windows Form Designer generated code

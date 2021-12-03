@@ -1,7 +1,4 @@
-﻿using Murray.ViewModels.Common;
-using System;
-
-namespace Murray.Vistas.Productos
+﻿namespace Murray.Vistas.Productos
 {
     partial class BuscadorProductos
     {
@@ -9,11 +6,6 @@ namespace Murray.Vistas.Productos
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
-
-        /// <summary>
-        /// Vista de edición
-        /// </summary>
-        private System.ComponentModel.IContainer editor = null;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -26,50 +18,6 @@ namespace Murray.Vistas.Productos
                 components.Dispose();
             }
             base.Dispose(disposing);
-        }
-
-        protected override void OnAgregarClick(object sender, EventArgs e)
-        {
-            var editor = new EditorProductos();
-            editor.LoadRecord(default);
-            editor.ShowDialog();
-        }
-
-        protected override void OnBuscarTxtChange(string query)
-        {
-            LoadDatagrid<ProductoView>(Service.GetProductos(query));
-        }
-
-        protected override void OnEditarClick(object sender, EventArgs e)
-        {
-            var selected = GetSelected<ProductoView>();
-            if (selected is null)
-            {
-                return;
-            }
-
-            var editor = new EditorProductos();
-            editor.FormClosed += Editor_FormClosed;
-            editor.LoadRecord(selected.Id);
-
-            editor.ShowDialog();
-        }
-
-        private void Editor_FormClosed(object sender, System.Windows.Forms.FormClosedEventArgs e)
-        {
-            LoadDatagrid<ProductoView>(Service.GetProductos(string.Empty));
-        }
-
-        protected override void OnEliminarClick(object sender, EventArgs e)
-        {
-            var selected = GetSelected<ProductoView>();
-            if (selected is null)
-            {
-                return;
-            }
-
-            Service.DeleteProduct(selected.Id);
-            LoadDatagrid<ProductoView>(Service.GetProductos(string.Empty));
         }
 
         #region Windows Form Designer generated code

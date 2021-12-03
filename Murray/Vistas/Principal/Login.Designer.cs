@@ -1,6 +1,6 @@
 ﻿namespace Murray.Vistas
 {
-    partial class FrmLogin
+    partial class Login
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLogin));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.pbLogo = new System.Windows.Forms.PictureBox();
             this.lblUsuario = new System.Windows.Forms.Label();
             this.lblContraseña = new System.Windows.Forms.Label();

@@ -9,5 +9,6 @@
         public string Username { get; set; }
         public string Role { get; set; }
         public string Nombre { get; set; }
+        public int IdContacto { get; set; }
     }
 }

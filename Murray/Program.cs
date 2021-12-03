@@ -17,7 +17,7 @@ namespace Murray
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            FrmLogin login = new FrmLogin();
+            Login login = new Login();
             login.Show();
             Application.Run();
         }

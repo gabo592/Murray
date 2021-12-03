@@ -1,6 +1,6 @@
 ﻿namespace Murray.Vistas
 {
-    partial class FrmPrincipal
+    partial class Principal
     {
         /// <summary>
         /// Required designer variable.
@@ -35,7 +35,7 @@
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuAnimatorNS.Animation animation1 = new Bunifu.UI.WinForms.BunifuAnimatorNS.Animation();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPrincipal));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
             this.pnlBarraSup = new System.Windows.Forms.Panel();
             this.lblMenu = new System.Windows.Forms.Label();
             this.pbMenu = new System.Windows.Forms.PictureBox();

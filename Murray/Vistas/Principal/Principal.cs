@@ -5,9 +5,9 @@ using System.Runtime.InteropServices;
 
 namespace Murray.Vistas
 {
-    public partial class FrmPrincipal : Form
+    public partial class Principal : Form
     {
-        public FrmPrincipal()
+        public Principal()
         {
             InitializeComponent();
             EstadoInicial();

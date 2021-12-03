@@ -1,6 +1,6 @@
 ﻿namespace Murray.Vistas.Contactos
 {
-    partial class FrmInfoContacto
+    partial class EditorContactos
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmInfoContacto));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditorContactos));
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
@@ -55,7 +55,6 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties24 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.pnlImagenIzq = new System.Windows.Forms.Panel();
             this.pbLogo = new System.Windows.Forms.PictureBox();
             this.lblPrimerNombre = new System.Windows.Forms.Label();
@@ -76,7 +75,6 @@
             this.lblMunicipio = new System.Windows.Forms.Label();
             this.pnlBotones = new System.Windows.Forms.Panel();
             this.btnCancelar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.btnModificar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnAgregar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.pnlImagenIzq.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
@@ -723,7 +721,6 @@
             // pnlBotones
             // 
             this.pnlBotones.Controls.Add(this.btnCancelar);
-            this.pnlBotones.Controls.Add(this.btnModificar);
             this.pnlBotones.Controls.Add(this.btnAgregar);
             this.pnlBotones.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnlBotones.Location = new System.Drawing.Point(148, 362);
@@ -781,7 +778,7 @@
             this.btnCancelar.IdleIconLeftImage = null;
             this.btnCancelar.IdleIconRightImage = null;
             this.btnCancelar.IndicateFocus = false;
-            this.btnCancelar.Location = new System.Drawing.Point(267, 0);
+            this.btnCancelar.Location = new System.Drawing.Point(417, 0);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnCancelar.OnDisabledState.BorderRadius = 1;
@@ -824,98 +821,6 @@
             this.btnCancelar.UseDefaultRadiusAndThickness = true;
             this.btnCancelar.Click += new System.EventHandler(this.Salir);
             // 
-            // btnModificar
-            // 
-            this.btnModificar.AllowAnimations = true;
-            this.btnModificar.AllowMouseEffects = true;
-            this.btnModificar.AllowToggling = false;
-            this.btnModificar.AnimationSpeed = 200;
-            this.btnModificar.AutoGenerateColors = false;
-            this.btnModificar.AutoRoundBorders = false;
-            this.btnModificar.AutoSizeLeftIcon = true;
-            this.btnModificar.AutoSizeRightIcon = true;
-            this.btnModificar.BackColor = System.Drawing.Color.Transparent;
-            this.btnModificar.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
-            this.btnModificar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnModificar.BackgroundImage")));
-            this.btnModificar.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnModificar.ButtonText = "Modificar";
-            this.btnModificar.ButtonTextMarginLeft = 0;
-            this.btnModificar.ColorContrastOnClick = 45;
-            this.btnModificar.ColorContrastOnHover = 45;
-            this.btnModificar.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.btnModificar.CustomizableEdges = borderEdges2;
-            this.btnModificar.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnModificar.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btnModificar.DisabledFillColor = System.Drawing.Color.Empty;
-            this.btnModificar.DisabledForecolor = System.Drawing.Color.Empty;
-            this.btnModificar.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnModificar.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificar.ForeColor = System.Drawing.Color.White;
-            this.btnModificar.IconLeft = null;
-            this.btnModificar.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnModificar.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.btnModificar.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
-            this.btnModificar.IconMarginLeft = 11;
-            this.btnModificar.IconPadding = 10;
-            this.btnModificar.IconRight = null;
-            this.btnModificar.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnModificar.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.btnModificar.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
-            this.btnModificar.IconSize = 25;
-            this.btnModificar.IdleBorderColor = System.Drawing.Color.Empty;
-            this.btnModificar.IdleBorderRadius = 0;
-            this.btnModificar.IdleBorderThickness = 0;
-            this.btnModificar.IdleFillColor = System.Drawing.Color.Empty;
-            this.btnModificar.IdleIconLeftImage = null;
-            this.btnModificar.IdleIconRightImage = null;
-            this.btnModificar.IndicateFocus = false;
-            this.btnModificar.Location = new System.Drawing.Point(417, 0);
-            this.btnModificar.Name = "btnModificar";
-            this.btnModificar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btnModificar.OnDisabledState.BorderRadius = 1;
-            this.btnModificar.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnModificar.OnDisabledState.BorderThickness = 1;
-            this.btnModificar.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btnModificar.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btnModificar.OnDisabledState.IconLeftImage = null;
-            this.btnModificar.OnDisabledState.IconRightImage = null;
-            this.btnModificar.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
-            this.btnModificar.onHoverState.BorderRadius = 1;
-            this.btnModificar.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnModificar.onHoverState.BorderThickness = 1;
-            this.btnModificar.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
-            this.btnModificar.onHoverState.ForeColor = System.Drawing.Color.White;
-            this.btnModificar.onHoverState.IconLeftImage = null;
-            this.btnModificar.onHoverState.IconRightImage = null;
-            this.btnModificar.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
-            this.btnModificar.OnIdleState.BorderRadius = 1;
-            this.btnModificar.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnModificar.OnIdleState.BorderThickness = 1;
-            this.btnModificar.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
-            this.btnModificar.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btnModificar.OnIdleState.IconLeftImage = null;
-            this.btnModificar.OnIdleState.IconRightImage = null;
-            this.btnModificar.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
-            this.btnModificar.OnPressedState.BorderRadius = 1;
-            this.btnModificar.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnModificar.OnPressedState.BorderThickness = 1;
-            this.btnModificar.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
-            this.btnModificar.OnPressedState.ForeColor = System.Drawing.Color.White;
-            this.btnModificar.OnPressedState.IconLeftImage = null;
-            this.btnModificar.OnPressedState.IconRightImage = null;
-            this.btnModificar.Size = new System.Drawing.Size(150, 55);
-            this.btnModificar.TabIndex = 21;
-            this.btnModificar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnModificar.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnModificar.TextMarginLeft = 0;
-            this.btnModificar.TextPadding = new System.Windows.Forms.Padding(0);
-            this.btnModificar.UseDefaultRadiusAndThickness = true;
-            // 
             // btnAgregar
             // 
             this.btnAgregar.AllowAnimations = true;
@@ -930,16 +835,16 @@
             this.btnAgregar.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
             this.btnAgregar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAgregar.BackgroundImage")));
             this.btnAgregar.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnAgregar.ButtonText = "Agregar";
+            this.btnAgregar.ButtonText = "Guardar";
             this.btnAgregar.ButtonTextMarginLeft = 0;
             this.btnAgregar.ColorContrastOnClick = 45;
             this.btnAgregar.ColorContrastOnHover = 45;
             this.btnAgregar.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = true;
-            this.btnAgregar.CustomizableEdges = borderEdges3;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.btnAgregar.CustomizableEdges = borderEdges2;
             this.btnAgregar.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnAgregar.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnAgregar.DisabledFillColor = System.Drawing.Color.Empty;
@@ -1007,6 +912,7 @@
             this.btnAgregar.TextMarginLeft = 0;
             this.btnAgregar.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnAgregar.UseDefaultRadiusAndThickness = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // FrmInfoContacto
             // 
@@ -1065,7 +971,6 @@
         private Bunifu.UI.WinForms.BunifuDropdown cmbMunicipios;
         private System.Windows.Forms.Label lblMunicipio;
         private System.Windows.Forms.Panel pnlBotones;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnModificar;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnAgregar;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnCancelar;
     }

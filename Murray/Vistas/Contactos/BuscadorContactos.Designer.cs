@@ -1,7 +1,4 @@
-﻿using Murray.ViewModels.Common;
-using System;
-
-namespace Murray.Vistas.Contactos
+﻿namespace Murray.Vistas.Contactos
 {
     partial class BuscadorContactos
     {
@@ -21,26 +18,6 @@ namespace Murray.Vistas.Contactos
                 components.Dispose();
             }
             base.Dispose(disposing);
-        }
-
-        protected override void OnAgregarClick(object sender, EventArgs e)
-        {
-
-        }
-
-        protected override void OnBuscarTxtChange(string query)
-        {
-            LoadDatagrid<ContactoView>(Service.GetContactos(query));
-        }
-
-        protected override void OnEditarClick(object sender, EventArgs e)
-        {
-            var selected = GetSelected<ContactoView>();
-        }
-
-        protected override void OnEliminarClick(object sender, EventArgs e)
-        {
-            var selected = GetSelected<ContactoView>();
         }
 
         #region Windows Form Designer generated code

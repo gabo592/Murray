@@ -1,7 +1,4 @@
-﻿using Murray.ViewModels.Sales;
-using System;
-
-namespace Murray.Vistas.Ventas
+﻿namespace Murray.Vistas.Ventas
 {
     partial class BuscadorVentas
     {
@@ -21,26 +18,6 @@ namespace Murray.Vistas.Ventas
                 components.Dispose();
             }
             base.Dispose(disposing);
-        }
-
-        protected override void OnAgregarClick(object sender, EventArgs e)
-        {
-
-        }
-
-        protected override void OnBuscarTxtChange(string query)
-        {
-            LoadDatagrid<VentaView>(Service.GetVentas(query));
-        }
-
-        protected override void OnEditarClick(object sender, EventArgs e)
-        {
-            var selected = GetSelected<VentaView>();
-        }
-
-        protected override void OnEliminarClick(object sender, EventArgs e)
-        {
-            var selected = GetSelected<VentaView>();
         }
 
         #region Windows Form Designer generated code

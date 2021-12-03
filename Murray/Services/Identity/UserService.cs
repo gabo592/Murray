@@ -42,7 +42,8 @@ namespace Murray.Services.Identity
                     Id = user.Id,
                     Username = user.Username,
                     Nombre = contacto.NombreCompleto,
-                    Role = user.Role
+                    Role = user.Role,
+                    IdContacto = contacto.Id
                 };
             });
         }
