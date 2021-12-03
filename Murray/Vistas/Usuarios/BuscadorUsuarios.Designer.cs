@@ -1,0 +1,74 @@
+﻿using Murray.ViewModels.Identity;
+using System;
+
+namespace Murray.Vistas.Usuarios
+{
+    partial class BuscadorUsuarios
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        protected override void OnAgregarClick(object sender, EventArgs e)
+        {
+            
+        }
+
+        protected override void OnBuscarTxtChange(string query)
+        {
+            LoadDatagrid<UsuarioView>(Service.GetUsers(query));
+        }
+
+        protected override void OnEditarClick(object sender, EventArgs e)
+        {
+            var selected = GetSelected<UsuarioView>();
+        }
+
+        protected override void OnEliminarClick(object sender, EventArgs e)
+        {
+            var selected = GetSelected<UsuarioView>();
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BuscadorUsuarios));
+            this.SuspendLayout();
+            // 
+            // FrmUsuarios
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.ClientSize = new System.Drawing.Size(917, 449);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "FrmUsuarios";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Usuarios";
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+    }
+}

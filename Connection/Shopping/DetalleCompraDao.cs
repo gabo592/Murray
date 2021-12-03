@@ -26,7 +26,7 @@ namespace Connection.Shopping
         /// <inheritdoc cref="IDao{TModel}.Create(TModel)"/>/>
         public override DetalleCompra Create(DetalleCompra model)
         {
-            if (!Validate(model, Operation.CREATE))
+            if (Validate(model, Operation.CREATE))
                 return new DetalleCompra();
 
             return Read(StoredProcedures.DetalleCompraCreate, new Dictionary<string, object>
@@ -51,6 +51,15 @@ namespace Connection.Shopping
             }).FirstOrDefault() ?? new DetalleCompra();
         }
 
+        /// <inheritdoc cref="IDetalleCompraDao.GetByVentaId(int)"/>
+        public IEnumerable<DetalleCompra> GetByVentaId(int id)
+        {
+            return Read(StoredProcedures.DetalleCompraGet, new Dictionary<string, object>
+            {
+                ["IdCompra"] = id
+            });
+        }
+
         /// <inheritdoc cref="IDao{TModel}.Read"/>
         public override IEnumerable<DetalleCompra> Read()
         {
@@ -60,7 +69,7 @@ namespace Connection.Shopping
         /// <inheritdoc cref="IDao{TModel}.Update(int, TModel)"/>
         public override DetalleCompra Update(int id, DetalleCompra model)
         {
-            if (!Validate(model, Operation.UPDATE))
+            if (Validate(model, Operation.UPDATE))
                 return new DetalleCompra();
 
             return Read(StoredProcedures.DetalleCompraUpdate, new Dictionary<string, object>
@@ -80,7 +89,7 @@ namespace Connection.Shopping
 
         private bool Validate(DetalleCompra model, Operation operation)
         {
-            if (!Validations.Validate(model, Handler, operation))
+            if (Validations.Validate(model, Handler, operation))
                 return false;
 
             // Calculate

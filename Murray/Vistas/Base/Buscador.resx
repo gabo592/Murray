@@ -131,7 +131,7 @@
         SuhE9SEAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="btnEliminarUsuario.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnEliminar.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIAAAAA1CAYAAACJOeMNAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACtSURBVHhe7dI7FYAwAARBlMQB8e8lMiKAT8vDwU4xzV27
@@ -140,7 +140,7 @@
         J4A4AcQJIE4AcQKIewPY35GKuW83fGBKodZIUgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="btnModificarUsuario.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnModificar.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIAAAAA1CAYAAACJOeMNAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACtSURBVHhe7dI7FYAwAARBlMQB8e8lMiKAT8vDwU4xzV27
@@ -149,7 +149,7 @@
         J4A4AcQJIE4AcQKIewPY35GKuW83fGBKodZIUgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="btnAgregarUsuario.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnAgregar.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIAAAAA1CAYAAACJOeMNAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACtSURBVHhe7dI7FYAwAARBlMQB8e8lMiKAT8vDwU4xzV27

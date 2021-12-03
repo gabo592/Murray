@@ -1,5 +1,6 @@
 ﻿using Connection.Base;
 using Models.Shopping;
+using System.Collections.Generic;
 
 namespace Connection.Interfaces.Shopping
 {
@@ -8,5 +9,12 @@ namespace Connection.Interfaces.Shopping
     /// </summary>
     public interface IDetalleCompraDao : IDao<DetalleCompra>
     {
+        /// <summary>
+        ///     Obtiene los detalles de una compra
+        /// </summary>
+        /// <param name="id">
+        ///     Id de la compra a obtener detalles
+        /// </param>=
+        IEnumerable<DetalleCompra> GetByVentaId(int id);
     }
 }

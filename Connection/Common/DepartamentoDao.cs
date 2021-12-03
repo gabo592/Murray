@@ -83,7 +83,7 @@ namespace Connection.Common
         /// </summary>
         private bool Validate(Departamento model, Operation operation)
         {
-            if (!Validations.Validate(model, Handler, operation))
+            if (Validations.Validate(model, Handler, operation))
                 return false;
 
             if (model.Nombre.Length > 50)

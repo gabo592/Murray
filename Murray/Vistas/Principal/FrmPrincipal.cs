@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 
@@ -22,7 +16,7 @@ namespace Murray.Vistas
         private void EstadoInicial()
         {
             pbRestaurar.Visible = false;
-            pnlIzq.Visible = false;
+            pnlIzq.Visible = true;
             pbMaximizar.Visible = false;
             pbRestaurar.Visible = true;
         }
@@ -121,26 +115,20 @@ namespace Murray.Vistas
 
             switch (clave)
             {
-                case "Clientes":
-                    AddForm(new Contactos.FrmContactos());
+                case "Contactos":
+                    AddForm(new Contactos.BuscadorContactos());
                     break;
                 case "Ventas":
-                    AddForm(new Ventas.FrmCaja());
+                    AddForm(new Ventas.BuscadorVentas());
                     break;
                 case "Compras":
-                    AddForm(new Compras.FrmCompras());
+                    AddForm(new Compras.BuscadorCompras());
                     break;
                 case "Productos":
-                    AddForm(new Productos.FrmProductos());
-                    break;
-                case "Proveedores":
-                    AddForm(new Contactos.FrmContactos());
-                    break;
-                case "Empleados":
-                    AddForm(new Contactos.FrmContactos());
+                    AddForm(new Productos.BuscadorProductos());
                     break;
                 case "Seguridad":
-                    AddForm(new Usuarios.FrmUsuarios());
+                    AddForm(new Usuarios.BuscadorUsuarios());
                     break;
                 default:
                     MessageBox.Show(this, "No se encuentra el formulario especificado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);

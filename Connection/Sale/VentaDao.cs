@@ -9,6 +9,7 @@ using System.Linq;
 
 namespace Connection.Sale
 {
+
     internal class VentaDao : BaseDao<Venta>, IVentaDao
     {
         #region Constructor
@@ -25,7 +26,7 @@ namespace Connection.Sale
         /// <inheritdoc cref="IDao{TModel}.Create(TModel)"/>/>
         public override Venta Create(Venta model)
         {
-            if (!Validate(model, Operation.CREATE))
+            if (Validate(model, Operation.CREATE))
                 return new Venta();
 
             return Read(StoredProcedures.VentaCreate, new Dictionary<string, object>
@@ -53,10 +54,19 @@ namespace Connection.Sale
             return Read(StoredProcedures.VentaGet);
         }
 
+        /// <inheritdoc cref="IVentaDao.Read(string)"/>
+        public IEnumerable<Venta> Read(string query)
+        {
+            return Read(StoredProcedures.VentaGet, new Dictionary<string, object>
+            {
+                ["Query"] = query
+            });
+        }
+
         /// <inheritdoc cref="IDao{TModel}.Update(int, TModel)"/>
         public override Venta Update(int id, Venta model)
         {
-            if (!Validate(model, Operation.UPDATE))
+            if (Validate(model, Operation.UPDATE))
                 return new Venta();
 
             return Read(StoredProcedures.VentaUpdate, new Dictionary<string, object>
@@ -73,7 +83,7 @@ namespace Connection.Sale
 
         private bool Validate(Venta model, Operation operation)
         {
-            if (!Validations.Validate(model, Handler, operation))
+            if (Validations.Validate(model, Handler, operation))
                 return false;
 
             return Handler.HasError();

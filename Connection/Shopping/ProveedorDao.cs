@@ -26,7 +26,7 @@ namespace Connection.Shopping
         /// <inheritdoc cref="IDao{TModel}.Create(TModel)"/>/>
         public override Proveedor Create(Proveedor model)
         {
-            if (!Validate(model, Operation.CREATE))
+            if (Validate(model, Operation.CREATE))
                 return new Proveedor();
 
             return Read(StoredProcedures.ProveedorCreate, new Dictionary<string, object>
@@ -40,6 +40,16 @@ namespace Connection.Shopping
         public override Proveedor Delete(int id)
         {
             return Read(StoredProcedures.ProveedorDelete, new Dictionary<string, object>
+            {
+                ["Id"] = id
+
+            }).FirstOrDefault() ?? new Proveedor();
+        }
+
+        /// <inheritdoc cref="IProveedorDao.GetById(int)"/>
+        public Proveedor GetById(int id)
+        {
+            return Read(StoredProcedures.ProveedorGet, new Dictionary<string, object>
             {
                 ["Id"] = id
 
@@ -65,7 +75,7 @@ namespace Connection.Shopping
         /// <inheritdoc cref="IDao{TModel}.Update(int, TModel)"/>
         public override Proveedor Update(int id, Proveedor model)
         {
-            if (!Validate(model, Operation.UPDATE))
+            if (Validate(model, Operation.UPDATE))
                 return new Proveedor();
 
             return Read(StoredProcedures.ProveedorUpdate, new Dictionary<string, object>
@@ -80,7 +90,7 @@ namespace Connection.Shopping
 
         private bool Validate(Proveedor model, Operation operation)
         {
-            if (!Validations.Validate(model, Handler, operation))
+            if (Validations.Validate(model, Handler, operation))
                 return false;
 
             return Handler.HasError();

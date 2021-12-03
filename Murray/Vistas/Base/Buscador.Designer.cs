@@ -1,6 +1,6 @@
-﻿namespace Murray.Vistas.Contactos
+﻿namespace Murray.Vistas.Base
 {
-    partial class FrmContactos
+    partial class Buscador
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmContactos));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Buscador));
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
@@ -39,28 +39,22 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.pnlTop = new System.Windows.Forms.Panel();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtBuscar = new Bunifu.UI.WinForms.BunifuTextBox();
             this.pnlBotones = new System.Windows.Forms.Panel();
             this.btnEliminar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnModificar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnAgregar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.pnlPrincipal = new System.Windows.Forms.Panel();
-            this.dgvContactos = new Bunifu.UI.WinForms.BunifuDataGridView();
-            this.pnlTop.SuspendLayout();
+            this.DataGrid = new Bunifu.UI.WinForms.BunifuDataGridView();
+            this.dgvUsuarios = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.pnlBotones.SuspendLayout();
             this.pnlPrincipal.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvContactos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGrid)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pnlTop
-            // 
-            this.pnlTop.Controls.Add(this.txtBuscar);
-            this.pnlTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlTop.Location = new System.Drawing.Point(0, 0);
-            this.pnlTop.Name = "pnlTop";
-            this.pnlTop.Size = new System.Drawing.Size(976, 49);
-            this.pnlTop.TabIndex = 0;
             // 
             // txtBuscar
             // 
@@ -72,8 +66,8 @@
             this.txtBuscar.AutoSizeHeight = true;
             this.txtBuscar.BackColor = System.Drawing.Color.Transparent;
             this.txtBuscar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtBuscar.BackgroundImage")));
-            this.txtBuscar.BorderColorActive = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
-            this.txtBuscar.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.txtBuscar.BorderColorActive = System.Drawing.Color.White;
+            this.txtBuscar.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
             this.txtBuscar.BorderColorHover = System.Drawing.Color.White;
             this.txtBuscar.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
             this.txtBuscar.BorderRadius = 1;
@@ -82,7 +76,7 @@
             this.txtBuscar.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtBuscar.DefaultFont = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBuscar.DefaultText = "";
-            this.txtBuscar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtBuscar.Dock = System.Windows.Forms.DockStyle.Top;
             this.txtBuscar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
             this.txtBuscar.ForeColor = System.Drawing.Color.White;
             this.txtBuscar.HideSelection = true;
@@ -103,7 +97,7 @@
             stateProperties1.ForeColor = System.Drawing.Color.Empty;
             stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtBuscar.OnActiveState = stateProperties1;
-            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
             stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
@@ -128,7 +122,7 @@
             this.txtBuscar.SelectionLength = 0;
             this.txtBuscar.SelectionStart = 0;
             this.txtBuscar.ShortcutsEnabled = true;
-            this.txtBuscar.Size = new System.Drawing.Size(976, 49);
+            this.txtBuscar.Size = new System.Drawing.Size(917, 44);
             this.txtBuscar.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtBuscar.TabIndex = 0;
             this.txtBuscar.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -138,6 +132,7 @@
             this.txtBuscar.TextPlaceholder = "Enter text";
             this.txtBuscar.UseSystemPasswordChar = false;
             this.txtBuscar.WordWrap = true;
+            this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
             // 
             // pnlBotones
             // 
@@ -145,9 +140,9 @@
             this.pnlBotones.Controls.Add(this.btnModificar);
             this.pnlBotones.Controls.Add(this.btnAgregar);
             this.pnlBotones.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlBotones.Location = new System.Drawing.Point(0, 413);
+            this.pnlBotones.Location = new System.Drawing.Point(0, 396);
             this.pnlBotones.Name = "pnlBotones";
-            this.pnlBotones.Size = new System.Drawing.Size(976, 58);
+            this.pnlBotones.Size = new System.Drawing.Size(917, 53);
             this.pnlBotones.TabIndex = 1;
             // 
             // btnEliminar
@@ -164,7 +159,7 @@
             this.btnEliminar.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
             this.btnEliminar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEliminar.BackgroundImage")));
             this.btnEliminar.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnEliminar.ButtonText = "Eliminar ";
+            this.btnEliminar.ButtonText = "Eliminar";
             this.btnEliminar.ButtonTextMarginLeft = 0;
             this.btnEliminar.ColorContrastOnClick = 45;
             this.btnEliminar.ColorContrastOnHover = 45;
@@ -200,7 +195,7 @@
             this.btnEliminar.IdleIconLeftImage = null;
             this.btnEliminar.IdleIconRightImage = null;
             this.btnEliminar.IndicateFocus = false;
-            this.btnEliminar.Location = new System.Drawing.Point(592, 0);
+            this.btnEliminar.Location = new System.Drawing.Point(533, 0);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnEliminar.OnDisabledState.BorderRadius = 1;
@@ -234,13 +229,14 @@
             this.btnEliminar.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnEliminar.OnPressedState.IconLeftImage = null;
             this.btnEliminar.OnPressedState.IconRightImage = null;
-            this.btnEliminar.Size = new System.Drawing.Size(128, 58);
-            this.btnEliminar.TabIndex = 5;
+            this.btnEliminar.Size = new System.Drawing.Size(128, 53);
+            this.btnEliminar.TabIndex = 2;
             this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnEliminar.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnEliminar.TextMarginLeft = 0;
             this.btnEliminar.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnEliminar.UseDefaultRadiusAndThickness = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnModificar
             // 
@@ -292,7 +288,7 @@
             this.btnModificar.IdleIconLeftImage = null;
             this.btnModificar.IdleIconRightImage = null;
             this.btnModificar.IndicateFocus = false;
-            this.btnModificar.Location = new System.Drawing.Point(720, 0);
+            this.btnModificar.Location = new System.Drawing.Point(661, 0);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnModificar.OnDisabledState.BorderRadius = 1;
@@ -326,14 +322,14 @@
             this.btnModificar.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnModificar.OnPressedState.IconLeftImage = null;
             this.btnModificar.OnPressedState.IconRightImage = null;
-            this.btnModificar.Size = new System.Drawing.Size(128, 58);
-            this.btnModificar.TabIndex = 4;
+            this.btnModificar.Size = new System.Drawing.Size(128, 53);
+            this.btnModificar.TabIndex = 1;
             this.btnModificar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnModificar.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnModificar.TextMarginLeft = 0;
             this.btnModificar.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnModificar.UseDefaultRadiusAndThickness = true;
-            this.btnModificar.Click += new System.EventHandler(this.Botones_Click);
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnAgregar
             // 
@@ -385,7 +381,7 @@
             this.btnAgregar.IdleIconLeftImage = null;
             this.btnAgregar.IdleIconRightImage = null;
             this.btnAgregar.IndicateFocus = false;
-            this.btnAgregar.Location = new System.Drawing.Point(848, 0);
+            this.btnAgregar.Location = new System.Drawing.Point(789, 0);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnAgregar.OnDisabledState.BorderRadius = 1;
@@ -419,35 +415,35 @@
             this.btnAgregar.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnAgregar.OnPressedState.IconLeftImage = null;
             this.btnAgregar.OnPressedState.IconRightImage = null;
-            this.btnAgregar.Size = new System.Drawing.Size(128, 58);
-            this.btnAgregar.TabIndex = 2;
+            this.btnAgregar.Size = new System.Drawing.Size(128, 53);
+            this.btnAgregar.TabIndex = 0;
             this.btnAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnAgregar.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnAgregar.TextMarginLeft = 0;
             this.btnAgregar.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnAgregar.UseDefaultRadiusAndThickness = true;
-            this.btnAgregar.Click += new System.EventHandler(this.Botones_Click);
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // pnlPrincipal
             // 
-            this.pnlPrincipal.Controls.Add(this.dgvContactos);
+            this.pnlPrincipal.Controls.Add(this.DataGrid);
+            this.pnlPrincipal.Controls.Add(this.dgvUsuarios);
             this.pnlPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlPrincipal.Location = new System.Drawing.Point(0, 49);
+            this.pnlPrincipal.Location = new System.Drawing.Point(0, 44);
             this.pnlPrincipal.Name = "pnlPrincipal";
-            this.pnlPrincipal.Size = new System.Drawing.Size(976, 364);
+            this.pnlPrincipal.Size = new System.Drawing.Size(917, 352);
             this.pnlPrincipal.TabIndex = 2;
             // 
-            // dgvContactos
+            // DataGrid
             // 
-            this.dgvContactos.AllowCustomTheming = false;
+            this.DataGrid.AllowCustomTheming = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            this.dgvContactos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvContactos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvContactos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
-            this.dgvContactos.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvContactos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgvContactos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.DataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.DataGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DataGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DataGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.DataGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
@@ -455,26 +451,26 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvContactos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvContactos.ColumnHeadersHeight = 40;
-            this.dgvContactos.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
-            this.dgvContactos.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.dgvContactos.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.dgvContactos.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            this.dgvContactos.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvContactos.CurrentTheme.BackColor = System.Drawing.Color.White;
-            this.dgvContactos.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.dgvContactos.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue;
-            this.dgvContactos.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            this.dgvContactos.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dgvContactos.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
-            this.dgvContactos.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.dgvContactos.CurrentTheme.Name = null;
-            this.dgvContactos.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.dgvContactos.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.dgvContactos.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.dgvContactos.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            this.dgvContactos.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.DataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.DataGrid.ColumnHeadersHeight = 40;
+            this.DataGrid.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            this.DataGrid.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.DataGrid.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.DataGrid.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.DataGrid.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.DataGrid.CurrentTheme.BackColor = System.Drawing.Color.White;
+            this.DataGrid.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.DataGrid.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue;
+            this.DataGrid.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            this.DataGrid.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.DataGrid.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            this.DataGrid.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.DataGrid.CurrentTheme.Name = null;
+            this.DataGrid.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.DataGrid.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.DataGrid.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.DataGrid.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.DataGrid.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
@@ -482,53 +478,118 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvContactos.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvContactos.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvContactos.EnableHeadersVisualStyles = false;
-            this.dgvContactos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.dgvContactos.HeaderBackColor = System.Drawing.Color.DodgerBlue;
-            this.dgvContactos.HeaderBgColor = System.Drawing.Color.Empty;
-            this.dgvContactos.HeaderForeColor = System.Drawing.Color.White;
-            this.dgvContactos.Location = new System.Drawing.Point(0, 0);
-            this.dgvContactos.Name = "dgvContactos";
-            this.dgvContactos.RowHeadersVisible = false;
-            this.dgvContactos.RowTemplate.Height = 40;
-            this.dgvContactos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvContactos.Size = new System.Drawing.Size(976, 364);
-            this.dgvContactos.TabIndex = 1;
-            this.dgvContactos.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            this.DataGrid.DefaultCellStyle = dataGridViewCellStyle3;
+            this.DataGrid.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DataGrid.EnableHeadersVisualStyles = false;
+            this.DataGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.DataGrid.HeaderBackColor = System.Drawing.Color.DodgerBlue;
+            this.DataGrid.HeaderBgColor = System.Drawing.Color.Empty;
+            this.DataGrid.HeaderForeColor = System.Drawing.Color.White;
+            this.DataGrid.Location = new System.Drawing.Point(0, 0);
+            this.DataGrid.Name = "DataGrid";
+            this.DataGrid.RowHeadersVisible = false;
+            this.DataGrid.RowTemplate.Height = 40;
+            this.DataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DataGrid.Size = new System.Drawing.Size(917, 352);
+            this.DataGrid.TabIndex = 1;
+            this.DataGrid.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             // 
-            // FrmContactos
+            // dgvUsuarios
+            // 
+            this.dgvUsuarios.AllowCustomTheming = false;
+            this.dgvUsuarios.AllowUserToAddRows = false;
+            this.dgvUsuarios.AllowUserToDeleteRows = false;
+            this.dgvUsuarios.AllowUserToResizeColumns = false;
+            this.dgvUsuarios.AllowUserToResizeRows = false;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            this.dgvUsuarios.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgvUsuarios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvUsuarios.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.dgvUsuarios.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvUsuarios.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgvUsuarios.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvUsuarios.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.dgvUsuarios.ColumnHeadersHeight = 40;
+            this.dgvUsuarios.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            this.dgvUsuarios.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.dgvUsuarios.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.dgvUsuarios.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.dgvUsuarios.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvUsuarios.CurrentTheme.BackColor = System.Drawing.Color.White;
+            this.dgvUsuarios.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.dgvUsuarios.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue;
+            this.dgvUsuarios.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            this.dgvUsuarios.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dgvUsuarios.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            this.dgvUsuarios.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvUsuarios.CurrentTheme.Name = null;
+            this.dgvUsuarios.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgvUsuarios.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.dgvUsuarios.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.dgvUsuarios.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.dgvUsuarios.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvUsuarios.DefaultCellStyle = dataGridViewCellStyle6;
+            this.dgvUsuarios.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvUsuarios.EnableHeadersVisualStyles = false;
+            this.dgvUsuarios.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.dgvUsuarios.HeaderBackColor = System.Drawing.Color.DodgerBlue;
+            this.dgvUsuarios.HeaderBgColor = System.Drawing.Color.Empty;
+            this.dgvUsuarios.HeaderForeColor = System.Drawing.Color.White;
+            this.dgvUsuarios.Location = new System.Drawing.Point(0, 0);
+            this.dgvUsuarios.Name = "dgvUsuarios";
+            this.dgvUsuarios.RowHeadersVisible = false;
+            this.dgvUsuarios.RowTemplate.Height = 40;
+            this.dgvUsuarios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvUsuarios.Size = new System.Drawing.Size(917, 352);
+            this.dgvUsuarios.TabIndex = 0;
+            this.dgvUsuarios.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            // 
+            // Buscador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
-            this.ClientSize = new System.Drawing.Size(976, 471);
+            this.ClientSize = new System.Drawing.Size(917, 449);
             this.Controls.Add(this.pnlPrincipal);
             this.Controls.Add(this.pnlBotones);
-            this.Controls.Add(this.pnlTop);
+            this.Controls.Add(this.txtBuscar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "FrmContactos";
+            this.Name = "Buscador";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Contactos";
-            this.pnlTop.ResumeLayout(false);
+            this.Text = "Usuarios";
             this.pnlBotones.ResumeLayout(false);
             this.pnlPrincipal.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvContactos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGrid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel pnlTop;
         private Bunifu.UI.WinForms.BunifuTextBox txtBuscar;
         private System.Windows.Forms.Panel pnlBotones;
+        private System.Windows.Forms.Panel pnlPrincipal;
+        private Bunifu.UI.WinForms.BunifuDataGridView dgvUsuarios;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnAgregar;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnModificar;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnEliminar;
-        private System.Windows.Forms.Panel pnlPrincipal;
-        private Bunifu.UI.WinForms.BunifuDataGridView dgvContactos;
+        private Bunifu.UI.WinForms.BunifuDataGridView DataGrid;
     }
 }

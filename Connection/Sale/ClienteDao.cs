@@ -26,7 +26,7 @@ namespace Connection.Sale
         /// <inheritdoc cref="IDao{TModel}.Create(TModel)"/>/>
         public override Cliente Create(Cliente model)
         {
-            if (!Validate(model, Operation.CREATE))
+            if (Validate(model, Operation.CREATE))
                 return new Cliente();
 
             return Read(StoredProcedures.ClienteCreate, new Dictionary<string, object>
@@ -40,6 +40,16 @@ namespace Connection.Sale
         public override Cliente Delete(int id)
         {
             return Read(StoredProcedures.ClienteDelete, new Dictionary<string, object>
+            {
+                ["Id"] = id
+
+            }).FirstOrDefault() ?? new Cliente();
+        }
+
+        /// <inheritdoc cref="IClienteDao.GetById(int)"/>
+        public Cliente GetById(int id)
+        {
+            return Read(StoredProcedures.ClienteGet, new Dictionary<string, object>
             {
                 ["Id"] = id
 
@@ -65,7 +75,7 @@ namespace Connection.Sale
         /// <inheritdoc cref="IDao{TModel}.Update(int, TModel)"/>
         public override Cliente Update(int id, Cliente model)
         {
-            if (!Validate(model, Operation.UPDATE))
+            if (Validate(model, Operation.UPDATE))
                 return new Cliente();
 
             return Read(StoredProcedures.ClienteUpdate, new Dictionary<string, object>
@@ -80,7 +90,7 @@ namespace Connection.Sale
 
         private bool Validate(Cliente model, Operation operation)
         {
-            if (!Validations.Validate(model, Handler, operation))
+            if (Validations.Validate(model, Handler, operation))
                 return false;
 
             return Handler.HasError();

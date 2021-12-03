@@ -25,7 +25,7 @@ namespace Connection.Common
         /// <inheritdoc cref="IDao{TModel}.Create(TModel)"/>/>
         public override Categoria Create(Categoria model)
         {
-            if (!Validate(model, Operation.CREATE))
+            if (Validate(model, Operation.CREATE))
                 return new Categoria();
 
             return Read(StoredProcedures.CategoriaCreate, new Dictionary<string, object>
@@ -39,6 +39,16 @@ namespace Connection.Common
         public override Categoria Delete(int id)
         {
             return Read(StoredProcedures.CategoriaDelete, new Dictionary<string, object>
+            {
+                ["Id"] = id
+
+            }).FirstOrDefault() ?? new Categoria();
+        }
+
+        /// <inheritdoc cref="ICategoriaDao.GetById(int)"/>
+        public Categoria GetById(int id)
+        {
+            return Read(StoredProcedures.CategoriaGet, new Dictionary<string, object>
             {
                 ["Id"] = id
 
@@ -63,7 +73,7 @@ namespace Connection.Common
         /// <inheritdoc cref="IDao{TModel}.Update(int, TModel)"/>
         public override Categoria Update(int id, Categoria model)
         {
-            if (!Validate(model, Operation.UPDATE))
+            if (Validate(model, Operation.UPDATE))
                 return new Categoria();
 
             return Read(StoredProcedures.CategoriaUpdate, new Dictionary<string, object>
@@ -78,7 +88,7 @@ namespace Connection.Common
 
         private bool Validate(Categoria model, Operation operation)
         {
-            if (!Validations.Validate(model, Handler, operation))
+            if (Validations.Validate(model, Handler, operation))
                 return false;
 
             return Handler.HasError();

@@ -50,6 +50,16 @@ namespace Connection.Common
             }).FirstOrDefault() ?? new Contacto();
         }
 
+        /// <inheritdoc cref="IContactoDao.GetById(int)"/>
+        public Contacto GetById(int id)
+        {
+            return Read(StoredProcedures.ContactoGet, new Dictionary<string, object>
+            {
+                ["Id"] = id
+
+            }).FirstOrDefault() ?? new Contacto();
+        }
+
         /// <inheritdoc cref="IContactoDao.Read(string)"/>
         public IEnumerable<Contacto> Read(string value)
         {

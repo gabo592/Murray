@@ -26,7 +26,7 @@ namespace Connection.Common
         /// <inheritdoc cref="IDao{TModel}.Create(TModel)"/>/>
         public override Producto Create(Producto model)
         {
-            if (!Validate(model, Operation.CREATE))
+            if (Validate(model, Operation.CREATE))
                 return new Producto();
 
             return Read(StoredProcedures.ProductoCreate, new Dictionary<string, object>
@@ -77,7 +77,7 @@ namespace Connection.Common
         /// <inheritdoc cref="IDao{TModel}.Update(int, TModel)"/>
         public override Producto Update(int id, Producto model)
         {
-            if (!Validate(model, Operation.UPDATE))
+            if (Validate(model, Operation.UPDATE))
                 return new Producto();
 
             return Read(StoredProcedures.ProductoUpdate, new Dictionary<string, object>
@@ -95,7 +95,7 @@ namespace Connection.Common
 
         private bool Validate(Producto model, Operation operation)
         {
-            if (!Validations.Validate(model, Handler, operation))
+            if (Validations.Validate(model, Handler, operation))
                 return false;
 
             if (model.Precio.Equals(decimal.Zero))

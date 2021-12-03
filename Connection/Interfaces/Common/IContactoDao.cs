@@ -20,5 +20,13 @@ namespace Connection.Interfaces.Common
         ///     Lista de contactos con coincidencia en el filtro
         /// </returns>
         IEnumerable<Contacto> Read(string value);
+
+        /// <summary>
+        ///     Obtiene contacto por id
+        /// </summary>
+        /// <param name="id">
+        ///     Id del contacto
+        /// </param>
+        Contacto GetById(int id);
     }
 }

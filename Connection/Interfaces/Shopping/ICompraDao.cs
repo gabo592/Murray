@@ -1,5 +1,6 @@
 ﻿using Connection.Base;
 using Models.Shopping;
+using System.Collections.Generic;
 
 namespace Connection.Interfaces.Shopping
 {
@@ -8,5 +9,15 @@ namespace Connection.Interfaces.Shopping
     /// </summary>
     public interface ICompraDao : IDao<Compra>
     {
+        /// <summary>
+        ///     Busca ventas que coincidan con un criterio de busqueda
+        /// </summary>
+        /// <param name="query">
+        ///     Criterio de busqueda
+        /// </param>
+        /// <returns>
+        ///     Lista de ventas que coincidan con el filtro
+        /// </returns>
+        IEnumerable<Compra> Read(string query);
     }
 }

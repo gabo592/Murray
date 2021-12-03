@@ -23,5 +23,13 @@ namespace Connection.Interfaces.Sale
         ///     Lista de empleados que coincidan con el filtro
         /// </returns>
         IEnumerable<Cliente> Read(bool estado, int idContacto);
+
+        /// <summary>
+        ///     Obtiene cliente por id
+        /// </summary>
+        /// <param name="id">
+        ///     Id del cliente
+        /// </param>
+        Cliente GetById(int id);
     }
 }

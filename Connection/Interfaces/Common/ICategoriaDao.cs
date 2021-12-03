@@ -20,5 +20,13 @@ namespace Connection.Interfaces.Common
         ///     Lista de categorias con coincidencia en el filtro
         /// </returns>
         IEnumerable<Categoria> Read(string value);
+
+        /// <summary>
+        ///     Obtiene categoria por id
+        /// </summary>
+        /// <param name="id">
+        ///     Id de la categoria
+        /// </param>=
+        Categoria GetById(int id);
     }
 }

@@ -27,13 +27,24 @@ namespace Connection.Identity
         /// <inheritdoc cref="IDao{TModel}.Create(TModel)"/>
         public override Usuario Create(Usuario model)
         {
-            throw new System.NotImplementedException();
+            return Read(StoredProcedures.UsuarioCreate, new Dictionary<string, object>
+            {
+                ["UserName"] = model.Username,
+                ["Password"] = "123456",
+                ["Role"] = model.Role,
+                ["IdEmpleado"] = model.IdEmpleado
+
+            }).FirstOrDefault() ?? new Usuario();
         }
 
         /// <inheritdoc cref="IDao{TModel}.Delete(int)"/>
         public override Usuario Delete(int id)
         {
-            throw new System.NotImplementedException();
+            return Read(StoredProcedures.UsuarioDelete, new Dictionary<string, object>
+            {
+                ["Id"] = id
+
+            }).FirstOrDefault() ?? new Usuario();
         }
 
         /// <inheritdoc cref="IDao{TModel}.Read()"/>
@@ -47,14 +58,21 @@ namespace Connection.Identity
         {
             return Read(StoredProcedures.UsuarioGet, new Dictionary<string, object>
             {
-                ["username"] = username
+                ["UserName"] = username
             });
         }
 
         /// <inheritdoc cref="IDao{TModel}.Update(int, TModel)"/>
         public override Usuario Update(int id, Usuario model)
         {
-            throw new System.NotImplementedException();
+            return Read(StoredProcedures.UsuarioCreate, new Dictionary<string, object>
+            {
+                ["Id"] = id,
+                ["UserName"] = model.Username,
+                ["Role"] = model.Role,
+                ["IdEmpleado"] = model.IdEmpleado
+
+            }).FirstOrDefault() ?? new Usuario();
         }
 
         /// <inheritdoc cref="IUsuarioDao.Login(string, string)"/>
@@ -68,8 +86,8 @@ namespace Connection.Identity
 
             return Read(StoredProcedures.UsuarioLogin, new Dictionary<string, object>
             {
-                ["username"] = username,
-                ["password"] = password
+                ["UserName"] = username,
+                ["Password"] = password
 
             }).FirstOrDefault() ?? new Usuario();
         }  

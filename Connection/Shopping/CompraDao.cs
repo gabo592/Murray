@@ -26,7 +26,7 @@ namespace Connection.Shopping
         /// <inheritdoc cref="IDao{TModel}.Create(TModel)"/>/>
         public override Compra Create(Compra model)
         {
-            if (!Validate(model, Operation.CREATE))
+            if (Validate(model, Operation.CREATE))
                 return new Compra();
 
             return Read(StoredProcedures.CompraCreate, new Dictionary<string, object>
@@ -54,10 +54,19 @@ namespace Connection.Shopping
             return Read(StoredProcedures.CompraGet);
         }
 
+        /// <inheritdoc cref="ICompraDao.Read(string)"/>
+        public IEnumerable<Compra> Read(string query)
+        {
+            return Read(StoredProcedures.CompraGet, new Dictionary<string, object>
+            {
+                ["Query"] = query
+            });
+        }
+
         /// <inheritdoc cref="IDao{TModel}.Update(int, TModel)"/>
         public override Compra Update(int id, Compra model)
         {
-            if (!Validate(model, Operation.UPDATE))
+            if (Validate(model, Operation.UPDATE))
                 return new Compra();
 
             return Read(StoredProcedures.CompraUpdate, new Dictionary<string, object>
@@ -74,7 +83,7 @@ namespace Connection.Shopping
 
         private bool Validate(Compra model, Operation operation)
         {
-            if (!Validations.Validate(model, Handler, operation))
+            if (Validations.Validate(model, Handler, operation))
                 return false;
 
             return Handler.HasError();

@@ -23,5 +23,13 @@ namespace Connection.Interfaces.Shopping
         ///     Lista de empleados que coincidan con el filtro
         /// </returns>
         IEnumerable<Proveedor> Read(bool estado, int idContacto);
+
+        /// <summary>
+        ///     Obtiene proveedor por id
+        /// </summary>
+        /// <param name="id">
+        ///     Id del proveedor
+        /// </param>
+        Proveedor GetById(int id);
     }
 }

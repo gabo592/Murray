@@ -56,6 +56,16 @@ namespace Connection.Common
             }).FirstOrDefault() ?? new Empleado();
         }
 
+        /// <inheritdoc cref="IEmpleadoDao.GetById(int)"/>
+        public Empleado GetById(int id)
+        {
+            return Read(StoredProcedures.EmpleadoGet, new Dictionary<string, object>
+            {
+                ["Id"] = id
+
+            }).FirstOrDefault() ?? new Empleado();
+        }
+
         /// <inheritdoc cref="IDao{TModel}.Read"/>
         public override IEnumerable<Empleado> Read()
         {

@@ -44,6 +44,9 @@ namespace Murray.Services.Identity
         /// </param>
         public Usuario DoLogin(string username, string password)
         {
+            if (Session.ActiveLogin)
+                return Session.User;
+
             if (string.IsNullOrEmpty(username))
                 Handler.Add("USERNAME_IS_EMPTY");
 
@@ -53,7 +56,13 @@ namespace Murray.Services.Identity
             if (Handler.HasError())
                 return new Usuario();
 
-            return Dao.Login(username, password);
+            var user = Dao.Login(username, password);
+
+            if (Handler.HasError())
+                return new Usuario();
+
+            Session.SetSession(user);
+            return user;
         }
 
         /// <inheritdoc cref="IDisposable.Dispose"/>

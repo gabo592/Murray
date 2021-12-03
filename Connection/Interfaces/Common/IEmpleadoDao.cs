@@ -23,5 +23,13 @@ namespace Connection.Interfaces.Common
         ///     Lista de empleados que coincidan con el filtro
         /// </returns>
         IEnumerable<Empleado> Read(bool estado, int idContacto);
+
+        /// <summary>
+        ///     Obtiene empleado por id
+        /// </summary>
+        /// <param name="id">
+        ///     Id del empleado a obtener
+        /// </param>=
+        Empleado GetById(int id);
     }
 }

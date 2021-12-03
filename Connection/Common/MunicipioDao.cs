@@ -25,7 +25,7 @@ namespace Connection.Common
         /// <inheritdoc cref="IDao{TModel}.Create(TModel)"/>/>
         public override Municipio Create(Municipio model)
         {
-            if (!Validate(model, Operation.CREATE))
+            if (Validate(model, Operation.CREATE))
                 return new Municipio();
 
             return Read(StoredProcedures.MunicipioCreate, new Dictionary<string, object>
@@ -90,7 +90,7 @@ namespace Connection.Common
         /// <inheritdoc cref="IDao{TModel}.Update(int, TModel)"/>
         public override Municipio Update(int id, Municipio model)
         {
-            if (!Validate(model, Operation.UPDATE))
+            if (Validate(model, Operation.UPDATE))
                 return new Municipio();
 
             return Read(StoredProcedures.MunicipioCreate, new Dictionary<string, object>
@@ -106,7 +106,7 @@ namespace Connection.Common
 
         private bool Validate(Municipio model, Operation operation)
         {
-            if (!Validations.Validate(model, Handler, operation))
+            if (Validations.Validate(model, Handler, operation))
                 return false;
 
             if (model.IdDepartamento.Equals(default))
