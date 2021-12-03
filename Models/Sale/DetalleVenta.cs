@@ -14,13 +14,13 @@ namespace Models.Sale
         public int Cantidad { get; set; }
 
         /// <inheritdoc cref="ITransacctionDetail.Precio"/>
-        public decimal Precio { get; set; }
+        public double Precio { get; set; }
 
         /// <inheritdoc cref="ITransacctionDetail.Descuento"/>
-        public decimal Descuento { get; set; }
+        public double Descuento { get; set; }
 
         /// <inheritdoc cref="ITransacctionDetail.Subtotal"/>
-        public decimal Subtotal { get; set; }
+        public double Subtotal => (Cantidad * Precio) - Descuento;
 
         #region Foreing Keys
 

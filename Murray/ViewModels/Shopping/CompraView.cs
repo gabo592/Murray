@@ -8,7 +8,7 @@
         public string Empleado { get; set; }
         public int Productos { get; set; }
         public int Cantidad { get; set; }
-        public decimal Subtotal { get; set; }
-        public decimal Total { get; set; }
+        public double Subtotal { get; set; }
+        public double Total { get; set; }
     }
 }

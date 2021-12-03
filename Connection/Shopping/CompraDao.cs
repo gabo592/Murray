@@ -48,6 +48,16 @@ namespace Connection.Shopping
             }).FirstOrDefault() ?? new Compra();
         }
 
+        /// <inheritdoc cref="ICompraDao.GetById(int)"/>
+        public Compra GetById(int id)
+        {
+            return Read(StoredProcedures.CompraGet, new Dictionary<string, object>
+            {
+                ["Id"] = id
+
+            }).FirstOrDefault() ?? new Compra();
+        }
+
         /// <inheritdoc cref="IDao{TModel}.Read"/>
         public override IEnumerable<Compra> Read()
         {

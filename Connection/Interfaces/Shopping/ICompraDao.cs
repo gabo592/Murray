@@ -19,5 +19,13 @@ namespace Connection.Interfaces.Shopping
         ///     Lista de ventas que coincidan con el filtro
         /// </returns>
         IEnumerable<Compra> Read(string query);
+
+        /// <summary>
+        ///     Obtiene compra por Id
+        /// </summary>
+        /// <param name="id">
+        ///     Id de la compra
+        /// </param>=
+        Compra GetById(int id);
     }
 }

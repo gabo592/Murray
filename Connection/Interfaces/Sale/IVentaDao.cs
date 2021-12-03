@@ -19,5 +19,13 @@ namespace Connection.Interfaces.Sale
         ///     Lista de ventas que coincidan con el filtro
         /// </returns>
         IEnumerable<Venta> Read(string query);
+
+        /// <summary>
+        ///     Obtiene venta por Id
+        /// </summary>
+        /// <param name="id">
+        ///     Id de la venta
+        /// </param>=
+        Venta GetById(int id);
     }
 }

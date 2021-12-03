@@ -15,6 +15,6 @@ namespace Connection.Interfaces.Shopping
         /// <param name="id">
         ///     Id de la compra a obtener detalles
         /// </param>=
-        IEnumerable<DetalleCompra> GetByVentaId(int id);
+        IEnumerable<DetalleCompra> GetByCompraId(int id);
     }
 }

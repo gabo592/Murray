@@ -18,16 +18,16 @@
         /// <summary>
         ///     Valor unitario del elemento
         /// </summary>
-        decimal Precio { get; set; }
+        double Precio { get; set; }
 
         /// <summary>
         ///     Monto de descuento a aplicar en el conjunto de elementos
         /// </summary>
-        decimal Descuento { get; set; }
+        double Descuento { get; set; }
 
         /// <summary>
         ///     Subtotal del detalle
         /// </summary>
-        decimal Subtotal { get; set; }
+        double Subtotal { get; }
     }
 }

@@ -93,8 +93,7 @@ namespace Connection.Sale
                 return false;
 
             // Calculate
-            model.Subtotal = (model.Cantidad * model.Precio) - model.Descuento;
-            if (model.Subtotal < decimal.Zero)
+            if (model.Subtotal < 0D)
                 Handler.Add("SUBTOTAL_IS_NEGATIVE");
 
             return Handler.HasError();

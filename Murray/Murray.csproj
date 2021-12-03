@@ -168,8 +168,11 @@
     <Compile Include="ViewModels\Common\ContactoView.cs" />
     <Compile Include="ViewModels\Common\ProductoView.cs" />
     <Compile Include="ViewModels\Identity\UsuarioView.cs" />
+    <Compile Include="ViewModels\Sales\DetalleVentaView.cs" />
     <Compile Include="ViewModels\Sales\VentaView.cs" />
     <Compile Include="ViewModels\Shopping\CompraView.cs" />
+    <Compile Include="ViewModels\Common\ContactoSelectorView.cs" />
+    <Compile Include="ViewModels\Shopping\DetalleCompraView.cs" />
     <Compile Include="Vistas\Base\Buscador.cs">
       <SubType>Form</SubType>
     </Compile>

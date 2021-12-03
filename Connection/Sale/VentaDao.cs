@@ -48,6 +48,16 @@ namespace Connection.Sale
             }).FirstOrDefault() ?? new Venta();
         }
 
+        /// <inheritdoc cref="IVentaDao.GetById(int)"/>
+        public Venta GetById(int id)
+        {
+            return Read(StoredProcedures.VentaGet, new Dictionary<string, object>
+            {
+                ["Id"] = id
+
+            }).FirstOrDefault() ?? new Venta();
+        }
+
         /// <inheritdoc cref="IDao{TModel}.Read"/>
         public override IEnumerable<Venta> Read()
         {

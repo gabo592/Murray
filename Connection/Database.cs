@@ -51,6 +51,9 @@ namespace Connection
             if (string.IsNullOrEmpty(procedure))
                 throw new NullReferenceException("Nombre del procedimiento de almacenado no especificado");
 
+            if (parameters is null)
+                parameters = new Dictionary<string, object>();
+
             using (var connection = new SqlConnection(ConnectionString))
             {
                 try
@@ -70,13 +73,10 @@ namespace Connection
                 {
                     SqlCommandBuilder.DeriveParameters(sql);
 
-                    if (parameters != null)
+                    foreach (SqlParameter parameter in sql.Parameters)
                     {
-                        foreach (SqlParameter parameter in sql.Parameters)
-                        {
-                            parameters.TryGetValue(RemoteAtSign(parameter.ParameterName), out var value);
-                            parameter.Value = value is null ? DBNull.Value : value;
-                        }
+                        parameters.TryGetValue(RemoteAtSign(parameter.ParameterName), out var value);
+                        parameter.Value = value is null ? DBNull.Value : value;
                     }
 
                     try
@@ -119,6 +119,13 @@ namespace Connection
                     if (property is null) continue;
 
                     var value = reader.IsDBNull(index) ? null : reader.GetValue(index);
+
+                    if (value is decimal && property.PropertyType == typeof(double))
+                        value = Convert.ToDouble(value);
+
+                    if (value is double && property.PropertyType == typeof(decimal))
+                        value = Convert.ToDecimal(value);
+
                     property.SetValue(instance, value);    
                 }
 

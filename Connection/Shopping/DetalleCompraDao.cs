@@ -51,8 +51,8 @@ namespace Connection.Shopping
             }).FirstOrDefault() ?? new DetalleCompra();
         }
 
-        /// <inheritdoc cref="IDetalleCompraDao.GetByVentaId(int)"/>
-        public IEnumerable<DetalleCompra> GetByVentaId(int id)
+        /// <inheritdoc cref="IDetalleCompraDao.GetByCompraId(int)"/>
+        public IEnumerable<DetalleCompra> GetByCompraId(int id)
         {
             return Read(StoredProcedures.DetalleCompraGet, new Dictionary<string, object>
             {
@@ -93,8 +93,7 @@ namespace Connection.Shopping
                 return false;
 
             // Calculate
-            model.Subtotal = (model.Cantidad * model.Precio) - model.Descuento;
-            if (model.Subtotal < decimal.Zero)
+            if (model.Subtotal < 0D)
                 Handler.Add("SUBTOTAL_IS_NEGATIVE");
 
             return Handler.HasError();
